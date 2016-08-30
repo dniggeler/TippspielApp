@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippSpiel", "TippSpiel\TippSpiel.csproj", "{A5C6EED2-33EC-49FA-ABF8-FB3ADD9B617A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsScraper.Contract", "OddsScraper.Contract\OddsScraper.Contract.csproj", "{5F1B2C9E-1349-4621-B9A5-1B7D2E952547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsScraper.Implementation", "OddsScraper.Implementation\OddsScraper.Implementation.csproj", "{3D422660-5E2C-4B88-B6C3-13B1D48D4C89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsScraper.Tests", "OddsScraper.Tests\OddsScraper.Tests.csproj", "{52F6A630-C542-46D7-8861-433EE39B4707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tippspiel.Helpers", "Tippspiel.Helpers\Tippspiel.Helpers.csproj", "{BD6983EF-854B-47D7-B564-D53E05400B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SqlClient", "Data.SqlClient\Data.SqlClient.csproj", "{C6882258-0BE9-4EB7-ADA8-B9F59A7C6B57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C6EED2-33EC-49FA-ABF8-FB3ADD9B617A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C6EED2-33EC-49FA-ABF8-FB3ADD9B617A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C6EED2-33EC-49FA-ABF8-FB3ADD9B617A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C6EED2-33EC-49FA-ABF8-FB3ADD9B617A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1B2C9E-1349-4621-B9A5-1B7D2E952547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1B2C9E-1349-4621-B9A5-1B7D2E952547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1B2C9E-1349-4621-B9A5-1B7D2E952547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1B2C9E-1349-4621-B9A5-1B7D2E952547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D422660-5E2C-4B88-B6C3-13B1D48D4C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D422660-5E2C-4B88-B6C3-13B1D48D4C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D422660-5E2C-4B88-B6C3-13B1D48D4C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D422660-5E2C-4B88-B6C3-13B1D48D4C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F6A630-C542-46D7-8861-433EE39B4707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F6A630-C542-46D7-8861-433EE39B4707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F6A630-C542-46D7-8861-433EE39B4707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F6A630-C542-46D7-8861-433EE39B4707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6983EF-854B-47D7-B564-D53E05400B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6983EF-854B-47D7-B564-D53E05400B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6983EF-854B-47D7-B564-D53E05400B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6983EF-854B-47D7-B564-D53E05400B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6882258-0BE9-4EB7-ADA8-B9F59A7C6B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6882258-0BE9-4EB7-ADA8-B9F59A7C6B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6882258-0BE9-4EB7-ADA8-B9F59A7C6B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6882258-0BE9-4EB7-ADA8-B9F59A7C6B57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
