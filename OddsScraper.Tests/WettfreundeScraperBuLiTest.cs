@@ -18,7 +18,7 @@ namespace WettfreundeScraper.Tests
             _output = output;
         }
 
-        [Fact(DisplayName = "26. Spieltag")]
+        [Fact(DisplayName = "2015 26. Spieltag")]
         public void GetSpieltagTest()
         {
             // given
@@ -26,7 +26,22 @@ namespace WettfreundeScraper.Tests
 
             // when
             var result = _oddsScraper.GetOdds(Resources.Spieltag26Html, spieltag);
-            _output.WriteLine("{0}",result.Count);
+            _output.WriteLine("{0}", result.Count);
+
+            // then
+            result.Should().NotBeNull().And.Subject.Should().HaveCount(9);
+
+        }
+
+        [Fact(DisplayName = "2016 3. Spieltag")]
+        public void GetSpieltag201603Test()
+        {
+            // given
+            string spieltag = "3";
+
+            // when
+            var result = _oddsScraper.GetOdds(Resources.Spieltag3Html, spieltag);
+            _output.WriteLine("{0}", result.Count);
 
             // then
             result.Should().NotBeNull().And.Subject.Should().HaveCount(9);

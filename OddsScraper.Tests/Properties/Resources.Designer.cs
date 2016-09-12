@@ -139,5 +139,21 @@ namespace OddsScraper.Tests.Properties {
                 return ResourceManager.GetString("Spieltag26Html", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;de-DE&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+        ///&lt;head profile=&quot;http://gmpg.org/xfn/11&quot;&gt;
+        ///&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+        ///&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        ///&lt;title&gt;Bundesliga Spielplan 2015/2016 - Spiele, Termine, Wettquoten &amp;raquo; wettfreunde.net &lt;/title&gt;
+        ///&lt;link rel=&quot;pingback&quot; href=&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Spieltag3Html {
+            get {
+                return ResourceManager.GetString("Spieltag3Html", resourceCulture);
+            }
+        }
     }
 }

@@ -63,7 +63,7 @@ namespace OddsScraper
 
         public static double? ConvertToDouble(HtmlNode tdNode)
         {
-            var numberStr = tdNode.InnerText.Replace(',', '.').Trim();
+            var numberStr = tdNode?.InnerText.Replace(',', '.').Trim();
 
             if (string.IsNullOrEmpty(numberStr))
             {

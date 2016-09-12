@@ -1,0 +1,3493 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" prefix="og: http://ogp.me/ns#">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bundesliga Spielplan 2016/2017 - Spiele, Termine, Wettquoten &raquo; wettfreunde.net </title>
+<link rel="pingback" href="http://www.wettfreunde.net/xmlrpc.php" />
+<meta name="description" content="Spielplan der deutschen Fussball Bundesliga für die Saison 2016/2017. Alle Spiele, Termine und die besten Wettquoten der Sportwetten Buchmacher"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.wettfreunde.net/bundesliga-spielplan/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Bundesliga Spielplan 2016/2017 - Spiele, Termine, Wettquoten &raquo; wettfreunde.net" />
+<meta property="og:description" content="Spielplan der deutschen Fussball Bundesliga für die Saison 2016/2017. Alle Spiele, Termine und die besten Wettquoten der Sportwetten Buchmacher" />
+<meta property="og:url" content="http://www.wettfreunde.net/bundesliga-spielplan/" />
+<meta property="og:site_name" content="wettfreunde.net" />
+<meta property="og:image" content="http://www.wettfreunde.net/wp-content/uploads/2015/05/interwetten-logo-120x100.jpg" />
+<meta property="og:image" content="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" />
+<meta property="og:image" content="http://www.wettfreunde.net/wp-content/uploads/2015/05/deposit.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Spielplan der deutschen Fussball Bundesliga für die Saison 2016/2017. Alle Spiele, Termine und die besten Wettquoten der Sportwetten Buchmacher" />
+<meta name="twitter:title" content="Bundesliga Spielplan 2016/2017 - Spiele, Termine, Wettquoten &raquo; wettfreunde.net" />
+<meta name="twitter:image" content="http://www.wettfreunde.net/wp-content/uploads/2015/05/interwetten-logo-120x100.jpg" />
+<meta name="twitter:creator" content="@Heinz_Patzelt" />
+<link rel="alternate" type="application/rss+xml" title="wettfreunde.net &raquo; Feed" href="http://www.wettfreunde.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wettfreunde.net &raquo; Kommentar-Feed" href="http://www.wettfreunde.net/comments/feed/" />
+<link rel='stylesheet' id='et_monarch-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css' media='all' />
+<!--[if !IE]><!-->
+<link rel="stylesheet" type="text/css" href="//www.wettfreunde.net/wp-content/cache/wpfc-minified/a3d5b4053edaccf836d6f55f1ec37be1/1470932302index.css" media="all"/>
+<!--<![endif]-->
+<script src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/4463363d8111e013450a48e35a20bcc3/1468075224index.js' type="text/javascript"></script>
+<link rel='https://api.w.org/' href='http://www.wettfreunde.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wettfreunde.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wettfreunde.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel='shortlink' href='http://www.wettfreunde.net/?p=24883' />
+<link rel="alternate" type="application/json+oembed" href="http://www.wettfreunde.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.wettfreunde.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F&#038;format=xml" />
+<style type="text/css" id="et-social-custom-css">
+</style><style>
+/* BODY */
+span.wprs_rating:after, span.rating-editor:after{color:#2d934e !important;}
+#wprs_square .editorrating_average{background:#2d934e !important;}
+#wprs_square .progress-bar-warning, .wprs_display_rating_percentage .progress-bar-warning, .wprs_comparison .progress-bar-warning{background-color:#2d934e !important;}
+span.wprs_rating-user:after, .wprs_user_rating_stars .fa-fw, span.rating-user:after, #wprs_square .wprs_submit_review{color:#428bca !important;}
+#wprs_square .wprs_submit_review:hover{color:#333 !important;}
+#wprs_square .userrating_average span{background:#428bca !important;}
+#wprs_square .progress-bar-info, .wprs_userrating_criteria .progress-bar-info{background-color:#428bca !important;}
+.ar_button{background-color:#428bca !important;}
+.ar_button_demo{background-color:#ccc !important;}
+.wprs_pros{background-color:#e9faee !important;}
+.wprs_cons{background-color:#faede9 !important;}
+.wprs_cta{background-color:#efefef !important;}
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style type="text/css">
+#topnav,ul.nav ul a{border:0;font-size:12pt;font-weight:bold;font-family:Calibri,Arial,sans-serif;}
+</style>
+<link rel="icon" href="http://www.wettfreunde.net/wp-content/uploads/2015/10/cropped-wettfreunde-favicon-01-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.wettfreunde.net/wp-content/uploads/2015/10/cropped-wettfreunde-favicon-01-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.wettfreunde.net/wp-content/uploads/2015/10/cropped-wettfreunde-favicon-01-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.wettfreunde.net/wp-content/uploads/2015/10/cropped-wettfreunde-favicon-01-270x270.png" />
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-15315024-1', 'auto'); ga('send', 'pageview');</script>
+</head>
+<body class="page page-id-24883 page-template-default et_monarch sn-c bodybg20">
+<div id="outer-wrap">
+<div id="topnav">
+<div class="limit clearfix">
+<ul class="nav">
+<li id="menu-item-24797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-24797"><a href="http://www.wettfreunde.net/">Home</a></li>
+<li id="menu-item-24798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24798"><a href="http://www.wettfreunde.net/wettanbieter-test/">Wettanbieter Test</a></li>
+<li id="menu-item-24799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24799"><a href="http://www.wettfreunde.net/sportwetten-bonus/">Wettbonus Vergleich</a></li>
+<li id="menu-item-24800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24800"><a href="http://www.wettfreunde.net/wettfreunde-news/">Wettfreunde Tipps</a></li>
+<li id="menu-item-41464" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41464"><a href="http://www.wettfreunde.net/ueber-uns/">Über uns</a></li>
+</ul>
+<div class="sub-icons"> <ul class="clearfix"> <li><a class="subicon rss" title="Subscribe via RSS Feed" href="http://www.wettfreunde.net/feed/">RSS Feed</a></li> <li><a class="subicon facebook" title="Folge Wettfreunde.net auf Facebook" rel="external" href="http://www.facebook.com/wettfreunde.net">Facebook</a></li> <li><a class="subicon twitter" rel="external" title="Folge Wettfreunde.net auf Twitter" href="http://www.twitter.com/wettfreunde">Twitter</a></li> <li><a class="subicon gplus" title="Folge Wettfreunde.net auf Google+" rel="publisher" href="https://plus.google.com/+wettfreunde/">Google</a></li> </ul></div></div></div><div id="header" class="clearfix">
+<div id="head-content" class="clearfix">
+<div id="sitetitle"> <a href="http://www.wettfreunde.net" title="wettfreunde.net"><img src="http://www.wettfreunde.net/wp-content/uploads/2015/05/header-wettfreunde.jpg" alt="wettfreunde.net" /></a></div></div></div><div id="wrap">
+<div id="page" class="clearfix">
+<div class="page-border clearfix">
+<div id="contentleft" class="clearfix">
+<div id="content" class="clearfix">
+<div class="singlepage clearfix post-24883 page type-page status-publish hentry" id="single-page-24883">
+<div class="entry">
+<h1 class="page-title">Bundesliga Spielplan 2016/2017 &#8211; Spiele, Termine, Wettquoten</h1>
+<h2>Hier finden Sie eine Übersicht über die Spiele der Bundesliga Saison 2016/2017. Alle Spiele, Termine und die besten Wettquoten der Sportwetten Buchmacher</h2>
+<p><a href="http://www.wettfreunde.net/wetten/interwetten"><img class="alignleft size-full wp-image-24769" title="170 Euro Wettbonus für die Bundesliga bei Interwetten abholen" src="http://www.wettfreunde.net/wp-content/uploads/2015/05/interwetten-logo-120x100.jpg" alt="Interwetten Logo 120x100" width="120" height="100" /></a>Die angegebenen <strong>Quoten und Termine werden regelmäßig kontrolliert</strong> und bei möglichen Änderungen dementsprechend angepasst. Der Bundesliga Spielplan der Wettfreunde bietet somit eine ideale Grundlage für <span style="font-size: small;">→</span> <a href="http://www.wettfreunde.net/fussballwetten"><em>Fussball Wetten</em></a> und Tipps auf die erste Deutsche Bundesliga.<br />
+&nbsp;</p>
+<h5><center>→ <a href="http://www.wettfreunde.net/interwetten-wettbonus/"><strong>jetzt 110 Euro Bundesliga Bonus bei Interwetten abholen</strong></a></center></h5>
+<p>&nbsp;<br />
+<strong>Wer gewinnt den deutschen Meistertitel 2017 und wer steigt ab? </strong>&#8211; hier gibts die Quoten für <a href="http://www.wettfreunde.net/deutscher-meister-wetten/"><em>Bundesliga Meister Wetten</em></a> sowie die Quoten für die <a href="http://www.wettfreunde.net/bundesliga-absteiger-wetten/"><em>Bundesliga Absteiger</em></a> .</p>
+<p>&nbsp;</p>
+<div style="width: 100%x; overflow-x: auto; overflow-y: hidden;">
+<table style="width: 100%;" border="0">
+<tbody>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>2. Spieltag der Bundesliga 2016/17<br />
+von 9. bis 11.9.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">09.09. 20:30</span></td>
+<td>Schalke 04</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/schalke-bayern-muenchen-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Schalke - Bayern Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>10,5</strong><br />
+<a href="http://www.wettfreunde.net/expekt/">Expekt</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>5,80</strong><br />
+<a href="http://www.wettfreunde.net/tipico/">Tipico</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,35</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 15:30</span></td>
+<td>Leverkusen</td>
+<td>HSV</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/leverkusen-hsv-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Leverkusen - HSV Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,55</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>4,50</strong><br />
+<a href="http://www.wettfreunde.net/tipico/">Tipico</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>6,70</strong><br />
+<a href="http://www.wettfreunde.net/tipico/">Tipico</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 15:30</span></td>
+<td>Ingolstadt</td>
+<td><nobr>Hertha BSC</nobr></td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/ingsolstadt-hertha-bsc-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Ingolstadt - Hertha Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,50</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,20</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,10</strong><br />
+<a href="http://www.wettfreunde.net/bwin/">Bwin</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 15:30</span></td>
+<td>Wolfsburg</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/wolfsburg-koeln-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" alt="Button Tipp" width="49" height="22" title="Wolfsburg - Köln Tipp" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,88</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,85</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>4,30</strong><br />
+<a href="http://www.wettfreunde.net/betway/">Betway</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 15:30</span></td>
+<td>Darmstadt</td>
+<td><nobr>E. Frankfurt</nobr></td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/darmstadt-eintracht-frankfurt-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" alt="Button Tipp" width="49" height="22" title="Darmstadt - Frankfurt Tipp" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,00</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,40</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,50</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 15:30</span></td>
+<td>Freiburg</td>
+<td>Gladbach</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/sc-freiburg-moenchengladbach-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Freiburg - Gladbach Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,80</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,90</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,05</strong><br />
+<a href="http://www.wettfreunde.net/william-hill/">William Hill</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">10.09. 18:30</span></td>
+<td>RB Leipzig</td>
+<td>Dortmund</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/rb-leipzig-borussia-dortmund-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Leipzig - Dortmund Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>5,50</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>4,40</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,62</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">11.09. 15:30</span></td>
+<td>Bremen</td>
+<td>Augsburg</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/werder-bremen-fc-augsburg-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Bremen - Augsburg Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,35</strong><br />
+<a href="http://www.wettfreunde.net/bwin/">Bwin</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,65</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,15</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">11.09. 17:30</span></td>
+<td>Mainz</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/mainz-hoffenheim-2016-spieltag-2/"><img src="http://www.wettfreunde.net/wp-content/uploads/2008/10/100218_wettfreunde_header_tipp.jpg" title="Mainz - Hoffenheim Tipp" alt="Tipp" width="49" height="22" class="alignnone size-full wp-image-8260" /></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,10</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,80</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,75</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+</tr>
+</tbody>
+</table></div><p>&nbsp;</p>
+<div style="width: 100%x; overflow-x: auto; overflow-y: hidden;">
+<table style="width: 100%;" border="0">
+<tbody>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>3. Spieltag der Bundesliga 2016/17<br />
+von 16. bis 18.9.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">16.09. 20:30</span></td>
+<td>1. FC Köln</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09. 15:30</span></td>
+<td>FC Bayern</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09. 15:30</span></td>
+<td>Dortmund</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09. 15:30</span></td>
+<td>HSV</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09 15:30</span></td>
+<td>Hoffenheim</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09. 15:30</span></td>
+<td>E. Frankfurt</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">17.09. 18:30</span></td>
+<td>Gladbach</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">18.09. 15:30</span></td>
+<td>Augsburg</td>
+<td>Mainz</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">18.09. 17:30</span></td>
+<td>Hertha BSC</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>4. Spieltag der Bundesliga 2016/17<br />
+von 20. bis 21.9.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.09. 20:00</span></td>
+<td>Wolfsburg</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.09. 20:00</span></td>
+<td>Ingolstadt</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.09. 20:00</span></td>
+<td>Darmstadt</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.09. 20:00</span></td>
+<td>Freiburg</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">21.09. 20:00</span></td>
+<td>FC Bayern</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">21.09. 20:00</span></td>
+<td>Leverkusen</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">21.09. 20:00</span></td>
+<td>Schalke 04</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">21.09. 20:00</span></td>
+<td>Bremen</td>
+<td>Mainz</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">21.09. 20:00</span></td>
+<td>RB Leipzig</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>5. Spieltag der Bundesliga 2016/17<br />
+von 23. bis 25.9.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">23.09 20:30</span></td>
+<td>Dortmund</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 15:30</span></td>
+<td>Gladbach</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 15:30</span></td>
+<td>Mainz 05</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 15:30</span></td>
+<td>HSV</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 15:30</span></td>
+<td>Augsburg</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 15:30</span></td>
+<td>E. Frankfurt</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">24.09. 18:30</span></td>
+<td>Bremen</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">25.09. 15:30</span></td>
+<td>Hoffenheim</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">25.09. 17:30</span></td>
+<td>1. FC Köln</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>6. Spieltag der Bundesliga 2016/17<br />
+von 30.9. bis 2.10.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>7. Spieltag der Bundesliga 2016/17<br />
+von 14. bis 16.10.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>8. Spieltag der Bundesliga 2016/17<br />
+von 21. bis 23.10.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>9. Spieltag der Bundesliga 2016/17<br />
+von 28. bis 30.10.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>10. Spieltag der Bundesliga 2016/17<br />
+von 4. bis 6.11.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>11. Spieltag der Bundesliga 2016/17<br />
+von 18. bis 20.11.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>12. Spieltag der Bundesliga 2016/17<br />
+von 25. bis 27.11.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>13. Spieltag der Bundesliga 2016/17<br />
+von 2. bis 4.12.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>14. Spieltag der Bundesliga 2016/17<br />
+von 9. bis 11.12.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>15. Spieltag der Bundesliga 2016/17<br />
+von 16. bis 18.12.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>16. Spieltag der Bundesliga 2016/17<br />
+von 20. bis 21.12.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>17. Spieltag der Bundesliga 2016/17<br />
+von 20. bis 22.1.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>18. Spieltag der Bundesliga 2016/17<br />
+von 27. bis 29.1.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>19. Spieltag der Bundesliga 2016/17<br />
+von 3. bis 5.2.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>20. Spieltag der Bundesliga 2016/17<br />
+von 10. bis 12.2.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>21. Spieltag der Bundesliga 2016/17<br />
+von 17. bis 19.2.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>22. Spieltag der Bundesliga 2016/17<br />
+von 24. bis 26.2.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>23. Spieltag der Bundesliga 2016/17<br />
+von 3. bis 5.3.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>24. Spieltag der Bundesliga 2016/17<br />
+von 10. bis 12.3.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>25. Spieltag der Bundesliga 2016/17<br />
+von 17. bis 19.3.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>26. Spieltag der Bundesliga 2016/17<br />
+von 31.3. bis 2.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>27. Spieltag der Bundesliga 2016/17<br />
+von 4. bis 5.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>28. Spieltag der Bundesliga 2016/17<br />
+von 7. bis 9.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>29. Spieltag der Bundesliga 2016/17<br />
+von 15. bis 16.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>30. Spieltag der Bundesliga 2016/17<br />
+von 21. bis 23.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Schalke 04</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>31. Spieltag der Bundesliga 2016/17<br />
+von 28. bis 30.4.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Bremen</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Augsburg</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>RB Leipzig</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hoffenheim</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Wolfsburg</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Darmstadt</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Mainz 05</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Leverkusen</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>32. Spieltag der Bundesliga 2016/17<br />
+von 5. bis 7.5.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>HSV</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>E. Frankfurt</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Gladbach</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>1. FC Köln</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>FC Bayern</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Dortmund</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Ingolstadt</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Hertha BSC</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">TBA</span></td>
+<td>Freiburg</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>33. Spieltag der Bundesliga 2016/17<br />
+am 13.5.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Augsburg</td>
+<td>Dortmund</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Wolfsburg</td>
+<td>Gladbach</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Darmstadt</td>
+<td>Hertha BSC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Leverkusen</td>
+<td>1. FC Köln</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Schalke 04</td>
+<td>HSV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Freiburg</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Bremen</td>
+<td>Hoffenheim</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>RB Leipzig</td>
+<td>FC Bayern</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">13.5. 15:30</span></td>
+<td>Mainz 05</td>
+<td>E. Frankfurt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>34. Spieltag der Bundesliga 2016/17<br />
+am 20.5.2017</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>Hertha BSC</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>E. Frankfurt</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>Ingolstadt</td>
+<td>Schalke 04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>1. FC Köln</td>
+<td>Mainz 05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>HSV</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>Hoffenheim</td>
+<td>Augsburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>Dortmund</td>
+<td>Bremen</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>Gladbach</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">20.5. 15:30</span></td>
+<td>FC Bayern</td>
+<td>Freiburg</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table></div><p>&nbsp;</p>
+<div style="width: 100%x; overflow-x: auto; overflow-y: hidden;">
+<table style="width: 100%;" border="0">
+<tbody>
+<tr style="background-color: #5a7d94;">
+<td colspan="4"><span style="color: #ffffff; font-size: medium;"><strong>1. Spieltag der Bundesliga 2016/17<br />
+von 26. bis 28.8.2016</strong></span></td>
+<td style="text-align: center;" colspan="3"><span style="color: #ffffff; font-size: medium;"><strong>beste Wettquote</strong></span></td>
+</tr>
+<tr style="background-color: #5a7d94;">
+<td><span style="font-size: small;"><span style="color: #ffffff;">Anstoß</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+<td><span style="font-size: small;"><span style="color: #ffffff;">Ergebnis</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 1</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Unentschieden</span></span></td>
+<td style="text-align: center;"><span style="font-size: small;"><span style="color: #ffffff;">Team 2</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">26.8. 20:30</span></td>
+<td>FC Bayern</td>
+<td>Bremen</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/bayern-muenchen-werder-bremen-2016-spieltag-1/"><strong>6:0</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,15</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>11,5</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>30,0</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 15:30</span></td>
+<td>Dortmund</td>
+<td>Mainz</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/dortmund-mainz-2016-spieltag-1/"><strong>2:1</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,40</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>5,40</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>9,20</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 15:30</span></td>
+<td>1. FC Köln</td>
+<td>Darmstadt</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/koeln-darmstadt-2016-spieltag-1/"><strong>2:0</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>1,80</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,70</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>5,00</strong><br />
+<a href="http://www.wettfreunde.net/tipico/">Tipico</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 15:30</span></td>
+<td><nobr>E. Frankfurt</nobr></td>
+<td>Schalke</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/eintracht-frankfurt-schalke-2016-spieltag-1/"><strong>1:0</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,40</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,60</strong><br />
+<a href="http://www.wettfreunde.net/bwin/">Bwin</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,20</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 15:30</span></td>
+<td>HSV</td>
+<td>Ingolstadt</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/hsv-fc-ingolstadt-2016-spieltag-1/"><strong>1:1</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,14</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,30</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>4,00</strong><br />
+<a href="http://www.wettfreunde.net/betway/">Betway</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 15:30</span></td>
+<td>Augsburg</td>
+<td>Wolfsburg</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/fc-augsburg-wolfsburg-2016-spieltag-1/"><strong>0:2</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,90</strong><br />
+<a href="http://www.wettfreunde.net/tipico/">Tipico</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,40</strong><br />
+<a href="http://www.wettfreunde.net/bwin/">Bwin</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,60</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">27.8. 18:30</span></td>
+<td>Gladbach</td>
+<td>Leverkusen</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/moenchengladbach-leverkusen-2016-spieltag-1/"><strong>2:1</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,50</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,55</strong><br />
+<a href="http://www.wettfreunde.net/betsafe/">Betsafe</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,20</strong><br />
+<a href="http://www.wettfreunde.net/betway/">Betway</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">28.8. 15:30</span></td>
+<td>Hertha</td>
+<td>Freiburg</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/hertha-bsc-freiburg-2016-spieltag-1/"><strong>2:1</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,20</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,30</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>4,00</strong><br />
+<a href="http://www.wettfreunde.net/betway/">Betway</a></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #006400;">28.8. 17:30</span></td>
+<td>Hoffenheim</td>
+<td>RB Leipzig</td>
+<td style="text-align: center;"><a href="http://www.wettfreunde.net/bundesliga-tipps/hoffenheim-leipzig-2016-spieltag-1/"><strong>2:2</strong></a></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,60</strong><br />
+<a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>3,40</strong><br />
+<a href="http://www.wettfreunde.net/betway/">Betway</a></span></td>
+<td style="text-align: center;"><span style="color: #006400;"><strong>2,90</strong><br />
+<a href="http://www.wettfreunde.net/bet365/">Bet365</a></span></td>
+</tr>
+</tbody>
+</table></div><p>&nbsp;</p>
+<h5><strong>Welcher Online Wettanbieter hat das beste Angebot an Fussballwetten zur Bundesliga in Deutschland?</strong></h5>
+<p>Hier finden Sie einen Überblick der besten Buchmacher für <a href="http://www.wettfreunde.net/bundesliga-wetten"><em>Bundesliga Wetten</em></a> sowie Live Wetten auf die deutsche Bundesliga. Detaillierte Vorschauen, Tipps und <strong>Analysen zu allen Spielen der Bundesliga </strong>finden Sie rechtzeitig vor jedem Spieltag unter dem Menüpunkt <a href="http://www.wettfreunde.net/bundesliga-tipps"><em>Bundesliga Tipps</em></a>.</p>
+<p>Die Ergebnisse und einen Rückblick auf jeden Spieltag gibt es ebenfalls in dieser Rubrik. Zudem veröffentlichen die Wettfreunde einen Vergleich der besten <a href="http://www.wettfreunde.net/bundesliga-quoten"><em>Bundesliga Quoten</em></a> aller <strong>wichtigen online Sportwetten Anbieter.</strong> Diese werden laufend aktualisiert und auf den neuesten Stand gebracht.</p>
+<p>&nbsp;</p>
+<p><center><a class="button turquoise" href="http://www.wettfreunde.net/wettanbieter-vergleich/">alle Wettanbieter im Vergleich</a></center>&nbsp;</p>
+<h4>Was gibt es beim Bundesliga Spielplan der Wettfreunde zu beachten?</h4>
+<p>Die genauen Termine und Anstoßzeiten werden <strong>jeweils ein paar Wochen vor dem betreffenden Spieltag bekannt gegeben</strong> und von uns im Spielplan eingetragen. Die Angaben stammen von der deutschen Fußball Bundesliga.</p>
+<p>Die Wettquoten für den nächsten Spieltag der Bundesliga werden jeweils am Montag eingeholt, verglichen und <strong>die besten Wettquoten werden im Spielplan der Wettfreunde eingetragen</strong>. Sollte es während der Woche zu Quotenänderungen kommen so werden diese hier berücksichtigt, die beste Quote für den jeweiligen Bundesliga Tipp sollte also auf dem aktuellsten Stand der Wettanbieter sein.</p>
+<p><img class="alignleft size-full wp-image-41284" src="http://www.wettfreunde.net/wp-content/uploads/2015/05/deposit.png" alt="Icon Einzahlungen" width="64" height="64" />Gerade am Spieltag selbst kann es aber bei manchem Buchmacher <strong>bedingt durch hohe Wetteinsätze zu gröberen Quotenänderungen kommen</strong>, je näher der Spieltermin rückt desto hektischer werden die Wettmärkte bei Fußballwetten.</p>
+<p>Wir empfehlen daher, vor der Abgabe einer Wette auf die Spiele der Bundesliga <strong>die betreffende Wettquoten nochmal zu überprüfen</strong> und gegebenenfalls einen anderen Wettanbieter zu wählen, wenn die aktuelle Quote nicht mehr den eigenen Vorstellungen entspricht.</p>
+<p>&nbsp;</p>
+<h5>→ <a href="http://www.wettfreunde.net/bundesliga-tipps"><strong>Bundesliga Tipps zum aktuellen Spieltag</strong></a></h5>
+<p>&nbsp;</p>
+<div class="et_social_inline et_social_mobile_on et_social_inline_bottom">
+<div class="et_social_networks et_social_autowidth et_social_slide et_social_circle et_social_left et_social_no_animation et_social_withnetworknames et_social_outer_dark">
+<ul class="et_social_icons_container"><li class="et_social_facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F&#038;t=Bundesliga%20Spielplan%202016%2F2017%20%E2%80%93%20Spiele%2C%20Termine%2C%20Wettquoten" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="24883" data-social_type="share"><i class="et_social_icon et_social_icon_facebook"></i><div class="et_social_network_label"><div class="et_social_networkname">Facebook</div></div><span class="et_social_overlay"></span></a></li><li class="et_social_twitter"><a href="http://twitter.com/share?text=Bundesliga%20Spielplan%202016%2F2017%20%E2%80%93%20Spiele%2C%20Termine%2C%20Wettquoten&#038;url=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F&#038;via=" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="24883" data-social_type="share"><i class="et_social_icon et_social_icon_twitter"></i><div class="et_social_network_label"><div class="et_social_networkname">Twitter</div></div><span class="et_social_overlay"></span></a></li><li class="et_social_googleplus"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F&#038;t=Bundesliga%20Spielplan%202016%2F2017%20%E2%80%93%20Spiele%2C%20Termine%2C%20Wettquoten" class="et_social_share" rel="nofollow" data-social_name="googleplus" data-post_id="24883" data-social_type="share"><i class="et_social_icon et_social_icon_googleplus"></i><div class="et_social_network_label"><div class="et_social_networkname">Google+</div></div><span class="et_social_overlay"></span></a></li><li class="et_social_linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fwww.wettfreunde.net%2Fbundesliga-spielplan%2F&#038;title=Bundesliga%20Spielplan%202016%2F2017%20%E2%80%93%20Spiele%2C%20Termine%2C%20Wettquoten" class="et_social_share" rel="nofollow" data-social_name="linkedin" data-post_id="24883" data-social_type="share"><i class="et_social_icon et_social_icon_linkedin"></i><div class="et_social_network_label"><div class="et_social_networkname">LinkedIn</div></div><span class="et_social_overlay"></span></a></li><li class="et_social_all_button">
+<a href="#" rel="nofollow" data-location="inline" data-page_id="24883" data-permalink="http://www.wettfreunde.net/bundesliga-spielplan/" data-title="Bundesliga Spielplan 2016/2017 &#8211; Spiele, Termine, Wettquoten" class="et_social_open_all">
+<i class="et_social_icon et_social_icon_all_button"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul></div></div><div style="clear:both;"></div></div></div></div><div id="sidebar-narrow" class="clearfix">
+<div id="text-2" class="widget widget-1 widget-first widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Hauptmenü</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/">Startseite</a></li> <li><a href="http://www.wettfreunde.net/wettanbieter-test/">Wettanbieter Test</a></li> <li><a href="http://www.wettfreunde.net/sportwetten-bonus/">Wettbonus Vergleich</a></li> <li><a href="http://www.wettfreunde.net/sportwetten-news/">Sportwetten News</a></li> <li><a href="http://www.wettfreunde.net/wettfreunde-news/">Wettfreunde Tipps</a></li></div></div></div><div id="text-3" class="widget widget-2 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Top 3 Wettanbieter</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/interwetten/">Interwetten</a></li>
+<li><a href="http://www.wettfreunde.net/bet365/">Bet365</a></li>
+<li><a href="http://www.wettfreunde.net/tipico/">Tipico</a></li></div></div></div><div id="text-4" class="widget widget-3 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Top 3 Wettbonus</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/bet365-wettbonus/">Bet365 Bonus</a></li> <li><a href="http://www.wettfreunde.net/tipico-wettbonus/">Tipico Bonus</a></li> <li><a href="http://www.wettfreunde.net/interwetten-wettbonus/">Interwetten Bonus</a></li></div></div></div><div id="text-5" class="widget widget-4 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Bundesliga 2016/2017</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/bundesliga-wetten/">Bundesliga Wetten</a></li> <li><a href="http://www.wettfreunde.net/bundesliga-quoten/">Bundesliga Quoten</a></li> <li><a href="http://www.wettfreunde.net/bundesliga-tipps/">Bundesliga Tipps</a></li> <li><a href="http://www.wettfreunde.net/bundesliga-spielplan/">Bundesliga Spielplan</a></li> <li><a href="http://www.wettfreunde.net/zweite-liga-tipps/">2. Bundesliga Tipps</a></li> <li><a href="http://www.wettfreunde.net/dfb-pokal-tipps/">DFB Pokal Tipps</a></li></div></div></div><div id="text-6" class="widget widget-5 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Fußballwetten</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/champions-league/">Champions League</a></li> <li><a href="http://www.wettfreunde.net/europa-league/">Europa League</a></li> <li><a href="http://www.wettfreunde.net/fussball-international/">Fußball International</a></li> <li><a href="http://www.wettfreunde.net/wm-2018-tipps/">WM 2018 Qualifikation</a></li></div></div></div><div id="text-15" class="widget widget-6 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Wettfreunde Umfrage</span></h3>			<div class="textwidget">Wie viele verschiedene Wettanbieter benützen Sie regelmäßig? <br> <a href="http://www.wettfreunde.net/umfragen/"><img src="http://www.wettfreunde.net/wp-content/uploads/2015/11/button-abstimmen.jpg" title="jetzt abstimmen" alt="Button abstimmen" width="175" height="68" class="alignleft size-full wp-image-55504" /></a> <br></div></div></div><div id="text-7" class="widget widget-7 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Erfolgreich Wetten</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/wettarten/">Wettarten</a></li> <li><a href="http://www.wettfreunde.net/wettbegriffe/">Wettbegriffe</a></li> <li><a href="http://www.wettfreunde.net/wettstrategie/">Wettstrategie</a></li> <li><a href="http://www.wettfreunde.net/erfolgreich-wetten/">Häufige Fragen</a></li></div></div></div><div id="text-8" class="widget widget-8 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Sportwetten Tools</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/livescores-resultate/">Livescores und Resultate</a></li> <li><a href="http://www.wettfreunde.net/tabellen-statistiken/">Tabellen und Statistiken</a></li> <li><a href="http://www.wettfreunde.net/wettquoten-vergleich/">Wettquoten Vergleich</a></li> <li><a href="http://www.wettfreunde.net/aktuelle-sportinfos/">Aktuelle Sportinfos</a></li></div></div></div><div id="text-9" class="widget widget-9 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Sportwetten Links</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/wettbueros/">Wettbüros</a></li> <li><a href="http://www.wettfreunde.net/online-buchmacher/">Buchmacher</a></li> <li><a href="http://www.wettfreunde.net/wettinfos/">Wettinfos</a></li> <li><a href="http://www.wettfreunde.net/wettforen/">Wettforen</a></li></div></div></div><div id="text-10" class="widget widget-10 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Wett Tipps Archiv</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/wm-2010-tipps/">WM 2010 Tipps</a></li> <li><a href="http://www.wettfreunde.net/em-2012-tipps/">EM 2012 Tipps</a></li> <li><a href="http://www.wettfreunde.net/wm-2014-tipps/">WM 2014 Tipps</a></li> <li><a href="http://www.wettfreunde.net/em-2016-tipps/">EM 2016 Tipps</a></li></div></div></div><div id="text-11" class="widget widget-11 widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Über Wettfreunde.net</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/ueber-uns/">Über uns - die Redaktion</a></li> <li><a href="http://www.wettfreunde.net/impressum-kontakt/">Impressum und Kontakt</a></li> <li><a href="http://www.wettfreunde.net/nutzungsbedingungen/">Nutzungsbedingungen</a></li></div></div></div><div id="text-14" class="widget widget-12 widget_text"><div class="widget-wrap">			<div class="textwidget"><img src="http://www.wettfreunde.net/wp-content/uploads/2015/10/wettfreunde-hotline.jpg" alt="Wettfreunde Telefon Hotline" width="200" height="132" class="aligncenter size-full wp-image-52921" /></div></div></div><div id="sscontact-widget-2" class="widget widget-13 sscontact"><div class="widget-wrap">
+<div class="contactinfo">
+<div class="contactinfo-inner"> <h3 class="widgettitle"><span>Wettfreunde Hotline</span></h3> <span class="name">Kontaktieren Sie unsere Fachredaktion für alle Fragen rund um das Thema Sportwetten!</span> <span class="phone">0800-9940060 Deutschland (Kostenlos)</span> <span class="email"><a href="mailto:mai&#108;&#64;wettfr&#101;und&#101;&#46;&#110;&#101;t">Email</a></span></div></div></div></div><div id="socialicons-widget-2" class="widget widget-14 socialicons"><div class="widget-wrap"><h3 class="widgettitle"><span>Social Media</span></h3><div class="textwidget"><p>Folge Wettfreunde.net in den sozialen Netzwerken</p>
+<div class="sub-icons"> <ul class="clearfix"> <li><a class="subicon rss" title="Subscribe via RSS Feed" href="http://www.wettfreunde.net/feed/">RSS Feed</a></li> <li><a class="subicon facebook" title="Folge Wettfreunde.net auf Facebook" rel="external" href="http://www.facebook.com/wettfreunde.net">Facebook</a></li> <li><a class="subicon twitter" rel="external" title="Folge Wettfreunde.net auf Twitter" href="http://www.twitter.com/wettfreunde">Twitter</a></li> <li><a class="subicon gplus" title="Folge Wettfreunde.net auf Google+" rel="publisher" href="https://plus.google.com/+wettfreunde/">Google</a></li> </ul></div></div></div></div><div id="recent-posts-2" class="widget widget-15 widget_recent_entries"><div class="widget-wrap"> <h3 class="widgettitle"><span>Aktuellste Beiträge</span></h3> <ul> <li> <a href="http://www.wettfreunde.net/wettfreunde-news/us-open-finale-2016-kerber-pliskova-wetten-quoten/">US Open Finale 2016: Kerber &#8211; Pliskova | Wetten, Quoten</a> </li> <li> <a href="http://www.wettfreunde.net/europa-league/gruppenphase-2016-ogc-nizza-schalke-04-gruppe-i/">OGC Nizza – Schalke 04 Tipp und Wettquoten | Europa League 2016</a> </li> <li> <a href="http://www.wettfreunde.net/champions-league/gruppenphase-2016-juventus-fc-sevilla/">Juventus – FC Sevilla Tipp &#038; Wettquoten | CL Gruppenphase 2016</a> </li> <li> <a href="http://www.wettfreunde.net/wettfreunde-news/us-open-halbfinale-2016-wozniacki-kerber-wetten-quoten/">US Open Halbfinale 2016: Wozniacki &#8211; Kerber | Wetten, Quoten</a> </li> <li> <a href="http://www.wettfreunde.net/europa-league/gruppenphase-2016-mainz-05-st-etienne-gruppe-c/">Mainz 05 – St. Etienne Tipp und Wettquoten | Europa League 2016</a> </li> <li> <a href="http://www.wettfreunde.net/fussball-international/england-2016-2017-fc-liverpool-leicester-city/">Liverpool &#8211; Leicester Tipp, Quoten | Premier League 10.9.2016</a> </li> <li> <a href="http://www.wettfreunde.net/champions-league/gruppenphase-2016-leverkusen-zska-moskau/">Leverkusen – ZSKA Moskau Tipp &#038; Wettquoten | CL Gruppenphase 2016</a> </li> <li> <a href="http://www.wettfreunde.net/champions-league/gruppenphase-2016-real-madrid-sporting-lissabon/">Real – Sporting Lissabon Tipp &#038; Wettquoten | CL Gruppenphase 2016</a> </li> <li> <a href="http://www.wettfreunde.net/champions-league/gruppenphase-2016-legia-warschau-dortmund/">Legia – Dortmund Tipp &#038; Wettquoten | CL Gruppenphase 2016</a> </li> <li> <a href="http://www.wettfreunde.net/champions-league/gruppenphase-2016-fc-barcelona-celtic-glasgow/">FC Barcelona &#8211; Celtic Tipp &#038; Wettquoten | CL Gruppenphase 2016</a> </li> </ul></div></div><div id="text-12" class="widget widget-16 widget-last widget_text"><div class="widget-wrap">			<div class="textwidget"><img src="http://www.wettfreunde.net/wp-content/uploads/2015/07/expert.jpg" alt="button expert" width="156" height="127" class="alignleft size-full wp-image-41468" /></div></div></div></div><div style="clear:both;margin-bottom:20px;"></div></div></div></div></div><div id="footer-widgets" class="maincontent">
+<div class="limit clearfix">
+<div class="footer-widget1">
+<div id="nav_menu-2" class="widget widget-1 widget-first widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Wettanbieter Testberichte Top 10</span></h3><div class="menu-wettanbieter-testberichte-1-10-container"><ul id="menu-wettanbieter-testberichte-1-10" class="menu"><li id="menu-item-37224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37224"><a href="http://www.wettfreunde.net/interwetten/">Interwetten Testbericht</a></li>
+<li id="menu-item-37225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37225"><a href="http://www.wettfreunde.net/bet365/">Bet365 Testbericht</a></li>
+<li id="menu-item-37228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37228"><a href="http://www.wettfreunde.net/tipico/">Tipico Testbericht</a></li>
+<li id="menu-item-37229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37229"><a href="http://www.wettfreunde.net/betsafe/">Betsafe Testbericht</a></li>
+<li id="menu-item-37231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37231"><a href="http://www.wettfreunde.net/netbet/">Netbet Testbericht</a></li>
+<li id="menu-item-72132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72132"><a href="http://www.wettfreunde.net/bet3000/">Bet3000 Testbericht</a></li>
+<li id="menu-item-72130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72130"><a href="http://www.wettfreunde.net/betway/">Betway Testbericht</a></li>
+<li id="menu-item-37235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37235"><a href="http://www.wettfreunde.net/comeon/">ComeOn Testbericht</a></li>
+<li id="menu-item-37236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37236"><a href="http://www.wettfreunde.net/ladbrokes/">Ladbrokes Testbericht</a></li>
+<li id="menu-item-76078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76078"><a href="http://www.wettfreunde.net/william-hill/">William Hill Testbericht</a></li>
+</ul></div></div></div></div><div class="footer-widget2">
+<div id="nav_menu-8" class="widget widget-1 widget-first widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Wettanbieter Testberichte 11+</span></h3><div class="menu-wettanbieter-testberichte-11-container"><ul id="menu-wettanbieter-testberichte-11" class="menu"><li id="menu-item-76079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76079"><a href="http://www.wettfreunde.net/bwin/">Bwin Testbericht</a></li> <li id="menu-item-112529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112529"><a href="http://www.wettfreunde.net/sunmaker/">Sunmaker Testbericht</a></li> <li id="menu-item-52521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52521"><a href="http://www.wettfreunde.net/mybet/">Mybet Testbericht</a></li> <li id="menu-item-52529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52529"><a href="http://www.wettfreunde.net/expekt/">Expekt Testbericht</a></li> <li id="menu-item-52522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52522"><a href="http://www.wettfreunde.net/betvictor/">Betvictor Testbericht</a></li> <li id="menu-item-72135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72135"><a href="http://www.wettfreunde.net/bigbetworld/">Big Bet World Testbericht</a></li> <li id="menu-item-52531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52531"><a href="http://www.wettfreunde.net/betworld/">Betworld Testbericht</a></li> <li id="menu-item-72137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72137"><a href="http://www.wettfreunde.net/kulbet/">Kulbet Testbericht</a></li> <li id="menu-item-52524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52524"><a href="http://www.wettfreunde.net/sportingbet/">Sportingbet Testbericht</a></li> <li id="menu-item-72138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72138"><a href="http://www.wettfreunde.net/mobilbet/">Mobilbet Testbericht</a></li> <li id="menu-item-52525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52525"><a href="http://www.wettfreunde.net/unibet/">Unibet Testbericht</a></li> <li id="menu-item-52527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52527"><a href="http://www.wettfreunde.net/bet-at-home/">Bet-at-Home Testbericht</a></li> <li id="menu-item-52528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52528"><a href="http://www.wettfreunde.net/betsson/">Betsson Testbericht</a></li> <li id="menu-item-52520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52520"><a href="http://www.wettfreunde.net/betclick/">Betclic Testbericht</a></li> </ul></div></div></div></div><div class="footer-widget3">
+<div id="nav_menu-6" class="widget widget-1 widget-first widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Wettfreunde Tipps</span></h3><div class="menu-tipps-container"><ul id="menu-tipps" class="menu"><li id="menu-item-37283" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37283"><a href="http://www.wettfreunde.net/bundesliga-tipps/">Bundesliga</a></li>
+<li id="menu-item-37284" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37284"><a href="http://www.wettfreunde.net/zweite-liga-tipps/">Zweite Liga</a></li>
+<li id="menu-item-37287" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37287"><a href="http://www.wettfreunde.net/dfb-pokal-tipps/">DFB Pokal</a></li>
+<li id="menu-item-37282" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37282"><a href="http://www.wettfreunde.net/champions-league/">Champions League</a></li>
+<li id="menu-item-37286" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37286"><a href="http://www.wettfreunde.net/europa-league/">Europa League</a></li>
+<li id="menu-item-37285" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37285"><a href="http://www.wettfreunde.net/fussball-international/">Fussball International</a></li>
+<li id="menu-item-37290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37290"><a href="http://www.wettfreunde.net/em-2016-tipps/">Fußball EM 2016</a></li>
+<li id="menu-item-52532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52532"><a href="http://www.wettfreunde.net/fussballwetten/">Fußballwetten</a></li>
+<li id="menu-item-52533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52533"><a href="http://www.wettfreunde.net/livewetten/">Live Wetten</a></li>
+</ul></div></div></div></div><div class="footer-widget4">
+<div id="nav_menu-7" class="widget widget-1 widget-first widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Quoten Vergleich</span></h3><div class="menu-wettquoten-vergleich-container"><ul id="menu-wettquoten-vergleich" class="menu"><li id="menu-item-43610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43610"><a href="http://www.wettfreunde.net/bundesliga-quoten/">Bundesliga Spieltag</a></li> <li id="menu-item-43612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43612"><a href="http://www.wettfreunde.net/deutscher-meister-wetten/">Bundesliga Meister</a></li> <li id="menu-item-43611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43611"><a href="http://www.wettfreunde.net/bundesliga-absteiger-wetten/">Bundesliga Absteiger</a></li> <li id="menu-item-43613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43613"><a href="http://www.wettfreunde.net/zweite-liga-quoten/">2. Liga Spieltag</a></li> <li id="menu-item-43609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43609"><a href="http://www.wettfreunde.net/champions-league-quoten/">Champions League</a></li> <li id="menu-item-43615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43615"><a href="http://www.wettfreunde.net/europa-league-quoten/">Europa League</a></li> <li id="menu-item-43614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43614"><a href="http://www.wettfreunde.net/em-2016-quoten/">Europameister 2016</a></li> </ul></div></div></div><div id="text-13" class="widget widget-2 widget-last widget_text"><div class="widget-wrap"><h3 class="widgettitle"><span>Wettfreunde.net</span></h3>			<div class="textwidget"><li><a href="http://www.wettfreunde.net/impressum-kontakt/">Impressum / Kontakt</a></li> <li><a href="http://www.wettfreunde.net/ueber-uns/">Über uns / Redaktion</a></li></div></div></div></div></div></div><div id="footer" class="clearfix">
+<div class="limit"> &copy; 2008-2016 - www.wettfreunde.net - das Portal für erfolgreiche Sportwetten</div></div><div id="backtotop">Top</div></div><div class="et_social_pin_images_outer">
+<div class="et_social_pinterest_window">
+<div class="et_social_modal_header"><h3>Pin It on Pinterest</h3><span class="et_social_close"></span></div><div class="et_social_pin_images" data-permalink="http://www.wettfreunde.net/bundesliga-spielplan/" data-title="Bundesliga Spielplan 2016/2017 &#8211; Spiele, Termine, Wettquoten" data-post_id="24883"></div></div></div><script type="text/javascript">jQuery(document).ready(function(){
+jQuery("#onecol").click(function(){
+jQuery("#post-grid").removeClass("twocol");
+jQuery("#post-grid").removeClass("threecol");
+jQuery("#onecol").addClass("active");
+jQuery("#threecol").removeClass("active");
+jQuery("#twocol").removeClass("active");
+return false;
+});jQuery("#twocol").click(function(){
+jQuery("#post-grid").addClass("twocol");
+jQuery("#post-grid").removeClass("threecol");
+jQuery("#twocol").addClass("active");
+jQuery("#onecol").removeClass("active");
+jQuery("#threecol").removeClass("active");
+return false;
+});jQuery("#threecol").click(function(){
+jQuery("#post-grid").addClass("threecol");
+jQuery("#post-grid").removeClass("twocol");
+jQuery("#threecol").addClass("active");
+jQuery("#onecol").removeClass("active");
+jQuery("#twocol").removeClass("active");
+return false;
+});});</script>
+<script type="text/javascript">jQuery(function (){
+jQuery('.nav').mobileMenu({ defaultText:'Navigate to ...' });jQuery('.catnav').mobileMenu({ defaultText:'Navigate to ...', className:'select-menu-catnav' });jQuery('.fixednav').mobileMenu({ defaultText:'Navigate to ...', className:'select-menu-fixednav' });});</script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<script type="text/javascript">jQuery(document).ready(function(){ 
+jQuery('#topnav ul.nav').superfish({ 
+delay:300,				
+animation:{opacity:'show',height:'show'},	
+speed:'fast',				
+cssArrows:false				
+});});</script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/e40c2ca35e9b7c6bf35b2f15bbfbc6c0/1445434260index.js'></script>
+<script type='text/javascript'>var monarchSettings={"ajaxurl":"http:\/\/www.wettfreunde.net\/wp-admin\/admin-ajax.php","pageurl":"http:\/\/www.wettfreunde.net\/bundesliga-spielplan\/","stats_nonce":"863a094957","share_counts":"03730c92a9","follow_counts":"85fc39ee5f","total_counts":"f8f9222dfe","media_single":"1b927b2100","media_total":"0a09fa9434","generate_all_window_nonce":"81d679a7dc","no_img_message":"No images available for sharing on this page"};</script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/ec4426da20a7d114c615c71ca0817378/1445434260index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/9eed9e1ec506542fc039ad7ff223cfe5/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/fbed433c51092c277c9753c6c369c642/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/e66f7982d22c8caf59e6b3ad8a764c66/1445434260index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/1b93f5595c8fcc4bc67c6dbf37fc90e0/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/7aa2b58ae2ec4c3a54d3213744a966ee/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/c5bd5a8eb58cb3de168cdf0676886ab1/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/0ccba26fe6d210dd0e2cfe20f8fc92e0/1468075224index.js'></script>
+<script type='text/javascript' src='//www.wettfreunde.net/wp-content/cache/wpfc-minified/4843f12748eec2a7b7bba34209bbbbbb/1468075224index.js'></script>
+</body>
+</html><!-- Mobile: WP Fastest Cache file was created in 1.158301115036 seconds, on 09-09-16 14:24:39 -->
