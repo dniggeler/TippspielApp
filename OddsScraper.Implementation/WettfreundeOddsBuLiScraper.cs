@@ -7,6 +7,10 @@ using OddsScraper.Contract.Model;
 
 namespace OddsScraper
 {
+    /// <summary>
+    /// Helper class to extracts odds from wettfreunde.net site
+    /// </summary>
+    /// <seealso cref="OddsScraper.Contract.IOddsScraper" />
     public class WettfreundeOddsBuLiScraper : IOddsScraper
     {
         public List<OddsInfoModel> GetOdds(string oddsAsHtmlStr, string roundTag)
@@ -25,6 +29,13 @@ namespace OddsScraper
             return GetOdds(doc,roundTag);
         }
 
+        /// <summary>
+        /// Gets the odds.
+        /// </summary>
+        /// <param name="doc">The document.</param>
+        /// <param name="roundTag">The round tag.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ApplicationException">Spieltag nicht gefunden.</exception>
         private List<OddsInfoModel> GetOdds(HtmlDocument doc, string roundTag)
         {
             int spieltag = int.Parse(roundTag);
