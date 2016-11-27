@@ -129,32 +129,11 @@ namespace TippSpiel.SvcOpenData {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private int matchIDField;
-        
         private System.DateTime matchDateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TimeZoneIDField;
-        
-        private System.DateTime matchDateTimeUTCField;
         
         private int groupIDField;
         
-        private int groupOrderIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string groupNameField;
-        
         private int leagueIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string leagueNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string leagueSaisonField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string leagueShortcutField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nameTeam1Field;
@@ -162,15 +141,31 @@ namespace TippSpiel.SvcOpenData {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nameTeam2Field;
         
-        private int idTeam1Field;
-        
-        private int idTeam2Field;
-        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string iconUrlTeam1Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string iconUrlTeam2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneIDField;
+        
+        private System.DateTime matchDateTimeUTCField;
+        
+        private int groupOrderIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string groupNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string leagueSaisonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string leagueShortcutField;
+        
+        private int idTeam1Field;
+        
+        private int idTeam2Field;
         
         private int pointsTeam1Field;
         
@@ -178,17 +173,22 @@ namespace TippSpiel.SvcOpenData {
         
         private System.DateTime lastUpdateField;
         
-        private bool matchIsFinishedField;
-        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private TippSpiel.SvcOpenData.ArrayOfMatchResult matchResultsField;
+        
+        private System.Nullable<int> NumberOfViewersField;
+        
+        private int matchIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string leagueNameField;
+        
+        private bool matchIsFinishedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private TippSpiel.SvcOpenData.Goal[] goalsField;
         
         private TippSpiel.SvcOpenData.Location locationField;
-        
-        private System.Nullable<int> NumberOfViewersField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -201,19 +201,6 @@ namespace TippSpiel.SvcOpenData {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int matchID {
-            get {
-                return this.matchIDField;
-            }
-            set {
-                if ((this.matchIDField.Equals(value) != true)) {
-                    this.matchIDField = value;
-                    this.RaisePropertyChanged("matchID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
         public System.DateTime matchDateTime {
             get {
                 return this.matchDateTimeField;
@@ -226,33 +213,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string TimeZoneID {
-            get {
-                return this.TimeZoneIDField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TimeZoneIDField, value) != true)) {
-                    this.TimeZoneIDField = value;
-                    this.RaisePropertyChanged("TimeZoneID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
-        public System.DateTime matchDateTimeUTC {
-            get {
-                return this.matchDateTimeUTCField;
-            }
-            set {
-                if ((this.matchDateTimeUTCField.Equals(value) != true)) {
-                    this.matchDateTimeUTCField = value;
-                    this.RaisePropertyChanged("matchDateTimeUTC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
         public int groupID {
             get {
                 return this.groupIDField;
@@ -265,33 +226,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
-        public int groupOrderID {
-            get {
-                return this.groupOrderIDField;
-            }
-            set {
-                if ((this.groupOrderIDField.Equals(value) != true)) {
-                    this.groupOrderIDField = value;
-                    this.RaisePropertyChanged("groupOrderID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string groupName {
-            get {
-                return this.groupNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.groupNameField, value) != true)) {
-                    this.groupNameField = value;
-                    this.RaisePropertyChanged("groupName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
         public int leagueID {
             get {
                 return this.leagueIDField;
@@ -304,46 +239,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string leagueName {
-            get {
-                return this.leagueNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.leagueNameField, value) != true)) {
-                    this.leagueNameField = value;
-                    this.RaisePropertyChanged("leagueName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string leagueSaison {
-            get {
-                return this.leagueSaisonField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.leagueSaisonField, value) != true)) {
-                    this.leagueSaisonField = value;
-                    this.RaisePropertyChanged("leagueSaison");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string leagueShortcut {
-            get {
-                return this.leagueShortcutField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.leagueShortcutField, value) != true)) {
-                    this.leagueShortcutField = value;
-                    this.RaisePropertyChanged("leagueShortcut");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string nameTeam1 {
             get {
                 return this.nameTeam1Field;
@@ -356,7 +252,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
         public string nameTeam2 {
             get {
                 return this.nameTeam2Field;
@@ -365,6 +261,110 @@ namespace TippSpiel.SvcOpenData {
                 if ((object.ReferenceEquals(this.nameTeam2Field, value) != true)) {
                     this.nameTeam2Field = value;
                     this.RaisePropertyChanged("nameTeam2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string iconUrlTeam1 {
+            get {
+                return this.iconUrlTeam1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.iconUrlTeam1Field, value) != true)) {
+                    this.iconUrlTeam1Field = value;
+                    this.RaisePropertyChanged("iconUrlTeam1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string iconUrlTeam2 {
+            get {
+                return this.iconUrlTeam2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.iconUrlTeam2Field, value) != true)) {
+                    this.iconUrlTeam2Field = value;
+                    this.RaisePropertyChanged("iconUrlTeam2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string TimeZoneID {
+            get {
+                return this.TimeZoneIDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneIDField, value) != true)) {
+                    this.TimeZoneIDField = value;
+                    this.RaisePropertyChanged("TimeZoneID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        public System.DateTime matchDateTimeUTC {
+            get {
+                return this.matchDateTimeUTCField;
+            }
+            set {
+                if ((this.matchDateTimeUTCField.Equals(value) != true)) {
+                    this.matchDateTimeUTCField = value;
+                    this.RaisePropertyChanged("matchDateTimeUTC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        public int groupOrderID {
+            get {
+                return this.groupOrderIDField;
+            }
+            set {
+                if ((this.groupOrderIDField.Equals(value) != true)) {
+                    this.groupOrderIDField = value;
+                    this.RaisePropertyChanged("groupOrderID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string groupName {
+            get {
+                return this.groupNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.groupNameField, value) != true)) {
+                    this.groupNameField = value;
+                    this.RaisePropertyChanged("groupName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string leagueSaison {
+            get {
+                return this.leagueSaisonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.leagueSaisonField, value) != true)) {
+                    this.leagueSaisonField = value;
+                    this.RaisePropertyChanged("leagueSaison");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string leagueShortcut {
+            get {
+                return this.leagueShortcutField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.leagueShortcutField, value) != true)) {
+                    this.leagueShortcutField = value;
+                    this.RaisePropertyChanged("leagueShortcut");
                 }
             }
         }
@@ -395,33 +395,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string iconUrlTeam1 {
-            get {
-                return this.iconUrlTeam1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.iconUrlTeam1Field, value) != true)) {
-                    this.iconUrlTeam1Field = value;
-                    this.RaisePropertyChanged("iconUrlTeam1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string iconUrlTeam2 {
-            get {
-                return this.iconUrlTeam2Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.iconUrlTeam2Field, value) != true)) {
-                    this.iconUrlTeam2Field = value;
-                    this.RaisePropertyChanged("iconUrlTeam2");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=15)]
         public int pointsTeam1 {
             get {
                 return this.pointsTeam1Field;
@@ -434,7 +408,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=16)]
         public int pointsTeam2 {
             get {
                 return this.pointsTeam2Field;
@@ -447,7 +421,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
         public System.DateTime lastUpdate {
             get {
                 return this.lastUpdateField;
@@ -460,20 +434,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
-        public bool matchIsFinished {
-            get {
-                return this.matchIsFinishedField;
-            }
-            set {
-                if ((this.matchIsFinishedField.Equals(value) != true)) {
-                    this.matchIsFinishedField = value;
-                    this.RaisePropertyChanged("matchIsFinished");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
         public TippSpiel.SvcOpenData.ArrayOfMatchResult matchResults {
             get {
                 return this.matchResultsField;
@@ -486,7 +447,59 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
+        public System.Nullable<int> NumberOfViewers {
+            get {
+                return this.NumberOfViewersField;
+            }
+            set {
+                if ((this.NumberOfViewersField.Equals(value) != true)) {
+                    this.NumberOfViewersField = value;
+                    this.RaisePropertyChanged("NumberOfViewers");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
+        public int matchID {
+            get {
+                return this.matchIDField;
+            }
+            set {
+                if ((this.matchIDField.Equals(value) != true)) {
+                    this.matchIDField = value;
+                    this.RaisePropertyChanged("matchID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string leagueName {
+            get {
+                return this.leagueNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.leagueNameField, value) != true)) {
+                    this.leagueNameField = value;
+                    this.RaisePropertyChanged("leagueName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
+        public bool matchIsFinished {
+            get {
+                return this.matchIsFinishedField;
+            }
+            set {
+                if ((this.matchIsFinishedField.Equals(value) != true)) {
+                    this.matchIsFinishedField = value;
+                    this.RaisePropertyChanged("matchIsFinished");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
         public TippSpiel.SvcOpenData.Goal[] goals {
             get {
                 return this.goalsField;
@@ -499,7 +512,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=23)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=24)]
         public TippSpiel.SvcOpenData.Location location {
             get {
                 return this.locationField;
@@ -508,19 +521,6 @@ namespace TippSpiel.SvcOpenData {
                 if ((object.ReferenceEquals(this.locationField, value) != true)) {
                     this.locationField = value;
                     this.RaisePropertyChanged("location");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=24)]
-        public System.Nullable<int> NumberOfViewers {
-            get {
-                return this.NumberOfViewersField;
-            }
-            set {
-                if ((this.NumberOfViewersField.Equals(value) != true)) {
-                    this.NumberOfViewersField = value;
-                    this.RaisePropertyChanged("NumberOfViewers");
                 }
             }
         }
@@ -544,10 +544,10 @@ namespace TippSpiel.SvcOpenData {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private int locationIDField;
-        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string locationCityField;
+        
+        private int locationIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string locationStadiumField;
@@ -559,6 +559,19 @@ namespace TippSpiel.SvcOpenData {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string locationCity {
+            get {
+                return this.locationCityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.locationCityField, value) != true)) {
+                    this.locationCityField = value;
+                    this.RaisePropertyChanged("locationCity");
+                }
             }
         }
         
@@ -575,20 +588,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string locationCity {
-            get {
-                return this.locationCityField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.locationCityField, value) != true)) {
-                    this.locationCityField = value;
-                    this.RaisePropertyChanged("locationCity");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string locationStadium {
             get {
                 return this.locationStadiumField;
@@ -627,9 +627,17 @@ namespace TippSpiel.SvcOpenData {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private int goalIDField;
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string goalCommentField;
+        
+        private int goalGetterIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string goalGetterNameField;
         
         private System.Nullable<int> goalMachIDField;
+        
+        private int goalIDField;
         
         private System.Nullable<int> goalScoreTeam1Field;
         
@@ -637,19 +645,11 @@ namespace TippSpiel.SvcOpenData {
         
         private System.Nullable<int> goalMatchMinuteField;
         
-        private int goalGetterIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string goalGetterNameField;
-        
         private System.Nullable<bool> goalPenaltyField;
         
         private System.Nullable<bool> goalOwnGoalField;
         
         private System.Nullable<bool> goalOvertimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string goalCommentField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -661,15 +661,41 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int goalID {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string goalComment {
             get {
-                return this.goalIDField;
+                return this.goalCommentField;
             }
             set {
-                if ((this.goalIDField.Equals(value) != true)) {
-                    this.goalIDField = value;
-                    this.RaisePropertyChanged("goalID");
+                if ((object.ReferenceEquals(this.goalCommentField, value) != true)) {
+                    this.goalCommentField = value;
+                    this.RaisePropertyChanged("goalComment");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int goalGetterID {
+            get {
+                return this.goalGetterIDField;
+            }
+            set {
+                if ((this.goalGetterIDField.Equals(value) != true)) {
+                    this.goalGetterIDField = value;
+                    this.RaisePropertyChanged("goalGetterID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string goalGetterName {
+            get {
+                return this.goalGetterNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.goalGetterNameField, value) != true)) {
+                    this.goalGetterNameField = value;
+                    this.RaisePropertyChanged("goalGetterName");
                 }
             }
         }
@@ -687,7 +713,20 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int goalID {
+            get {
+                return this.goalIDField;
+            }
+            set {
+                if ((this.goalIDField.Equals(value) != true)) {
+                    this.goalIDField = value;
+                    this.RaisePropertyChanged("goalID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
         public System.Nullable<int> goalScoreTeam1 {
             get {
                 return this.goalScoreTeam1Field;
@@ -700,7 +739,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
         public System.Nullable<int> goalScoreTeam2 {
             get {
                 return this.goalScoreTeam2Field;
@@ -713,7 +752,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
         public System.Nullable<int> goalMatchMinute {
             get {
                 return this.goalMatchMinuteField;
@@ -726,33 +765,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
-        public int goalGetterID {
-            get {
-                return this.goalGetterIDField;
-            }
-            set {
-                if ((this.goalGetterIDField.Equals(value) != true)) {
-                    this.goalGetterIDField = value;
-                    this.RaisePropertyChanged("goalGetterID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string goalGetterName {
-            get {
-                return this.goalGetterNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.goalGetterNameField, value) != true)) {
-                    this.goalGetterNameField = value;
-                    this.RaisePropertyChanged("goalGetterName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
         public System.Nullable<bool> goalPenalty {
             get {
                 return this.goalPenaltyField;
@@ -765,7 +778,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
         public System.Nullable<bool> goalOwnGoal {
             get {
                 return this.goalOwnGoalField;
@@ -778,7 +791,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
         public System.Nullable<bool> goalOvertime {
             get {
                 return this.goalOvertimeField;
@@ -787,19 +800,6 @@ namespace TippSpiel.SvcOpenData {
                 if ((this.goalOvertimeField.Equals(value) != true)) {
                     this.goalOvertimeField = value;
                     this.RaisePropertyChanged("goalOvertime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string goalComment {
-            get {
-                return this.goalCommentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.goalCommentField, value) != true)) {
-                    this.goalCommentField = value;
-                    this.RaisePropertyChanged("goalComment");
                 }
             }
         }
@@ -823,12 +823,12 @@ namespace TippSpiel.SvcOpenData {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string resultNameField;
-        
         private int pointsTeam1Field;
         
         private int pointsTeam2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string resultNameField;
         
         private int resultOrderIDField;
         
@@ -847,6 +847,32 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int pointsTeam1 {
+            get {
+                return this.pointsTeam1Field;
+            }
+            set {
+                if ((this.pointsTeam1Field.Equals(value) != true)) {
+                    this.pointsTeam1Field = value;
+                    this.RaisePropertyChanged("pointsTeam1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int pointsTeam2 {
+            get {
+                return this.pointsTeam2Field;
+            }
+            set {
+                if ((this.pointsTeam2Field.Equals(value) != true)) {
+                    this.pointsTeam2Field = value;
+                    this.RaisePropertyChanged("pointsTeam2");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string resultName {
             get {
@@ -860,33 +886,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
-        public int pointsTeam1 {
-            get {
-                return this.pointsTeam1Field;
-            }
-            set {
-                if ((this.pointsTeam1Field.Equals(value) != true)) {
-                    this.pointsTeam1Field = value;
-                    this.RaisePropertyChanged("pointsTeam1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public int pointsTeam2 {
-            get {
-                return this.pointsTeam2Field;
-            }
-            set {
-                if ((this.pointsTeam2Field.Equals(value) != true)) {
-                    this.pointsTeam2Field = value;
-                    this.RaisePropertyChanged("pointsTeam2");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
         public int resultOrderID {
             get {
                 return this.resultOrderIDField;
@@ -899,7 +899,7 @@ namespace TippSpiel.SvcOpenData {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string resultTypeName {
             get {
                 return this.resultTypeNameField;
@@ -1306,6 +1306,10 @@ namespace TippSpiel.SvcOpenData {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
+        private System.Nullable<System.DateTime> goalGetterBirthdayField;
+        
+        private System.Nullable<int> goalGetterGoalCountField;
+        
         private int goalGetterIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1314,10 +1318,6 @@ namespace TippSpiel.SvcOpenData {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string goalGetterNationalityField;
         
-        private System.Nullable<System.DateTime> goalGetterBirthdayField;
-        
-        private System.Nullable<int> goalGetterGoalCountField;
-        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -1325,6 +1325,32 @@ namespace TippSpiel.SvcOpenData {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.DateTime> goalGetterBirthday {
+            get {
+                return this.goalGetterBirthdayField;
+            }
+            set {
+                if ((this.goalGetterBirthdayField.Equals(value) != true)) {
+                    this.goalGetterBirthdayField = value;
+                    this.RaisePropertyChanged("goalGetterBirthday");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> goalGetterGoalCount {
+            get {
+                return this.goalGetterGoalCountField;
+            }
+            set {
+                if ((this.goalGetterGoalCountField.Equals(value) != true)) {
+                    this.goalGetterGoalCountField = value;
+                    this.RaisePropertyChanged("goalGetterGoalCount");
+                }
             }
         }
         
@@ -1363,32 +1389,6 @@ namespace TippSpiel.SvcOpenData {
                 if ((object.ReferenceEquals(this.goalGetterNationalityField, value) != true)) {
                     this.goalGetterNationalityField = value;
                     this.RaisePropertyChanged("goalGetterNationality");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
-        public System.Nullable<System.DateTime> goalGetterBirthday {
-            get {
-                return this.goalGetterBirthdayField;
-            }
-            set {
-                if ((this.goalGetterBirthdayField.Equals(value) != true)) {
-                    this.goalGetterBirthdayField = value;
-                    this.RaisePropertyChanged("goalGetterBirthday");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public System.Nullable<int> goalGetterGoalCount {
-            get {
-                return this.goalGetterGoalCountField;
-            }
-            set {
-                if ((this.goalGetterGoalCountField.Equals(value) != true)) {
-                    this.goalGetterGoalCountField = value;
-                    this.RaisePropertyChanged("goalGetterGoalCount");
                 }
             }
         }
