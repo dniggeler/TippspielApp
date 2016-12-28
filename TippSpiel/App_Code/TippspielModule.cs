@@ -1,6 +1,8 @@
 ﻿using log4net;
 using Ninject.Modules;
 using Ninject.Web.Common;
+using OddsScraper;
+using OddsScraper.Contract;
 using Tippspiel.Contracts;
 using Tippspiel.Helpers;
 using Tippspiel.Implementation;
@@ -25,6 +27,10 @@ namespace BhFS.Tippspiel.Utils
 
             Kernel.Bind<WettfreundeScraper>()
                 .ToSelf()
+                .InRequestScope();
+
+            Kernel.Bind<IOddsScraper>()
+                .To<WettfreundeOddsBuLiScraper>()
                 .InRequestScope();
         }
     }
