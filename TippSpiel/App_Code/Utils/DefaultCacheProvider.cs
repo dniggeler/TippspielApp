@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.Caching;
+using Tippspiel.Contracts;
 
 namespace FussballTipp.Utils
 {

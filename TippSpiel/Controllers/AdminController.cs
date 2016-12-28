@@ -13,6 +13,7 @@ using BhFS.Tippspiel.Utils;
 using FussballTipp.Repository;
 using FussballTipp.Utils;
 using Data.SqlClient;
+using Tippspiel.Contracts;
 
 namespace FussballTippApp.Controllers
 {

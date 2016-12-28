@@ -8,6 +8,8 @@ using BhFS.Tippspiel.Utils;
 using System.Net.Mail;
 using System.Net;
 using FussballTipp.Repository;
+using Tippspiel.Contracts;
+using Tippspiel.Contracts.Models;
 
 namespace FussballTippApp.Controllers
 {

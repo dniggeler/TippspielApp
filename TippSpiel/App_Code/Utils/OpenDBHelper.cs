@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using FussballTipp.Repository;
 using FussballTippApp.Models;
+using Tippspiel.Contracts;
 
 namespace BhFS.Tippspiel.Utils
 {

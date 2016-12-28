@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using BhFS.Tippspiel.Utils;
 using FussballTipp.Utils;
+using Tippspiel.Contracts;
+using Tippspiel.Contracts.Models;
 
 namespace FussballTipp.Repository
 {

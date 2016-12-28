@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Reflection;
 using System.Resources;
-using System.Web;
 using System.Web.Mvc;
 using BhFS.Tippspiel.Utils;
 using FussballTippApp.Models;
-using System.Web.Caching;
 using TippSpiel.Mailers;
 using FussballTipp.Repository;
-using FussballTipp.Utils;
 using OddsScraper.Contract.Model;
 using WebGrease.Css.Extensions;
 using OddsScraper;
 using TippSpiel.Properties;
+using Tippspiel.Contracts;
 
 namespace FussballTippApp.Controllers
 {

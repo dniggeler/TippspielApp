@@ -133,6 +133,18 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -198,6 +210,10 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -212,6 +228,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\TippspielModule.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Filters\InitializeTippSpielDataAttribute.cs" />
     <Compile Include="Mailers\ITippMailer.cs" />
@@ -231,10 +249,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Repository\BuliDataRepository.cs" />
-    <Compile Include="App_Code\Repository\IMatchDataRepository.cs" />
     <Compile Include="App_Code\Utils\DefaultCacheProvider.cs" />
-    <Compile Include="App_Code\Utils\IAccessStats.cs" />
-    <Compile Include="App_Code\Utils\ICacheProvider.cs" />
     <Compile Include="App_Code\Utils\OpenDBHelper.cs" />
     <Compile Include="App_Code\Utils\SportsdataConfigInfo.cs" />
     <Compile Include="App_Code\Utils\TippSpielConfigInfo.cs" />
@@ -1392,6 +1407,10 @@
     <ProjectReference Include="..\OddsScraper.Implementation\OddsScraper.Implementation.csproj">
       <Project>{3d422660-5e2c-4b88-b6c3-13b1d48d4c89}</Project>
       <Name>OddsScraper.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tippspiel.Contracts\Tippspiel.Contracts.csproj">
+      <Project>{e4a69a88-49fb-48a1-bb57-333574e34c2d}</Project>
+      <Name>Tippspiel.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tippspiel.Helpers\Tippspiel.Helpers.csproj">
       <Project>{bd6983ef-854b-47d7-b564-d53e05400b8f}</Project>

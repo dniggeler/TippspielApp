@@ -1,22 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace FussballTipp.Repository
+namespace Tippspiel.Contracts.Models
 {
-    public class GroupInfoModel
-    {
-        public int Id { get; private set; }
-        public string Text { get; private set; }
-
-        public GroupInfoModel(int id, string text)
-        {
-            Id = id;
-            Text = text;
-        }
-    }
-
     public class MatchDataModel
     {
         public int MatchId { get; set; }
@@ -40,10 +25,10 @@ namespace FussballTipp.Repository
         {
             get
             {
-                if (this.HasStarted == true)
+                if (HasStarted == true)
                 {
-                    return (this.HomeTeamScore > this.AwayTeamScore) ?
-                                                    1 : (this.HomeTeamScore < this.AwayTeamScore) ?
+                    return (HomeTeamScore > AwayTeamScore) ?
+                                                    1 : (HomeTeamScore < AwayTeamScore) ?
                                                     2 : 0;
                 }
                 else
@@ -60,24 +45,5 @@ namespace FussballTipp.Repository
                 return !(KickoffTime > DateTime.Now);
             }
         }
-    }
-
-    public interface IFussballDataRepository
-    {
-        bool IsSpieltagComplete { get; }
-
-        bool Exist(string leagueShortcut, string leagueSeason);
-
-        GroupInfoModel GetCurrentGroup();
-        List<GroupInfoModel> GetAllGroups();
-
-        MatchDataModel GetNextMatch();
-        MatchDataModel GetLastMatch();
-
-        MatchDataModel GetMatchData(int matchId);
-
-        List<MatchDataModel> GetMatchesByCurrentGroup();
-        List<MatchDataModel> GetMatchesByGroup(int groupId);
-        List<MatchDataModel> GetAllMatches();
     }
 }
