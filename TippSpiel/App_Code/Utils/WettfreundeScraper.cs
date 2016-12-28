@@ -1,19 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using HtmlAgilityPack;
 using System.Net;
 using System.Text;
 using System.IO;
 using OddsScraper.Contract.Model;
 using OddsScraper;
+using Tippspiel.Helpers;
+using OddsScraper.Contract;
 
 namespace BhFS.Tippspiel.Utils
 {
     public class WettfreundeScraper
     {
-        public static List<OddsInfoModel> Scrap(int spieltag)
+        private readonly IOddsScraper _oddsScraper;
+
+        public WettfreundeScraper(IOddsScraper oddsScraper)
+        {
+            _oddsScraper = oddsScraper;
+        }
+
+        public List<OddsInfoModel> Scrap(int spieltag)
         {
             string domainUrl = WettfreundeConfigInfo.Current.BaseURL;
             string betOddsUrl = domainUrl + WettfreundeConfigInfo.Current.OddsLink;
@@ -28,7 +34,7 @@ namespace BhFS.Tippspiel.Utils
 
         }
 
-        static string PostRequest(string domain, string url, string requestData, CookieContainer cookies)
+        string PostRequest(string domain, string url, string requestData, CookieContainer cookies)
         {
             Byte[] requestBytes = Encoding.UTF8.GetBytes(requestData);
 

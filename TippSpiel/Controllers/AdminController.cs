@@ -21,12 +21,14 @@ namespace FussballTippApp.Controllers
 
         private IFussballDataRepository _matchDataRepository;
         private readonly ICacheProvider _cache;
+        private readonly WettfreundeScraper _oddsScraper;
 
-        public AdminController(IFussballDataRepository repository, ICacheProvider cacheProvider, log4net.ILog logger)
+        public AdminController(IFussballDataRepository repository, WettfreundeScraper oddsScraper, ICacheProvider cacheProvider, log4net.ILog logger)
         {
             _matchDataRepository = repository;
             _cache = cacheProvider;
             _log = logger;
+            _oddsScraper = oddsScraper;
         }
 
         public ActionResult Index(int? Spieltag)
@@ -140,7 +142,7 @@ namespace FussballTippApp.Controllers
             {
                 var matchList = new List<MatchInfoModel>();
 
-                var oddsList = WettfreundeScraper.Scrap(spieltag);
+                var oddsList = _oddsScraper.Scrap(spieltag);
 
                 var matches = client.GetMatchdataByGroupLeagueSaison(spieltag, SportsdataConfigInfo.Current.LeagueShortcut, SportsdataConfigInfo.Current.LeagueSaison);
 

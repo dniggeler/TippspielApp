@@ -22,6 +22,10 @@ namespace BhFS.Tippspiel.Utils
             Kernel.Bind<ILog>()
                 .ToMethod(c => LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType))
                 .InRequestScope();
+
+            Kernel.Bind<WettfreundeScraper>()
+                .ToSelf()
+                .InRequestScope();
         }
     }
 }

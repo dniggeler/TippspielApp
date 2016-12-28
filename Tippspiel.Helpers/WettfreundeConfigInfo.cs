@@ -1,6 +1,4 @@
-﻿using Tippspiel.Helpers;
-
-namespace BhFS.Tippspiel.Utils
+﻿namespace Tippspiel.Helpers
 {
     public class WettfreundeConfigInfo : AppInfo<WettfreundeConfigInfo>
     {

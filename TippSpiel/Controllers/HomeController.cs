@@ -21,14 +21,16 @@ namespace FussballTippApp.Controllers
     {
         private readonly ILog _log;
         private IFussballDataRepository _matchDataRepository;
+        private ITippMailer _tippMailer = new TippMailer();
+        private readonly WettfreundeScraper _oddsScraper;
 
-        public HomeController(IFussballDataRepository repository, ILog logger)
+        public HomeController(IFussballDataRepository repository, WettfreundeScraper oddsScraper, ILog logger)
         {
             _matchDataRepository = repository;
             _log = logger;
+            _oddsScraper = oddsScraper;
         }
 
-        private ITippMailer _tippMailer = new TippMailer();
         public ITippMailer TippMailer
         {
             get { return _tippMailer; }
@@ -71,7 +73,7 @@ namespace FussballTippApp.Controllers
 
                 try
                 {
-                    oddsList = WettfreundeScraper.Scrap(currentSpieltag);
+                    oddsList = _oddsScraper.Scrap(currentSpieltag);
 
                 }
                 catch (Exception ex)
