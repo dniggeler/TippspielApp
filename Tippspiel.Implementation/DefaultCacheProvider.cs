@@ -2,7 +2,7 @@
 using System.Runtime.Caching;
 using Tippspiel.Contracts;
 
-namespace FussballTipp.Utils
+namespace Tippspiel.Implementation
 {
     public class DefaultCacheProvider : ICacheProvider
     {

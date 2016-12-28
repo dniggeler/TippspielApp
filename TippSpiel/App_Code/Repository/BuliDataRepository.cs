@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using BhFS.Tippspiel.Utils;
-using FussballTipp.Utils;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
+using Tippspiel.Helpers;
 
 namespace FussballTipp.Repository
 {
@@ -13,9 +12,11 @@ namespace FussballTipp.Repository
         public int StartGroup { get; set; }
         public int EndGroup { get; set; }
 
-        public BuLiDataRepository(SportsdataConfigInfo info)
+        public BuLiDataRepository(SportsdataConfigInfo info, ICacheProvider cacheProvider)
             :  this(info.LeagueShortcut, info.LeagueSaison)
-        {}
+        {
+            _cache = cacheProvider;
+        }
 
         public BuLiDataRepository(string leagueShortcut, string leagueSeason)
         {
@@ -328,7 +329,7 @@ namespace FussballTipp.Repository
         private static int _remoteHits = 0;
         private static int _cacheHits = 0;
         private const int CACHE_DURATION = 60;
-        private ICacheProvider _cache = new DefaultCacheProvider();
+        private ICacheProvider _cache = null;
 
         private string _leagueTag;
         private string _saisonTag;

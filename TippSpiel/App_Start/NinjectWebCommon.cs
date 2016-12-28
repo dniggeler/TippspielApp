@@ -10,7 +10,7 @@ namespace TippSpiel.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-
+    using BhFS.Tippspiel.Utils;
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -61,6 +61,8 @@ namespace TippSpiel.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load<TippspielModule>();
+            
         }        
     }
 }

@@ -10,6 +10,7 @@ using System.Net;
 using FussballTipp.Repository;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
+using Tippspiel.Helpers;
 
 namespace FussballTippApp.Controllers
 {
@@ -17,7 +18,12 @@ namespace FussballTippApp.Controllers
     {
         readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current);
+        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
+
+        public EmailReminderController(IFussballDataRepository repository)
+        {
+            _matchDataRepository = repository;
+        }
 
         public ActionResult Index()
         {

@@ -134,11 +134,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
@@ -228,7 +228,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\TippspielModule.cs" />
+    <Compile Include="App_Code\TippspielModule.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Filters\InitializeTippSpielDataAttribute.cs" />
@@ -249,9 +249,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Repository\BuliDataRepository.cs" />
-    <Compile Include="App_Code\Utils\DefaultCacheProvider.cs" />
     <Compile Include="App_Code\Utils\OpenDBHelper.cs" />
-    <Compile Include="App_Code\Utils\SportsdataConfigInfo.cs" />
     <Compile Include="App_Code\Utils\TippSpielConfigInfo.cs" />
     <Compile Include="App_Code\Utils\WettfreundeConfigInfo.cs" />
     <Compile Include="App_Code\Utils\WettfreundeScraper.cs" />
@@ -1415,6 +1413,10 @@
     <ProjectReference Include="..\Tippspiel.Helpers\Tippspiel.Helpers.csproj">
       <Project>{bd6983ef-854b-47d7-b564-d53e05400b8f}</Project>
       <Name>Tippspiel.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tippspiel.Implementation\Tippspiel.Implementation.csproj">
+      <Project>{492db578-aafb-4ce4-bdc0-e6d965dfc097}</Project>
+      <Name>Tippspiel.Implementation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

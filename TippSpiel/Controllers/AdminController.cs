@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using WebMatrix.WebData;
 using FussballTippApp.Models;
@@ -11,9 +9,9 @@ using FussballTippApp.Filters;
 using OddsScraper.Contract.Model;
 using BhFS.Tippspiel.Utils;
 using FussballTipp.Repository;
-using FussballTipp.Utils;
 using Data.SqlClient;
 using Tippspiel.Contracts;
+using Tippspiel.Helpers;
 
 namespace FussballTippApp.Controllers
 {
@@ -22,7 +20,14 @@ namespace FussballTippApp.Controllers
     {
         readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current);
+        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
+        private readonly ICacheProvider _cache;
+
+        public AdminController(IFussballDataRepository repository, ICacheProvider cacheProvider)
+        {
+            _matchDataRepository = repository;
+            _cache = cacheProvider;
+        }
 
         public ActionResult Index(int? Spieltag)
         {
@@ -90,7 +95,6 @@ namespace FussballTippApp.Controllers
 
         public ActionResult ClearCache()
         {
-            var _cache = new DefaultCacheProvider();
             _cache.Clear();
 
             return RedirectToAction("Index");

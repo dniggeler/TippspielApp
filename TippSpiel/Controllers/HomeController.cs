@@ -12,6 +12,7 @@ using WebGrease.Css.Extensions;
 using OddsScraper;
 using TippSpiel.Properties;
 using Tippspiel.Contracts;
+using Tippspiel.Helpers;
 
 namespace FussballTippApp.Controllers
 {
@@ -20,7 +21,12 @@ namespace FussballTippApp.Controllers
     {
         readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current);
+        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
+
+        public HomeController(IFussballDataRepository repository)
+        {
+            _matchDataRepository = repository;
+        }
 
         private ITippMailer _tippMailer = new TippMailer();
         public ITippMailer TippMailer

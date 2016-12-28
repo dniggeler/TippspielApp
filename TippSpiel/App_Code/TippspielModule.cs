@@ -1,14 +1,22 @@
 ﻿using Ninject.Modules;
-using FussballTipp.Utils;
+using Ninject.Web.Common;
 using Tippspiel.Contracts;
+using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 
-namespace TippSpiel.App_Code
+namespace BhFS.Tippspiel.Utils
 {
     public class TippspielModule : NinjectModule
     {
         public override void Load()
         {
-            Kernel.Bind<ICacheProvider>().To<DefaultCacheProvider>();
+            Kernel.Bind<ICacheProvider>()
+                .To<DefaultCacheProvider>()
+                .InSingletonScope();
+
+            Kernel.Bind<IFussballDataRepository>()
+                .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>()))
+                .InRequestScope();
         }
     }
 }
