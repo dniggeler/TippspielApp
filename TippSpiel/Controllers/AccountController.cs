@@ -17,10 +17,15 @@ namespace FussballTippApp.Controllers
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
-        readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        readonly log4net.ILog _log;
+
+        public AccountController(log4net.ILog logger)
+        {
+            _log = logger;
+        }
+
         //
         // GET: /Account/Login
-
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
@@ -97,7 +102,7 @@ namespace FussballTippApp.Controllers
 
                         ctxt.SaveChanges();
 
-                        log.InfoFormat("Registered: User={0}, Pwd={1}, Email={2}",model.UserName,model.Password,model.Email);
+                        _log.InfoFormat("Registered: User={0}, Pwd={1}, Email={2}",model.UserName,model.Password,model.Email);
                     }
                     return RedirectToAction("Index", "Home");
                 }

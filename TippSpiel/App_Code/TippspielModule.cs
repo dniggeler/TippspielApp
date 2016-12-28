@@ -1,4 +1,5 @@
-﻿using Ninject.Modules;
+﻿using log4net;
+using Ninject.Modules;
 using Ninject.Web.Common;
 using Tippspiel.Contracts;
 using Tippspiel.Helpers;
@@ -16,6 +17,10 @@ namespace BhFS.Tippspiel.Utils
 
             Kernel.Bind<IFussballDataRepository>()
                 .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>()))
+                .InRequestScope();
+
+            Kernel.Bind<ILog>()
+                .ToMethod(c => LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType))
                 .InRequestScope();
         }
     }

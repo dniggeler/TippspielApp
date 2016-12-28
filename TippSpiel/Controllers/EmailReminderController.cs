@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using FussballTippApp.Models;
-using BhFS.Tippspiel.Utils;
 using System.Net.Mail;
 using System.Net;
-using FussballTipp.Repository;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
 using Tippspiel.Helpers;
@@ -16,13 +12,14 @@ namespace FussballTippApp.Controllers
 {
     public class EmailReminderController : Controller
     {
-        readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        readonly log4net.ILog _log;
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
+        private IFussballDataRepository _matchDataRepository;
 
-        public EmailReminderController(IFussballDataRepository repository)
+        public EmailReminderController(IFussballDataRepository repository, log4net.ILog logger)
         {
             _matchDataRepository = repository;
+            _log = logger;
         }
 
         public ActionResult Index()
@@ -100,7 +97,7 @@ namespace FussballTippApp.Controllers
                     }
                     catch (Exception ex)
                     {
-                        log.ErrorFormat("Exception while email sent: " + ex.Message);
+                        _log.ErrorFormat("Exception while email sent: " + ex.Message);
                     }
                 }
             }
@@ -110,7 +107,7 @@ namespace FussballTippApp.Controllers
 
         public JsonResult CheckAndSend()
         {
-            log.Debug("Begin CheckAndSend()");
+            _log.Debug("Begin CheckAndSend()");
 
             var model = GetEmailReminders();
 
@@ -131,7 +128,7 @@ namespace FussballTippApp.Controllers
                     Receivers = model.EmailReminderDict.Where(p => (p.Value == true)).Select(p => p.Key).ToArray()
                 };
 
-                log.Debug("End CheckAndSend()");
+                _log.Debug("End CheckAndSend()");
 
                 return Json(jsonResponse, JsonRequestBehavior.AllowGet);
             }
@@ -178,7 +175,7 @@ namespace FussballTippApp.Controllers
             client.EnableSsl = false;
             client.Send(msg);
 
-            log.DebugFormat("Reminder email sent to {0}", email);
+            _log.DebugFormat("Reminder email sent to {0}", email);
 
         }
     }

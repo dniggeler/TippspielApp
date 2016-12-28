@@ -8,7 +8,6 @@ using System.Web.Security;
 using FussballTippApp.Filters;
 using OddsScraper.Contract.Model;
 using BhFS.Tippspiel.Utils;
-using FussballTipp.Repository;
 using Data.SqlClient;
 using Tippspiel.Contracts;
 using Tippspiel.Helpers;
@@ -18,15 +17,16 @@ namespace FussballTippApp.Controllers
     [InitializeSimpleMembership]
     public class AdminController : Controller
     {
-        readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        readonly log4net.ILog _log;
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
+        private IFussballDataRepository _matchDataRepository;
         private readonly ICacheProvider _cache;
 
-        public AdminController(IFussballDataRepository repository, ICacheProvider cacheProvider)
+        public AdminController(IFussballDataRepository repository, ICacheProvider cacheProvider, log4net.ILog logger)
         {
             _matchDataRepository = repository;
             _cache = cacheProvider;
+            _log = logger;
         }
 
         public ActionResult Index(int? Spieltag)
@@ -86,7 +86,7 @@ namespace FussballTippApp.Controllers
                 }
                 catch (MembershipCreateUserException e)
                 {
-                    log.ErrorFormat("User {0} not created: {1}", user.username, e.Message);
+                    _log.ErrorFormat("User {0} not created: {1}", user.username, e.Message);
                 }
             }
 

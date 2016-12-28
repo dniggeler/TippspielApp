@@ -250,7 +250,6 @@
     </Compile>
     <Compile Include="App_Code\Repository\BuliDataRepository.cs" />
     <Compile Include="App_Code\Utils\OpenDBHelper.cs" />
-    <Compile Include="App_Code\Utils\TippSpielConfigInfo.cs" />
     <Compile Include="App_Code\Utils\WettfreundeConfigInfo.cs" />
     <Compile Include="App_Code\Utils\WettfreundeScraper.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />

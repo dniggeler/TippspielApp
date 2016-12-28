@@ -6,26 +6,26 @@ using System.Web.Mvc;
 using BhFS.Tippspiel.Utils;
 using FussballTippApp.Models;
 using TippSpiel.Mailers;
-using FussballTipp.Repository;
 using OddsScraper.Contract.Model;
 using WebGrease.Css.Extensions;
 using OddsScraper;
 using TippSpiel.Properties;
 using Tippspiel.Contracts;
 using Tippspiel.Helpers;
+using log4net;
 
 namespace FussballTippApp.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
-        readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private readonly ILog _log;
+        private IFussballDataRepository _matchDataRepository;
 
-        private IFussballDataRepository _matchDataRepository = new BuLiDataRepository(SportsdataConfigInfo.Current,null);
-
-        public HomeController(IFussballDataRepository repository)
+        public HomeController(IFussballDataRepository repository, ILog logger)
         {
             _matchDataRepository = repository;
+            _log = logger;
         }
 
         private ITippMailer _tippMailer = new TippMailer();
