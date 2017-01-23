@@ -4,7 +4,6 @@ using Ninject.Web.Common;
 using OddsScraper;
 using OddsScraper.Contract;
 using Tippspiel.Contracts;
-using Tippspiel.Helpers;
 using Tippspiel.Implementation;
 
 namespace BhFS.Tippspiel.Utils
@@ -13,9 +12,12 @@ namespace BhFS.Tippspiel.Utils
     {
         public override void Load()
         {
-            Kernel.Bind<ICacheProvider>()
-                .To<DefaultCacheProvider>()
-                .InSingletonScope();
+            var modules = new INinjectModule[]
+            {
+                new ClientModule(),
+            };
+
+            Kernel.Load(modules);
 
             Kernel.Bind<IFussballDataRepository>()
                 .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>()))

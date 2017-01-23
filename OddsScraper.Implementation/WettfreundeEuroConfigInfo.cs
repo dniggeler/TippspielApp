@@ -1,5 +1,5 @@
 ﻿using OddsScraper.Contract;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 
 namespace OddsScraper
 {

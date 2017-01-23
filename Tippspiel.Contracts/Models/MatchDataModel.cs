@@ -6,6 +6,7 @@ namespace Tippspiel.Contracts.Models
     {
         public int MatchId { get; set; }
         public int GroupId { get; set; }
+        public int GroupOrderId { get; set; }
         public int MatchNr { get; set; }
         public string LeagueShortcut { get; set; }
         public DateTime KickoffTime { get; set; }

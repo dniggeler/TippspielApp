@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using OddsScraper.Contract.Model;
 using OddsScraper;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 using OddsScraper.Contract;
 
 namespace BhFS.Tippspiel.Utils

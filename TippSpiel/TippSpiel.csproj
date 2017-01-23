@@ -228,6 +228,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Repository\OpenligaRepository.cs" />
     <Compile Include="App_Code\TippspielModule.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -1407,10 +1408,6 @@
     <ProjectReference Include="..\Tippspiel.Contracts\Tippspiel.Contracts.csproj">
       <Project>{e4a69a88-49fb-48a1-bb57-333574e34c2d}</Project>
       <Name>Tippspiel.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tippspiel.Helpers\Tippspiel.Helpers.csproj">
-      <Project>{bd6983ef-854b-47d7-b564-d53e05400b8f}</Project>
-      <Name>Tippspiel.Helpers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tippspiel.Implementation\Tippspiel.Implementation.csproj">
       <Project>{492db578-aafb-4ce4-bdc0-e6d965dfc097}</Project>

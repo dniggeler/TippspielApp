@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.ModelConfiguration;
+﻿using System;
+using System.Data.Entity.ModelConfiguration;
 
 namespace Data.SqlClient
 {
@@ -9,11 +10,13 @@ namespace Data.SqlClient
             // Primary Key
             HasKey(t => new { t.Id });
 
-            ToTable("MatchInfo", "dbo");
+            ToTable("MatchHistory", "dbo");
 
+            Property(t => t.LeagueIdentifier).HasColumnName("LeagueIdentifier");
+            Property(t => t.SeasonIdentifier).HasColumnName("SeasonIdentifier");
             Property(t => t.Id).HasColumnName("Id");
             Property(t => t.MatchId).HasColumnName("MatchId");
-            Property(t => t.GroupId).HasColumnName("GroupId");
+            Property(t => t.GroupOrderId).HasColumnName("GroupOrderId");
             Property(t => t.MatchNr).HasColumnName("MatchNr");
             Property(t => t.KickoffTime).HasColumnName("KickoffTime");
             Property(t => t.KickoffTimeUtc).HasColumnName("KickoffTimeUtc");
@@ -25,7 +28,7 @@ namespace Data.SqlClient
             Property(t => t.AwayTeamScore).HasColumnName("AwayTeamScore");
             Property(t => t.HomeTeamIcon).HasColumnName("HomeTeamIcon");
             Property(t => t.AwayTeamIcon).HasColumnName("AwayTeamIcon");
-            Property(t => t.HasProlongation).HasColumnName("HasProlongation");
+            Property(t => t.IsInProlongation).HasColumnName("IsInProlongation");
             Property(t => t.IsFinished).HasColumnName("IsFinished");
         }
     }

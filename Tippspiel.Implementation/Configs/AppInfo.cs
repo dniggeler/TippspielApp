@@ -1,9 +1,18 @@
-﻿using System.Web;
+﻿using System.Collections.Generic;
 
-namespace Tippspiel.Helpers
+namespace Tippspiel.Implementation
 {
     public class AppInfo<TSubclass> where TSubclass : AppInfo<TSubclass>, new()
     {
+        private static Dictionary<string, TSubclass> _memoryStorage = null;
+
+        static AppInfo()
+        {
+            _memoryStorage = new Dictionary<string, TSubclass>();
+
+            _memoryStorage.Add(Key, null);
+        }
+
         private static string Key
         {
             get { return typeof(AppInfo<TSubclass>).FullName; }
@@ -11,8 +20,15 @@ namespace Tippspiel.Helpers
 
         private static TSubclass Value
         {
-            get { return (TSubclass)HttpContext.Current.Application[Key]; }
-            set { HttpContext.Current.Application[Key] = value; }
+            get
+            {
+                return _memoryStorage[Key];
+            }
+
+            set
+            {
+                _memoryStorage[Key] = value;
+            }
         }
 
         public static TSubclass Current
@@ -26,7 +42,9 @@ namespace Tippspiel.Helpers
                         // standard lock double-check
                         instance = Value;
                         if (instance == null)
+                        {
                             Value = instance = new TSubclass();
+                        }
                     }
                 return instance;
             }

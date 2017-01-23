@@ -1,4 +1,4 @@
-﻿namespace Tippspiel.Helpers
+﻿namespace Tippspiel.Implementation
 {
     public class TippspielConfigInfo : AppInfo<TippspielConfigInfo>
     {

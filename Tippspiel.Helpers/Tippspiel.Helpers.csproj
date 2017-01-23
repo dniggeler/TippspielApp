@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SportdataConfigInfo.cs" />
-    <Compile Include="TippSpielConfigInfo.cs" />
-    <Compile Include="WettfreundeConfigInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tippspiel.Contracts\Tippspiel.Contracts.csproj">
+      <Project>{e4a69a88-49fb-48a1-bb57-333574e34c2d}</Project>
+      <Name>Tippspiel.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

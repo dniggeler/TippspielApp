@@ -2,7 +2,7 @@
 using System.Linq;
 using FussballTippApp.Models;
 using Tippspiel.Contracts;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 
 namespace BhFS.Tippspiel.Utils
 {

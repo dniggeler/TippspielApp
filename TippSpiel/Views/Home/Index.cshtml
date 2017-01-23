@@ -66,8 +66,8 @@
     @foreach (var m in Model.Matchdata)
     {
         <tr>
-            <td><img alt="" src="@m.HomeTeamIcon"/></td><td>@m.HomeTeam</td>
-            <td><img alt="" src="@m.AwayTeamIcon"/></td><td>@m.AwayTeam</td>
+            <td><img alt="" src="@m.HomeTeamIcon" style="max-width:35px"/></td><td>@m.HomeTeam</td>
+            <td><img alt="" src="@m.AwayTeamIcon" style="max-width:35px"/></td><td>@m.AwayTeam</td>
             @if (m.HasStarted == true && m.HomeTeamScore > -1 && m.AwayTeamScore > -1)
             {
                 <td>@m.HomeTeamScore.ToString() : @m.AwayTeamScore.ToString()</td>            

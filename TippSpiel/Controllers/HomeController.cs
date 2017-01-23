@@ -11,7 +11,7 @@ using WebGrease.Css.Extensions;
 using OddsScraper;
 using TippSpiel.Properties;
 using Tippspiel.Contracts;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 using log4net;
 
 namespace FussballTippApp.Controllers

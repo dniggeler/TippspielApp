@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 
 namespace FussballTipp.Repository
 {
@@ -53,7 +53,11 @@ namespace FussballTipp.Repository
                 _remoteHits++;
             }
 
-            return new GroupInfoModel(g.groupOrderID, g.groupName);
+            return new GroupInfoModel
+            {
+                Id = g.groupOrderID,
+                Text = g.groupName
+            };
         }
 
         List<GroupInfoModel> IFussballDataRepository.GetAllGroups()
@@ -76,7 +80,10 @@ namespace FussballTipp.Repository
             var groupList = new List<GroupInfoModel>();
             foreach (var g in groups)
             {
-                groupList.Add(new GroupInfoModel(g.groupOrderID, g.groupName));
+                groupList.Add(new GroupInfoModel {
+                    Id = g.groupOrderID,
+                    Text = g.groupName
+                });
             }
 
             return groupList;

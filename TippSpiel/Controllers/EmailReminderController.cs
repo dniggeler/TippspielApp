@@ -5,8 +5,8 @@ using FussballTippApp.Models;
 using System.Net.Mail;
 using System.Net;
 using Tippspiel.Contracts;
+using Tippspiel.Implementation;
 using Tippspiel.Contracts.Models;
-using Tippspiel.Helpers;
 
 namespace FussballTippApp.Controllers
 {

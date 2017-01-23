@@ -10,7 +10,7 @@ using OddsScraper.Contract.Model;
 using BhFS.Tippspiel.Utils;
 using Data.SqlClient;
 using Tippspiel.Contracts;
-using Tippspiel.Helpers;
+using Tippspiel.Implementation;
 
 namespace FussballTippApp.Controllers
 {
@@ -106,13 +106,16 @@ namespace FussballTippApp.Controllers
         {
             var matches = _matchDataRepository.GetMatchesByGroup(spieltag);
 
+            var leagueIdentifier = SportsdataConfigInfo.Current.LeagueShortcut;
+            var seasonIdentifier = SportsdataConfigInfo.Current.LeagueSaison;
+
             using (var ctxt = new MatchInfoContext())
             {
                 foreach (var m in matches)
                 {
                     ctxt.Items.Add(new MatchInfoItem()
                     {
-                        GroupId = m.GroupId,
+                        GroupOrderId = m.GroupId,
                         MatchId = m.MatchId,
                         MatchNr = m.MatchNr,
                         HomeTeamId = m.HomeTeamId,
@@ -126,7 +129,9 @@ namespace FussballTippApp.Controllers
                         KickoffTime = m.KickoffTime,
                         KickoffTimeUtc = m.KickoffTimeUTC,
                         IsFinished = m.IsFinished,
-                        HasProlongation = m.HasVerlaengerung
+                        IsInProlongation = m.HasVerlaengerung,
+                        LeagueIdentifier = leagueIdentifier,
+                        SeasonIdentifier = seasonIdentifier
                     });
                 }
 

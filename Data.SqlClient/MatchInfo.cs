@@ -4,9 +4,11 @@ namespace Data.SqlClient
 {
     public class MatchInfoItem
     {
+        public string LeagueIdentifier { get; set; }
+        public string SeasonIdentifier { get; set; }
         public int Id { get; set; }
         public int MatchId { get; set; }
-        public int GroupId { get; set; }
+        public int GroupOrderId { get; set; }
         public int MatchNr { get; set; }
         public DateTime KickoffTime { get; set; }
         public DateTime KickoffTimeUtc { get; set; }
@@ -19,6 +21,6 @@ namespace Data.SqlClient
         public string AwayTeamIcon { get; set; }
         public int HomeTeamScore { get; set; }
         public int AwayTeamScore { get; set; }
-        public bool HasProlongation { get; set; }
+        public bool IsInProlongation { get; set; }
     }
 }
