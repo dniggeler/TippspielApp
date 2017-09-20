@@ -11,9 +11,9 @@
         public SportsdataConfigInfo()
         {
             LeagueShortcut = "bl1";
-            LeagueSaison = "2016";
-            StartSpieltag = 18;
-            EndSpieltag = 34;
+            LeagueSaison = "2017";
+            StartSpieltag = 1;
+            EndSpieltag = 17;
         }
     }
 }

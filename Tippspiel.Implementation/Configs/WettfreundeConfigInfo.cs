@@ -7,7 +7,7 @@
 
         public WettfreundeConfigInfo()
         {
-            BaseURL = @"http://www.wettfreunde.net";
+            BaseURL = @"https://www.wettfreunde.net";
             OddsLink = @"/bundesliga-spielplan/";
         }
     }

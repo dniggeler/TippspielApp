@@ -457,7 +457,7 @@ namespace FussballTippApp.Controllers
         [AllowAnonymous]
         public ActionResult About()
         {
-            ViewBag.Message = "BuLi Tippspiel Vorrunde 2016/2017";
+            ViewBag.Message = "BuLi Tippspiel Vorrunde 2017/2018";
 
             return View();
         }
