@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using log4net;
 using FussballTippApp.Models;
 using Tippspiel.Contracts;
 using Tippspiel.Implementation;
@@ -8,6 +9,8 @@ namespace BhFS.Tippspiel.Utils
 {
     public class OpenDBHelper
     {
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public struct SpieltagInfo
         {
             public int CurrentSpieltag { get; set; }
@@ -27,6 +30,8 @@ namespace BhFS.Tippspiel.Utils
         {
             var dataNext = client.GetNextMatch(SportsdataConfigInfo.Current.LeagueShortcut);
             var dataLast = client.GetLastMatch(SportsdataConfigInfo.Current.LeagueShortcut);
+
+            Log.Debug($"Last:{dataLast?.groupOrderID}, Next: {dataNext?.groupOrderID}");
 
             if (dataNext == null)
             {
@@ -73,6 +78,8 @@ namespace BhFS.Tippspiel.Utils
             var dataNext = repository.GetNextMatch();
             var dataLast = repository.GetLastMatch();
 
+            Log.Debug($"Last is null: {dataLast==null}, Next is null: {dataNext==null}, Last:{dataLast?.GroupOrderId}, Next: {dataNext?.GroupOrderId}");
+
             if (dataNext == null && dataLast == null)
             {
                 return spieltagInfo;
@@ -89,12 +96,20 @@ namespace BhFS.Tippspiel.Utils
 
                 return spieltagInfo;
             }
+            if ((dataNext.GroupId > dataLast.GroupId) && (dataNext.GroupId > SportsdataConfigInfo.Current.EndSpieltag))
+            {
+                spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = SportsdataConfigInfo.Current.EndSpieltag;
+                spieltagInfo.IsCompleted = true;
+
+                return spieltagInfo;
+            }
+
             if (dataNext.GroupId > dataLast.GroupId)
             {
                 spieltagInfo.CurrentSpieltag = dataLast.GroupId;
                 spieltagInfo.TippSpieltag = dataNext.GroupId;
             }
-            else{
+            else {
                 spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = dataLast.GroupId;
                 spieltagInfo.IsCompleted = true;
             }

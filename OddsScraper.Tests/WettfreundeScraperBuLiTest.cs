@@ -18,14 +18,14 @@ namespace WettfreundeScraper.Tests
             _output = output;
         }
 
-        [Fact(DisplayName = "2015 26. Spieltag")]
+        [Fact(DisplayName = "2017 14. Spieltag")]
         public void GetSpieltagTest()
         {
             // given
-            string spieltag = "26";
+            string spieltag = "14";
 
             // when
-            var result = _oddsScraper.GetOdds(Resources.Spieltag26Html, spieltag);
+            var result = _oddsScraper.GetOdds(Resources.spieltag14, spieltag);
             _output.WriteLine("{0}", result.Count);
 
             // then

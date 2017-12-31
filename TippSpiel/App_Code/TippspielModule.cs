@@ -20,7 +20,7 @@ namespace BhFS.Tippspiel.Utils
             Kernel.Load(modules);
 
             Kernel.Bind<IFussballDataRepository>()
-                .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>()))
+                .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>(),c.Inject<ILog>()))
                 .InRequestScope();
 
             Kernel.Bind<ILog>()

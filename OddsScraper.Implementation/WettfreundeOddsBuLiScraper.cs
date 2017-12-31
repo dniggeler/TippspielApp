@@ -43,16 +43,15 @@ namespace OddsScraper
             var oddsList = new List<OddsInfoModel>();
             {
                 // remove all unnecessary html
-                {
-                    ScrubHelper.ScrubHtml(doc);
 
-                    var nodes = doc.DocumentNode.SelectNodes("//comment()");
-                    if (nodes != null)
+                ScrubHelper.ScrubHtml(doc);
+
+                var nodes = doc.DocumentNode.SelectNodes("//comment()");
+                if (nodes != null)
+                {
+                    foreach (HtmlNode comment in nodes)
                     {
-                        foreach (HtmlNode comment in nodes)
-                        {
-                            comment.ParentNode.RemoveChild(comment);
-                        }
+                        comment.ParentNode.RemoveChild(comment);
                     }
                 }
 
@@ -60,14 +59,15 @@ namespace OddsScraper
                 if (spieltagNode == null) throw new ApplicationException("Spieltag nicht gefunden.");
 
                 HtmlNode oddsTableNode = spieltagNode
-                                        .ParentNode
-                                        .ParentNode
-                                        .ParentNode
-                                        .NextSibling;
+                    .ParentNode
+                    .ParentNode
+                    .ParentNode
+                    .NextSibling;
 
                 // Odds
                 {
-
+                    var xpath = "./td";
+                    bool insideSpecialRule = false;
                     HtmlNode trNode = oddsTableNode.NextSibling.NextSibling.NextSibling;
 
                     for (int ii = 3; ii < 12; ii++)
@@ -76,7 +76,7 @@ namespace OddsScraper
                         var model = new OddsInfoModel();
 
                         int kk = 0;
-                        foreach (var tdNode in trNode.SelectNodes("./td"))
+                        foreach (var tdNode in trNode.SelectNodes(xpath))
                         {
                             switch (kk)
                             {
@@ -92,21 +92,18 @@ namespace OddsScraper
                                 {
                                     var oddsNode = tdNode.SelectSingleNode(".//strong");
                                     model.WinOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                    
                                 }
                                     break;
                                 case 5:
                                 {
                                     var oddsNode = tdNode.SelectSingleNode(".//strong");
                                     model.DrawOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                    
                                 }
                                     break;
                                 case 6:
                                 {
                                     var oddsNode = tdNode.SelectSingleNode(".//strong");
                                     model.LossOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                    
                                 }
                                     break;
                             }
@@ -114,12 +111,30 @@ namespace OddsScraper
                             kk++;
                         }
 
-                        trNode = trNode.NextSibling.NextSibling;
+                        var potentialNextNode = trNode.NextSibling.NextSibling;
+
+                        if (potentialNextNode != null && potentialNextNode.Name != "tr")
+                        {
+                            insideSpecialRule = true;
+                            trNode = trNode.SelectSingleNode("following-sibling::tr[1]");
+                            xpath = "preceding-sibling::td";
+
+                        }
+                        else if (insideSpecialRule)
+                        {
+                            xpath = "./td";
+                            insideSpecialRule = false;
+                        }
+                        else
+                        {
+                            trNode = trNode.NextSibling.NextSibling;
+                            xpath = "./td";
+                            insideSpecialRule = false;
+                        }
 
                         oddsList.Add(model);
                     }
                 }
-
             }
 
             return oddsList;

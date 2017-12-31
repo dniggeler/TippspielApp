@@ -87,6 +87,7 @@
     <Content Include="Data\EMTippspiel_Achtelfinals.txt" />
     <Content Include="Data\EMTippspiel_Final.txt" />
     <Content Include="Data\EMTippspiel_Viertelfinals.txt" />
+    <Content Include="Data\spieltag14.txt" />
     <Content Include="Data\Spieltag3Html.txt" />
     <Content Include="Data\Spieltag26Html.txt" />
   </ItemGroup>
@@ -112,6 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

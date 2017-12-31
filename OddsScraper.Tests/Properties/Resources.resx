@@ -130,6 +130,9 @@
   <data name="EMTippspiel_Viertelfinals" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\emtippspiel_viertelfinals.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="spieltag14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\spieltag14.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="Spieltag26Html" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\spieltag26html.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>

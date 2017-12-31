@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using log4net;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
 using Tippspiel.Implementation;
@@ -12,10 +13,11 @@ namespace FussballTipp.Repository
         public int StartGroup { get; set; }
         public int EndGroup { get; set; }
 
-        public BuLiDataRepository(SportsdataConfigInfo info, ICacheProvider cacheProvider)
+        public BuLiDataRepository(SportsdataConfigInfo info, ICacheProvider cacheProvider, ILog log)
             :  this(info.LeagueShortcut, info.LeagueSaison)
         {
             _cache = cacheProvider;
+            _log = log;
         }
 
         public BuLiDataRepository(string leagueShortcut, string leagueSeason)
@@ -104,6 +106,8 @@ namespace FussballTipp.Repository
             else
             {
                 matches = _client.GetMatchdataByLeagueSaison(_leagueTag, _saisonTag);
+                _log.Debug($"Remote hit GetAllMatches(), Count={matches?.Length}");
+
                 _cache.Set(CACHE_ALL_MATCH_TAG, matches, CACHE_DURATION);
 
                 // cache single matches
@@ -139,6 +143,7 @@ namespace FussballTipp.Repository
             else
             {
                 m = _client.GetNextMatch(_leagueTag);
+                _log.Debug($"Remote hit GetNextMatch(), {m?.groupOrderID}");
                 _cache.Set(CACHE_NXT_MATCH_TAG, m, CACHE_DURATION);
                 _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, 10);
                 _remoteHits++;
@@ -161,6 +166,8 @@ namespace FussballTipp.Repository
             else
             {
                 m = _client.GetLastMatch(_leagueTag);
+                _log.Debug($"Remote hit GetLastMatch(), {m?.groupOrderID}");
+
                 _cache.Set(CACHE_LAST_MATCH_TAG, m, CACHE_DURATION);
                 _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, CACHE_DURATION);
                 _remoteHits++;
@@ -337,6 +344,7 @@ namespace FussballTipp.Repository
         private static int _cacheHits = 0;
         private const int CACHE_DURATION = 60;
         private ICacheProvider _cache = null;
+        private readonly ILog _log;
 
         private string _leagueTag;
         private string _saisonTag;
