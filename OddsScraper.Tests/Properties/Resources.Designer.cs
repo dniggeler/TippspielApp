@@ -126,12 +126,44 @@ namespace OddsScraper.Tests.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 
-        ///&lt;!-- saved from url=(0049)https://www.wettfreunde.net/bundesliga-spielplan/ --&gt;
-        ///&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;line-gutter-backdrop&quot;&gt;&lt;/div&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;line-number&quot; value=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;line-content&quot;&gt;&lt;span class=&quot;html-doctype&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&amp;gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line-number&quot; value=&quot;2&quot;&gt;&lt;/td&gt;&lt;td [rest of string was truncated]&quot;;.
+        ///
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;de-DE&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+        ///
+        ///&lt;head profile=&quot;http://gmpg.org/xfn/11&quot;&gt;
+        ///
+        ///&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        ///
+        ///&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+        ///
+        ///&lt;meta name=&quot;google-site-verification&quot; content=&quot;I7oYBju5U8mGS3gg7ok3wn2Ez8Mtom7AhW89QKSa_tk&quot;&gt;
+        ///
+        ///&lt;title&gt;Bundesliga Spielplan 2017/2018 - Spiele, Termine, Wettquoten &amp;raquo; wettfreunde.net &lt;/title&gt;
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///&lt;meta name=&quot;description&quot; content=&quot;Spie [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string spieltag14 {
             get {
                 return ResourceManager.GetString("spieltag14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;de-DE&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+        ///&lt;head profile=&quot;http://gmpg.org/xfn/11&quot;&gt;
+        ///&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+        ///&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        ///&lt;meta name=&quot;google-site-verification&quot; content=&quot;I7oYBju5U8mGS3gg7ok3wn2Ez8Mtom7AhW89QKSa_tk&quot; /&gt;
+        ///&lt;title&gt;Bundesliga Spielplan 2017/ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Spieltag23Html {
+            get {
+                return ResourceManager.GetString("Spieltag23Html", resourceCulture);
             }
         }
         

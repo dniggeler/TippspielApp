@@ -88,6 +88,7 @@
     <Content Include="Data\EMTippspiel_Final.txt" />
     <Content Include="Data\EMTippspiel_Viertelfinals.txt" />
     <Content Include="Data\spieltag14.txt" />
+    <Content Include="Data\Spieltag23Html.txt" />
     <Content Include="Data\Spieltag3Html.txt" />
     <Content Include="Data\Spieltag26Html.txt" />
   </ItemGroup>

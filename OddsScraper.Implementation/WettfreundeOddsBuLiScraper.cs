@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using OddsScraper.Contract;
 using OddsScraper.Contract.Model;
@@ -15,8 +16,11 @@ namespace OddsScraper
     {
         public List<OddsInfoModel> GetOdds(string oddsAsHtmlStr, string roundTag)
         {
+            // fix html errors
+            var cleanHtmlSrc = FixOpenTags(oddsAsHtmlStr);
+
             HtmlDocument doc = new HtmlDocument();
-            doc.LoadHtml(oddsAsHtmlStr);
+            doc.LoadHtml(cleanHtmlSrc);
 
             return GetOdds(doc,roundTag);
         }
@@ -27,6 +31,16 @@ namespace OddsScraper
             var doc = web.Load(url);
 
             return GetOdds(doc,roundTag);
+        }
+
+        private string FixOpenTags(string oddsAsHtmlStr)
+        {
+            string errorPatternStr = @"</tr\n";
+            string correctedPatternStr = @"</tr>\n";
+
+            var regex = new Regex(errorPatternStr);
+
+            return regex.Replace(oddsAsHtmlStr, correctedPatternStr);
         }
 
         /// <summary>
