@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1230,7 +1231,7 @@
     <Content Include="Content\ext\resources\images\yourtheme\window\right-corners.psd" />
     <Content Include="Content\ext\resources\images\yourtheme\window\top-bottom.psd" />
     <Content Include="Content\ext\resources\resources.jsb" />
-    <None Include="Properties\PublishProfiles\BhFS.ch.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
