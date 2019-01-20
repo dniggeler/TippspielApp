@@ -119,18 +119,21 @@ namespace BhFS.Tippspiel.Utils
 
         public static MatchInfoModel Create(TippSpiel.SvcOpenData.Matchdata match)
         {
-            var matchModelObj = new MatchInfoModel();
-            matchModelObj.MatchId = match.matchID;
-            matchModelObj.KickoffTime = match.matchDateTime;
-            matchModelObj.HomeTeamScore = match.pointsTeam1;
-            matchModelObj.AwayTeamScore = match.pointsTeam2;
-            matchModelObj.HomeTeamIcon = match.iconUrlTeam1;
-            matchModelObj.AwayTeamIcon = match.iconUrlTeam2;
-            matchModelObj.HomeTeam = match.nameTeam1;
-            matchModelObj.AwayTeam = match.nameTeam2;
-            matchModelObj.IsFinished = match.matchIsFinished;
+            var matchModelObj = new MatchInfoModel
+            {
+                MatchId = match.matchID,
+                KickoffTime = match.matchDateTime,
+                KickoffTimeUtc = match.matchDateTimeUTC,
+                HomeTeamScore = match.pointsTeam1,
+                AwayTeamScore = match.pointsTeam2,
+                HomeTeamIcon = match.iconUrlTeam1,
+                AwayTeamIcon = match.iconUrlTeam2,
+                HomeTeam = match.nameTeam1,
+                AwayTeam = match.nameTeam2,
+                IsFinished = match.matchIsFinished
+            };
 
-            if (match.matchResults != null && match.matchResults.Count() > 0)
+            if (match.matchResults != null && match.matchResults.Any())
             {
                 var result = (from r in match.matchResults orderby r.resultTypeId descending select r).FirstOrDefault();
 

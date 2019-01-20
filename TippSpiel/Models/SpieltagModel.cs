@@ -46,35 +46,18 @@ namespace FussballTippApp.Models
         public int Rang { get; set; }
         public int RangDelta { get; set; }
 
-        public double FavoriteRatio
-        {
-            get
-            {
-                return (TippCount > 0) ? TippCountFavorite / TippCount : 0.0;
-            }
-        }
+        public double FavoriteRatio => (TippCount > 0) ? TippCountFavorite / TippCount : 0.0;
 
-        public double LongshotRatio
-        {
-            get
-            {
-                return (TippCount > 0) ? TippCountLongshot / TippCount : 0.0;
-            }
-        }
+        public double LongshotRatio => (TippCount > 0) ? TippCountLongshot / TippCount : 0.0;
 
-        public double PointAvg
-        {
-            get
-            {
-                return (TippCount > 0) ? TotalPoints / TippCount : 0.0;
-            }
-        }
+        public double PointAvg => (TippCount > 0) ? TotalPoints / TippCount : 0.0;
     }
 
     public class MatchInfoModel
     {
         public int MatchId { get; set; }
         public DateTime KickoffTime { get; set; }
+        public DateTime KickoffTimeUtc { get; set; }
         public bool IsFinished { get; set; }
         public string HomeTeam { get; set; }
         public string AwayTeam { get; set; }
@@ -98,16 +81,14 @@ namespace FussballTippApp.Models
         {
             get
             {
-                if (this.HasStarted == true)
+                if (HasStarted)
                 {
-                    return (this.HomeTeamScore > this.AwayTeamScore) ?
-                                                    1 : (this.HomeTeamScore < this.AwayTeamScore) ?
+                    return (HomeTeamScore > AwayTeamScore) ?
+                                                    1 : (HomeTeamScore < AwayTeamScore) ?
                                                     2 : 0;
                 }
-                else
-                {
-                    return null;
-                }
+
+                return null;
             }
         }
 
@@ -115,11 +96,11 @@ namespace FussballTippApp.Models
         {
             get
             {
-                if (this.HasStarted == false || this.ResultType.HasValue== false) return null;
+                if (HasStarted == false || ResultType.HasValue== false) return null;
 
-                if (this.MyTip.HasValue == true)
+                if (MyTip.HasValue)
                 {
-                    return (this.ResultType.Value == this.MyTip.Value) ? true : false;
+                    return (ResultType.Value == MyTip.Value);
                 }
 
                 return false;
@@ -130,26 +111,18 @@ namespace FussballTippApp.Models
         {
             get
             {
-                if (this.HasStarted == true &&
-                    this.MyTip.HasValue &&
-                    this.ResultType.HasValue)
+                if (HasStarted &&
+                    MyTip.HasValue &&
+                    ResultType.HasValue)
                 {
-                    return (this.ResultType.Value == this.MyTip.Value) ? this.MyOdds * this.MyAmount : 0.0;
+                    return (ResultType.Value == MyTip.Value) ? MyOdds * MyAmount : 0.0;
                 }
-                else
-                {
-                    return null;
-                }
+
+                return null;
             }
         }
 
-        public bool HasStarted
-        {
-            get
-            {
-                return !(KickoffTime > DateTime.Now);
-            }
-        }
+        public bool HasStarted => !(KickoffTimeUtc > DateTime.UtcNow);
 
         public MatchInfoModel()
         {

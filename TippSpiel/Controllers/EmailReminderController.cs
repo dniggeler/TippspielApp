@@ -142,8 +142,8 @@ namespace FussballTippApp.Controllers
             }
 
             if ((tippObj == null || tippObj.MyTip.HasValue == false) &&
-                (matchObj.KickoffTime > DateTime.Now) &&
-                (DateTime.Now > matchObj.KickoffTime.AddDays(-1)))
+                (matchObj.KickoffTimeUtc > DateTime.UtcNow) &&
+                (DateTime.UtcNow > matchObj.KickoffTimeUtc.AddDays(-1)))
             {
                 return true;
             }

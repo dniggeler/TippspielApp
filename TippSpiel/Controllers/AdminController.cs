@@ -157,6 +157,7 @@ namespace FussballTippApp.Controllers
                     var matchInfoModel = new MatchInfoModel();
                     matchInfoModel.MatchId = m.matchID;
                     matchInfoModel.KickoffTime = m.matchDateTime;
+                    matchInfoModel.KickoffTimeUtc = m.matchDateTimeUTC;
                     matchInfoModel.IsFinished = m.matchIsFinished;
                     matchInfoModel.HomeTeam = m.nameTeam1;
                     matchInfoModel.AwayTeam = m.nameTeam2;

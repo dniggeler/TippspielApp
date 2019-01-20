@@ -104,7 +104,8 @@ namespace FussballTippApp.Controllers
                         HomeTeamIcon = m.HomeTeamIcon,
                         HomeTeamScore = m.HomeTeamScore,
                         IsFinished = m.IsFinished,
-                        KickoffTime = m.KickoffTime
+                        KickoffTime = m.KickoffTime,
+                        KickoffTimeUtc = m.KickoffTimeUTC
                     };
 
                     model.IsSpieltagFinished = (model.IsSpieltagFinished && modelAllInfo.IsFinished);
@@ -187,6 +188,7 @@ namespace FussballTippApp.Controllers
                             HomeTeamScore = matchInfo.HomeTeamScore,
                             IsFinished = matchInfo.IsFinished,
                             KickoffTime = matchInfo.KickoffTime,
+                            KickoffTimeUtc = matchInfo.KickoffTimeUTC,
                             MyOdds = tip.MyOdds,
                             MyAmount = tip.MyAmount,
                             MyTip = tip.MyTip
@@ -399,7 +401,7 @@ namespace FussballTippApp.Controllers
 
                 using (var ctxt = new TippSpielContext())
                 {
-                    var matchObj = (from m in ctxt.TippMatchList 
+                    TippMatchModel matchObj = (from m in ctxt.TippMatchList 
                                     where m.MatchId == id &&
                                           m.User == user
                                     select m)
