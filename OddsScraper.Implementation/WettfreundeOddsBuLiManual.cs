@@ -83,29 +83,20 @@ namespace OddsScraper
                     AwayTeam = teamHertha,
                     HomeTeamSearch = teamBayernSearch,
                     AwayTeamSearch = teamHerthaSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 1.20,
+                    DrawOdds =6.8,
+                    LossOdds = 13.0,
                 },
-                new OddsInfoModel
-                {
-                    HomeTeam = teamDortmund,
-                    AwayTeam = teamAugsburg,
-                    HomeTeamSearch = teamDortmundSearch,
-                    AwayTeamSearch = teamAugsburgSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
-                },
+
                 new OddsInfoModel
                 {
                     HomeTeam = teamLeverkusen,
                     AwayTeam = teamPaderborn,
                     HomeTeamSearch = teamLeverkusenSearch,
                     AwayTeamSearch = teamPaderbornSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 1.36,
+                    DrawOdds = 5.3,
+                    LossOdds = 7.9,
                 },
 
                 new OddsInfoModel
@@ -114,9 +105,19 @@ namespace OddsScraper
                     AwayTeam = teamKoeln,
                     HomeTeamSearch = teamWolfsburgSearch,
                     AwayTeamSearch = teamKoelnSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 1.90,
+                    DrawOdds = 3.75,
+                    LossOdds = 3.90,
+                },
+                new OddsInfoModel
+                {
+                    HomeTeam = teamDortmund,
+                    AwayTeam = teamAugsburg,
+                    HomeTeamSearch = teamDortmundSearch,
+                    AwayTeamSearch = teamAugsburgSearch,
+                    WinOdds = 1.26,
+                    DrawOdds = 6.1,
+                    LossOdds = 11.0,
                 },
                 new OddsInfoModel
                 {
@@ -124,9 +125,9 @@ namespace OddsScraper
                     AwayTeam = teamDusseldorf,
                     HomeTeamSearch = teamBremenSearch,
                     AwayTeamSearch = teamDusseldorfSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 1.72,
+                    DrawOdds = 3.9,
+                    LossOdds = 4.25,
                 },
                 new OddsInfoModel
                 {
@@ -134,9 +135,9 @@ namespace OddsScraper
                     AwayTeam = teamMainz,
                     HomeTeamSearch = teamFreiburgSearch,
                     AwayTeamSearch = teamMainzSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 2.15,
+                    DrawOdds = 3.4,
+                    LossOdds = 3.35,
                 },
 
                 new OddsInfoModel
@@ -145,9 +146,9 @@ namespace OddsScraper
                     AwayTeam = teamSchalke,
                     HomeTeamSearch = teamMonchengladbachSearch,
                     AwayTeamSearch = teamSchalkeSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 2.1,
+                    DrawOdds = 3.55,
+                    LossOdds = 3.45,
                 },
                 new OddsInfoModel
                 {
@@ -155,9 +156,9 @@ namespace OddsScraper
                     AwayTeam = teamHoffenheim,
                     HomeTeamSearch = teamFrankfurtSearch,
                     AwayTeamSearch = teamHoffenheimSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 2.5,
+                    DrawOdds = 3.65,
+                    LossOdds = 2.65,
                 },
                 new OddsInfoModel
                 {
@@ -165,9 +166,9 @@ namespace OddsScraper
                     AwayTeam = teamLeipzig,
                     HomeTeamSearch = teamBerlinSearch,
                     AwayTeamSearch = teamLeipzigSearch,
-                    WinOdds = 0.5,
-                    DrawOdds = 0.25,
-                    LossOdds = 0.25,
+                    WinOdds = 4.45,
+                    DrawOdds = 3.95,
+                    LossOdds = 1.75,
                 },
             };
 
