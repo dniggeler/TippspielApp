@@ -78,6 +78,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="WettfreundeManualBuLiTest.cs" />
     <Compile Include="WettfreundeScraperBuLiTest.cs" />
     <Compile Include="WettfreundeScraperEuroTest.cs" />
     <Compile Include="WettfreundeScraperScrubTest.cs" />

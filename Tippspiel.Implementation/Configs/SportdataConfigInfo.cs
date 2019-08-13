@@ -11,9 +11,9 @@
         public SportsdataConfigInfo()
         {
             LeagueShortcut = "bl1";
-            LeagueSaison = "2018";
-            StartSpieltag = 18;
-            EndSpieltag = 36;
+            LeagueSaison = "2019";
+            StartSpieltag = 1;
+            EndSpieltag = 17;
         }
     }
 }

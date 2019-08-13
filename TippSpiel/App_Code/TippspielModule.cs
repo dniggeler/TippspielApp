@@ -32,7 +32,7 @@ namespace BhFS.Tippspiel.Utils
                 .InRequestScope();
 
             Kernel.Bind<IOddsScraper>()
-                .To<WettfreundeOddsBuLiScraper>()
+                .To<WettfreundeOddsBuLiManual>()
                 .InRequestScope();
         }
     }

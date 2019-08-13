@@ -61,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScrubHelper.cs" />
     <Compile Include="WettfreundeEuroConfigInfo.cs" />
+    <Compile Include="WettfreundeOddsBuLiManual.cs" />
     <Compile Include="WettfreundeOddsBuLiScraper.cs" />
     <Compile Include="WettfreundeOddsEuroScraper.cs" />
     <Compile Include="WettfreundeWorldCupConfigInfo.cs" />

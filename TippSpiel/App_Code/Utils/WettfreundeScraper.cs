@@ -4,8 +4,6 @@ using System.Net;
 using System.Text;
 using System.IO;
 using OddsScraper.Contract.Model;
-using OddsScraper;
-using Tippspiel.Implementation;
 using OddsScraper.Contract;
 
 namespace BhFS.Tippspiel.Utils
@@ -21,17 +19,7 @@ namespace BhFS.Tippspiel.Utils
 
         public List<OddsInfoModel> Scrap(int spieltag)
         {
-            string domainUrl = WettfreundeConfigInfo.Current.BaseURL;
-            string betOddsUrl = domainUrl + WettfreundeConfigInfo.Current.OddsLink;
-
-            CookieContainer cookies = new CookieContainer();
-
-            var oddResponseStr = PostRequest("", betOddsUrl, "", cookies);
-
-            var oddScraper = new WettfreundeOddsBuLiScraper();
-
-            return oddScraper.GetOdds(oddResponseStr, spieltag.ToString());
-
+            return _oddsScraper.GetOdds(null, spieltag.ToString());
         }
 
         string PostRequest(string domain, string url, string requestData, CookieContainer cookies)
