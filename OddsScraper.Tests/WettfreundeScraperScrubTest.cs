@@ -12,7 +12,7 @@ namespace OddsScraper.Tests
     public class WettfreundeScraperScrubTest
     {
         private readonly ITestOutputHelper _output;
-        private readonly IOddsScraper _oddsScraper = new WettfreundeOddsBuLiScraper();
+        private readonly IOddsScraper _oddsScraper = new WettfreundeOddsNewBuLiScraper();
 
         public WettfreundeScraperScrubTest(ITestOutputHelper output)
         {

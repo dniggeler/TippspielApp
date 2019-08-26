@@ -152,6 +152,15 @@ namespace OddsScraper.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string spieltag2019_2 {
+            get {
+                return ResourceManager.GetString("spieltag2019_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 
         ///&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
         ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;de-DE&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;

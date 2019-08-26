@@ -85,7 +85,7 @@ namespace FussballTippApp.Controllers
                     ResourceManager rm = new ResourceManager(typeof(Resources));
                     var fixContent = rm.GetObject(fixFilename) as string;
 
-                    var oddScraper = new WettfreundeOddsBuLiScraper();
+                    var oddScraper = new WettfreundeOddsNewBuLiScraper();
 
                     oddsList = oddScraper.GetOdds(fixContent, currentSpieltag.ToString());
                 }

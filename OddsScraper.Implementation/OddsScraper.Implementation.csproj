@@ -62,6 +62,7 @@
     <Compile Include="ScrubHelper.cs" />
     <Compile Include="WettfreundeEuroConfigInfo.cs" />
     <Compile Include="WettfreundeOddsBuLiManual.cs" />
+    <Compile Include="WettfreundeOddsNewBuLiScraper.cs" />
     <Compile Include="WettfreundeOddsBuLiScraper.cs" />
     <Compile Include="WettfreundeOddsEuroScraper.cs" />
     <Compile Include="WettfreundeWorldCupConfigInfo.cs" />
