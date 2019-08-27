@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using OddsScraper.Contract;
@@ -30,16 +31,6 @@ namespace OddsScraper
             return GetOdds(doc,roundTag);
         }
 
-        private string FixOpenTags(string oddsAsHtmlStr)
-        {
-            string errorPatternStr = @"</tr\n";
-            string correctedPatternStr = @"</tr>\n";
-
-            var regex = new Regex(errorPatternStr);
-
-            return regex.Replace(oddsAsHtmlStr, correctedPatternStr);
-        }
-
         /// <summary>
         /// Gets the odds.
         /// </summary>
@@ -49,8 +40,6 @@ namespace OddsScraper
         /// <exception cref="System.ApplicationException">Spieltag nicht gefunden.</exception>
         private List<OddsInfoModel> GetOdds(HtmlDocument doc, string roundTag)
         {
-            int spieltag = int.Parse(roundTag);
-
             var oddsList = new List<OddsInfoModel>();
             {
                 // remove all unnecessary html
@@ -84,9 +73,10 @@ namespace OddsScraper
 
                     var odds = GetGameOdds(sectionNode);
                     model.WinOdds = odds.Item1;
+                    model.DrawOdds = odds.Item2;
+                    model.LossOdds = odds.Item3;
 
                     oddsList.Add(model);
-                    
                 }
             }
 
@@ -95,7 +85,34 @@ namespace OddsScraper
 
         private Tuple<double?,double?,double?> GetGameOdds(HtmlNode sectionNode)
         {
-            return new Tuple<double?, double?, double?>(0.2,0.4,0.4);
+            var betProviderNode = sectionNode
+                .ParentNode
+                .SelectNodes(".//div[@class='bbo_table_row']")
+                .FirstOrDefault();
+
+            var winOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_1 ']");
+            if (winOddsNode == null)
+            {
+                winOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_1 hl']");
+            }
+
+            var drawOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_x ']");
+            if (drawOddsNode == null)
+            {
+                drawOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_x hl']");
+            }
+
+            var lossOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_2 ']");
+            if (lossOddsNode == null)
+            {
+                lossOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_2 hl']");
+            }
+
+            var winOddValue = Convert.ToDouble(winOddsNode.InnerText.Trim('\n', ' ', '\r'));
+            var drawOddValue = Convert.ToDouble(drawOddsNode.InnerText.Trim('\n', ' ', '\r'));
+            var lossOddValue = Convert.ToDouble(lossOddsNode.InnerText.Trim('\n', ' ', '\r'));
+
+            return new Tuple<double?, double?, double?>(winOddValue,drawOddValue,lossOddValue);
         }
 
         private Tuple<string, string> GetTeams(HtmlNode sectionNode)
