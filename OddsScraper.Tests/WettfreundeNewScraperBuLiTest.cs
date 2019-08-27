@@ -18,7 +18,7 @@ namespace WettfreundeScraper.Tests
             _output = output;
         }
 
-        [Fact(DisplayName = "2019 2. Spieltag")]
+        [Fact(DisplayName = "2019")]
         public void GetSpieltagTest()
         {
             // given
@@ -26,11 +26,10 @@ namespace WettfreundeScraper.Tests
 
             // when
             var result = _oddsScraper.GetOdds(Resources.spieltag2019_2, spieltag);
-            _output.WriteLine("{0}", result.Count);
+            _output.WriteLine(result.Count.ToString());
 
             // then
             result.Should().NotBeNull().And.Subject.Should().HaveCount(9);
-
         }
 
     }

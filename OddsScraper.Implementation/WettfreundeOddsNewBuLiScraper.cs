@@ -69,119 +69,62 @@ namespace OddsScraper
                     }
                 }
 
-                HtmlNode spieltagNode = GetSpieltagHtml(doc, spieltag);
-                if (spieltagNode == null) throw new ApplicationException("Spieltag nicht gefunden.");
-
-                HtmlNode oddsTableNode = spieltagNode
-                    .ParentNode
-                    .ParentNode
-                    .ParentNode
-                    .NextSibling;
-
                 // Odds
+                for (int ii = 1; ii <= 9; ii++)
                 {
-                    var xpath = "./td";
-                    bool insideSpecialRule = false;
-                    HtmlNode trNode = oddsTableNode.NextSibling.NextSibling.NextSibling;
+                    var sectionNode = GetSection(doc, ii);
+                    Debug.WriteLine(sectionNode.InnerHtml);
+                    var model = new OddsInfoModel();
 
-                    for (int ii = 3; ii < 12; ii++)
-                    {
-                        Debug.WriteLine(trNode.InnerHtml);
-                        var model = new OddsInfoModel();
+                    var teams = GetTeams(sectionNode);
 
-                        int kk = 0;
-                        foreach (var tdNode in trNode.SelectNodes(xpath))
-                        {
-                            switch (kk)
-                            {
-                                case 1:
-                                    model.HomeTeam = tdNode.InnerText;
-                                    model.HomeTeamSearch = model.HomeTeam.ToUpper();
-                                    break;
-                                case 2:
-                                    model.AwayTeam = tdNode.InnerText;
-                                    model.AwayTeamSearch = model.AwayTeam.ToUpper();
-                                    break;
-                                case 4:
-                                {
-                                    var oddsNode = tdNode.SelectSingleNode(".//strong");
-                                    model.WinOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                }
-                                    break;
-                                case 5:
-                                {
-                                    var oddsNode = tdNode.SelectSingleNode(".//strong");
-                                    model.DrawOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                }
-                                    break;
-                                case 6:
-                                {
-                                    var oddsNode = tdNode.SelectSingleNode(".//strong");
-                                    model.LossOdds = ScrubHelper.ConvertToDouble(oddsNode);
-                                }
-                                    break;
-                            }
 
-                            kk++;
-                        }
+                    model.HomeTeam = teams.Item1;
+                    model.HomeTeamSearch = model.HomeTeam.ToUpper();
 
-                        var potentialNextNode = trNode.NextSibling.NextSibling;
+                    model.AwayTeam = teams.Item2;
+                    model.AwayTeamSearch = model.AwayTeam.ToUpper();
 
-                        if (potentialNextNode != null && potentialNextNode.Name != "tr")
-                        {
-                            insideSpecialRule = true;
-                            trNode = trNode.SelectSingleNode("following-sibling::tr[1]");
-                            xpath = "preceding-sibling::td";
+                    var odds = GetGameOdds(sectionNode);
+                    model.WinOdds = odds.Item1;
 
-                        }
-                        else if (insideSpecialRule)
-                        {
-                            xpath = "./td";
-                            insideSpecialRule = false;
-                        }
-                        else
-                        {
-                            trNode = trNode.NextSibling.NextSibling;
-                            xpath = "./td";
-                            insideSpecialRule = false;
-                        }
-
-                        oddsList.Add(model);
-                    }
+                    oddsList.Add(model);
+                    
                 }
             }
 
             return oddsList;
         }
 
-        private static HtmlNode GetSpieltagHtml(HtmlDocument doc, int spieltag)
+        private Tuple<double?,double?,double?> GetGameOdds(HtmlNode sectionNode)
         {
-            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//h2"))
-            {
-                string cleanStr = node.InnerText.Trim(new char[] { '\n', ' ' });
+            return new Tuple<double?, double?, double?>(0.2,0.4,0.4);
+        }
 
-                if (cleanStr.ToUpper().Contains($"{spieltag}. SPIELTAG"))
-                {
-                    return node;
-                }
+        private Tuple<string, string> GetTeams(HtmlNode sectionNode)
+        {
+            var split = sectionNode.InnerText.Split(new []{"Wettquoten"},StringSplitOptions.RemoveEmptyEntries);
+            var split2 = split[0].Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
+
+            var splitTeams = split2[0].Split(new[] { "-"}, StringSplitOptions.RemoveEmptyEntries);
+
+            return new Tuple<string, string>(splitTeams[0].Trim(new []{' '}),splitTeams[1].Trim(new[] { ' ' }));
+        }
+
+        private static HtmlNode GetSection(HtmlDocument doc, int sectionNumber)
+        {
+            var sectionNode = doc.GetElementbyId($"section-{sectionNumber}");
+
+            if (sectionNode == null)
+            {
+                return null;
             }
 
-            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//table/tbody/tr/td/span/strong"))
+            foreach (HtmlNode node in sectionNode.SelectNodes(".//h2"))
             {
-                string cleanStr = node.InnerText.Trim(new char[] { '\n', ' ' });
+                string cleanStr = node.InnerText.Trim('\n', ' ');
 
-                if (cleanStr.ToUpper().Equals("SPIELTAG " + spieltag))
-                {
-                    return node;
-                }
-            }
-
-            // fall back, none found so far
-            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//table[3]/tbody/tr/td/span/strong"))
-            {
-                string cleanStr = node.InnerText.Trim(new char[] { '\n', ' ' });
-
-                if (cleanStr.ToUpper().Equals("SPIELTAG " + spieltag))
+                if (cleanStr.Contains("Wettquoten"))
                 {
                     return node;
                 }
@@ -189,5 +132,6 @@ namespace OddsScraper
 
             return null;
         }
-    }
+
+  }
 }
