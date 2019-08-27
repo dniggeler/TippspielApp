@@ -8,7 +8,7 @@
         public WettfreundeConfigInfo()
         {
             BaseURL = @"https://www.wettfreunde.net";
-            OddsLink = @"/bundesliga-spielplan/";
+            OddsLink = @"/bundesliga-quoten/";
         }
     }
 }

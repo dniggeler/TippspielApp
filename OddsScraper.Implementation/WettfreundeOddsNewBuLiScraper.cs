@@ -16,11 +16,8 @@ namespace OddsScraper
     {
         public List<OddsInfoModel> GetOdds(string oddsAsHtmlStr, string roundTag)
         {
-            // fix html errors
-            var cleanHtmlSrc = FixOpenTags(oddsAsHtmlStr);
-
             HtmlDocument doc = new HtmlDocument();
-            doc.LoadHtml(cleanHtmlSrc);
+            doc.LoadHtml(oddsAsHtmlStr);
 
             return GetOdds(doc,roundTag);
         }
