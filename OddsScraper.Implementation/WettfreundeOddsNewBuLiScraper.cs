@@ -117,7 +117,7 @@ namespace OddsScraper
 
         private Tuple<string, string> GetTeams(HtmlNode sectionNode)
         {
-            var split = sectionNode.InnerText.Split(new []{"Wettquoten"},StringSplitOptions.RemoveEmptyEntries);
+            var split = sectionNode.InnerText.Trim(' ').Split(new []{"Wettquoten"},StringSplitOptions.RemoveEmptyEntries);
             var split2 = split[0].Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
 
             var splitTeams = split2[0].Split(new[] { "-"}, StringSplitOptions.RemoveEmptyEntries);
