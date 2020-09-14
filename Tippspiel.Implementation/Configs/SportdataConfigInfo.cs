@@ -11,9 +11,9 @@
         public SportsdataConfigInfo()
         {
             LeagueShortcut = "bl1";
-            LeagueSaison = "2019";
-            StartSpieltag = 18;
-            EndSpieltag = 34;
+            LeagueSaison = "2020";
+            StartSpieltag = 1;
+            EndSpieltag = 17;
         }
     }
 }
