@@ -87,30 +87,14 @@ namespace OddsScraper
         {
             var betProviderNode = sectionNode
                 .ParentNode
-                .SelectNodes(".//div[@class='bbo_table_row']")
+                .SelectNodes(".//tr[@class='removable']")
                 .FirstOrDefault();
 
-            var winOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_1 ']");
-            if (winOddsNode == null)
-            {
-                winOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_1 hl']");
-            }
+            var oddsNodes = betProviderNode.SelectNodes(".//span[@data-odds]");
 
-            var drawOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_x ']");
-            if (drawOddsNode == null)
-            {
-                drawOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_x hl']");
-            }
-
-            var lossOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_2 ']");
-            if (lossOddsNode == null)
-            {
-                lossOddsNode = betProviderNode.SelectSingleNode(".//div[@class='bbo_odds_2 hl']");
-            }
-
-            var winOddValue = Convert.ToDouble(winOddsNode.InnerText.Trim('\n', ' ', '\r'));
-            var drawOddValue = Convert.ToDouble(drawOddsNode.InnerText.Trim('\n', ' ', '\r'));
-            var lossOddValue = Convert.ToDouble(lossOddsNode.InnerText.Trim('\n', ' ', '\r'));
+            var winOddValue = Convert.ToDouble(oddsNodes[0].InnerText.Trim('\n', ' ', '\r'));
+            var drawOddValue = Convert.ToDouble(oddsNodes[1].InnerText.Trim('\n', ' ', '\r'));
+            var lossOddValue = Convert.ToDouble(oddsNodes[2].InnerText.Trim('\n', ' ', '\r'));
 
             return new Tuple<double?, double?, double?>(winOddValue,drawOddValue,lossOddValue);
         }
@@ -120,7 +104,7 @@ namespace OddsScraper
             var split = sectionNode.InnerText.Trim(' ').Split(new []{"Wettquoten"},StringSplitOptions.RemoveEmptyEntries);
             var split2 = split[0].Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
 
-            var splitTeams = split2[0].Split(new[] { "-"}, StringSplitOptions.RemoveEmptyEntries);
+            var splitTeams = split2[0].Split(new[] { "-","&#8211;"}, StringSplitOptions.RemoveEmptyEntries);
 
             return new Tuple<string, string>(splitTeams[0].Trim(new []{' '}),splitTeams[1].Trim(new[] { ' ' }));
         }
