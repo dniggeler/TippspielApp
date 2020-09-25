@@ -73,9 +73,8 @@ namespace FussballTippApp.Controllers
 
                 try
                 {
-                    throw new ApplicationException("skip");
+                    //throw new ApplicationException("skip");
                     oddsList = _oddsScraper.Scrap(currentSpieltag);
-
                 }
                 catch (Exception ex)
                 {
