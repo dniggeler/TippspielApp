@@ -235,7 +235,10 @@ namespace FussballTippApp.Controllers
                     bool changePasswordSucceeded;
                     try
                     {
+                        //changePasswordSucceeded = true;
                         changePasswordSucceeded = WebSecurity.ChangePassword(User.Identity.Name, model.OldPassword, model.NewPassword);
+                        //string token = WebSecurity.GeneratePasswordResetToken("srehder");
+                        //var result = WebSecurity.ResetPassword(token, model.NewPassword);
                     }
                     catch (Exception)
                     {
