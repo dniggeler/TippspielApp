@@ -85,10 +85,16 @@ namespace OddsScraper
 
         private Tuple<double?,double?,double?> GetGameOdds(HtmlNode sectionNode)
         {
-            var betProviderNode = sectionNode
+            var selectedNodes = sectionNode
                 .ParentNode
-                .SelectNodes(".//tr[@class='removable']")
-                .FirstOrDefault();
+                .SelectNodes(".//tr[@class='removable']");
+
+            if (selectedNodes == null)
+            {
+                return new Tuple<double?, double?, double?>(0.0, 0.0, 0.0);
+            }
+
+            var betProviderNode = selectedNodes.FirstOrDefault();
 
             var oddsNodes = betProviderNode.SelectNodes(".//span[@data-odds]");
 
