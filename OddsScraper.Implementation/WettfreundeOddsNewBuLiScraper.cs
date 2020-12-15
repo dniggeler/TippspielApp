@@ -72,8 +72,7 @@ namespace OddsScraper
                     model.AwayTeam = teams.Item2;
                     model.AwayTeamSearch = model.AwayTeam.ToUpper();
 
-                    //var odds = GetGameOdds(sectionNode);
-                    var odds = GetGameOdds(teams.Item1);
+                    var odds = GetGameOdds(sectionNode, teams.Item1, roundTag);
                     model.WinOdds = odds.Item1;
                     model.DrawOdds = odds.Item2;
                     model.LossOdds = odds.Item3;
@@ -107,34 +106,39 @@ namespace OddsScraper
             return new Tuple<double?, double?, double?>(winOddValue,drawOddValue,lossOddValue);
         }
 
-        private Tuple<double?, double?, double?> GetGameOdds(string team1)
+        private Tuple<double?, double?, double?> GetGameOdds(HtmlNode sectionNode, string team1, string roundTag)
         {
-            Dictionary<string, Tuple<double, double, double>> quotes =
-                new Dictionary<string, Tuple<double, double, double>>
-                {
-                    { "Frankfurt", new Tuple<double, double, double>(2.75, 3.75, 2.37) },
-                    { "Hertha BSC", new Tuple<double, double, double>(1.72, 4, 4.5) },
-                    { "Bremen", new Tuple<double, double, double>(5.5, 4.5, 1.55) },
-                    { "Stuttgart", new Tuple<double, double, double>(2.05, 3.75, 3.4) },
-                    { "Schalke 04", new Tuple<double, double, double>(2.87, 3.5, 2.37) },
-                    { "Bayern", new Tuple<double, double, double>(1.33, 5.5, 8.5) },
-                    { "Hoffenheim", new Tuple<double, double, double>(5, 4.5, 1.6) },
-                    { "Köln", new Tuple<double, double, double>(5.25, 4.2, 1.6) },
-                    { "Bielefeld", new Tuple<double, double, double>(2.8, 3.3, 2.55) },
-                };
-
-            double winOddValue = 0;
-            double drawOddValue = 0;
-            double lossOddValue = 0;
-
-            if (quotes.TryGetValue(team1, out var quote))
+            if (roundTag == "12")
             {
-                winOddValue = quote.Item1;
-                drawOddValue = quote.Item2;
-                lossOddValue = quote.Item3;
+                Dictionary<string, Tuple<double, double, double>> quotes =
+                    new Dictionary<string, Tuple<double, double, double>>
+                    {
+                        { "Frankfurt", new Tuple<double, double, double>(2.75, 3.75, 2.37) },
+                        { "Hertha BSC", new Tuple<double, double, double>(1.72, 4, 4.5) },
+                        { "Bremen", new Tuple<double, double, double>(5.5, 4.5, 1.55) },
+                        { "Stuttgart", new Tuple<double, double, double>(2.05, 3.75, 3.4) },
+                        { "Schalke 04", new Tuple<double, double, double>(2.87, 3.5, 2.37) },
+                        { "Bayern", new Tuple<double, double, double>(1.33, 5.5, 8.5) },
+                        { "Hoffenheim", new Tuple<double, double, double>(5, 4.5, 1.6) },
+                        { "Köln", new Tuple<double, double, double>(5.25, 4.2, 1.6) },
+                        { "Bielefeld", new Tuple<double, double, double>(2.8, 3.3, 2.55) },
+                    };
+
+                double winOddValue = 0;
+                double drawOddValue = 0;
+                double lossOddValue = 0;
+
+                if (quotes.TryGetValue(team1, out var quote))
+                {
+                    winOddValue = quote.Item1;
+                    drawOddValue = quote.Item2;
+                    lossOddValue = quote.Item3;
+                }
+
+                return new Tuple<double?, double?, double?>(winOddValue, drawOddValue, lossOddValue);
             }
-            
-            return new Tuple<double?, double?, double?>(winOddValue, drawOddValue, lossOddValue);
+
+            return GetGameOdds(sectionNode);
         }
 
         private Tuple<string, string> GetTeams(HtmlNode sectionNode)
