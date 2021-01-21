@@ -108,7 +108,7 @@ namespace OddsScraper
 
         private Tuple<double?, double?, double?> GetGameOdds(HtmlNode sectionNode, string team1, string roundTag)
         {
-            if (roundTag == "12")
+            if (roundTag == "0")
             {
                 Dictionary<string, Tuple<double, double, double>> quotes =
                     new Dictionary<string, Tuple<double, double, double>>
