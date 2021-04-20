@@ -60,6 +60,11 @@ namespace OddsScraper
                 for (int ii = 1; ii <= 9; ii++)
                 {
                     var sectionNode = GetSection(doc, ii);
+                    if (sectionNode == null)
+                    {
+                        continue;
+                    }
+
                     Debug.WriteLine(sectionNode.InnerHtml);
                     var model = new OddsInfoModel();
 
