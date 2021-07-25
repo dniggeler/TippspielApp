@@ -1,4 +1,5 @@
-﻿@model FussballTippApp.Models.SpieltagModel
+﻿@using FussballTippApp.Models
+@model FussballTippApp.Models.SpieltagModel
 
 @{
     ViewBag.Title = "Tippen";
@@ -20,7 +21,7 @@
                     dataType: 'json',
                     success: function (result) {
                         $('.errMsg').remove();
-                        if (result.Success == false) {
+                        if (result.Success === false) {
                             $('#body').prepend('<div class="errMsg">' + result.Error + '</div>');
                         }
                         else {
@@ -63,12 +64,12 @@
         <th>My Odds</th>
         <th>My Points</th>
     </tr>
-    @foreach (var m in Model.Matchdata)
+    @foreach (MatchInfoModel m in Model.Matchdata)
     {
         <tr>
             <td><img alt="" src="@m.HomeTeamIcon" style="max-height:20px"/></td><td>@m.HomeTeam</td>
             <td><img alt="" src="@m.AwayTeamIcon" style="max-height:20px"/></td><td>@m.AwayTeam</td>
-            @if (m.HasStarted == true && m.HomeTeamScore > -1 && m.AwayTeamScore > -1)
+            @if (m.HasStarted && m.HomeTeamScore > -1 && m.AwayTeamScore > -1)
             {
                 <td>@m.HomeTeamScore.ToString() : @m.AwayTeamScore.ToString()</td>            
             }
@@ -80,7 +81,7 @@
             <td>
             @if (m.HomeTeamOdds.HasValue && m.DrawOdds.HasValue && m.AwayTeamOdds.HasValue)
             {
-                @(string.Format("{0:0.00} / {1:0.00} / {2:0.00}", m.HomeTeamOdds, m.DrawOdds, m.AwayTeamOdds))
+                @($"{m.HomeTeamOdds:0.00} / {m.DrawOdds:0.00} / {m.AwayTeamOdds:0.00}")
             }
             else
             {
@@ -89,18 +90,18 @@
 
             </td>
         
-            @if (m.HasStarted == false && m.IsFinished == false)
+            @if (m.HasStarted == false && m.IsFinished == false && DateTime.Today > m.KickoffTimeUtc.AddDays(-14))
             {
                 if (m.HomeTeamOdds.HasValue && m.DrawOdds.HasValue && m.AwayTeamOdds.HasValue)
                 {
                     <td>
-                        @Html.RadioButton("rb" + m.MatchId.ToString(), "{ " + String.Format("\"id\" : {0}, \"tip\" : \"{1}\", \"odds\" : {2}", m.MatchId, 1, m.HomeTeamOdds) + " }", (m.MyTip.HasValue) ? (m.MyTip.Value == 1) ? true : false : false)
+                        @Html.RadioButton("rb" + m.MatchId, "{ " + $"\"id\" : {m.MatchId}, \"tip\" : \"{1}\", \"odds\" : {m.HomeTeamOdds}" + " }", m.MyTip.HasValue && m.MyTip.Value == 1)
                     </td>       
                     <td>
-                        @Html.RadioButton("rb" + m.MatchId.ToString(), "{ " + String.Format("\"id\" : {0}, \"tip\" : \"{1}\", \"odds\" : {2}", m.MatchId, 0, m.DrawOdds) + " }", (m.MyTip.HasValue) ? (m.MyTip.Value == 0) ? true : false : false)
+                        @Html.RadioButton("rb" + m.MatchId, "{ " + $"\"id\" : {m.MatchId}, \"tip\" : \"{0}\", \"odds\" : {m.DrawOdds}" + " }", m.MyTip.HasValue && m.MyTip.Value == 0)
                     </td>       
                     <td>
-                        @Html.RadioButton("rb" + m.MatchId.ToString(), "{ " + String.Format("\"id\" : {0}, \"tip\" : \"{1}\", \"odds\" : {2}", m.MatchId, 2, m.AwayTeamOdds) + " }", (m.MyTip.HasValue) ? (m.MyTip.Value == 2) ? true : false : false)
+                        @Html.RadioButton("rb" + m.MatchId, "{ " + $"\"id\" : {m.MatchId}, \"tip\" : \"{2}\", \"odds\" : {m.AwayTeamOdds}" + " }", m.MyTip.HasValue && m.MyTip.Value == 2)
                     </td>
                 }
                 else
@@ -140,11 +141,11 @@
                    
             <td>
                 <span id='@("odds" + m.MatchId)'>
-                @((m.MyOdds.HasValue) ? String.Format("{0:0.00}", m.MyOdds.Value) : "-")
+                    @(m.MyOdds.HasValue ? $"{m.MyOdds.Value:0.00}" : "-")
                 </span>
             </td>
             <td>
-                @((m.MyPoints.HasValue) ? String.Format("{0:0.00}", m.MyPoints.Value) : "-")
+                @(m.MyPoints.HasValue ? $"{m.MyPoints.Value:0.00}" : "-")
             </td>
         </tr>
     }

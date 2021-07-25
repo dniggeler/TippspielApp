@@ -437,7 +437,7 @@ namespace FussballTippApp.Controllers
                     {
                         Success = true,
                         MatchId = id,
-                        MyOdds = String.Format("{0:0.00}",odds)
+                        MyOdds = $"{odds:0.00}"
                     };
 
                     return Json(result);
@@ -445,8 +445,8 @@ namespace FussballTippApp.Controllers
             }
             catch (FormatException ex)
             {
-                _log.ErrorFormat("Match id cannot be converted, id={0}." + id.ToString());
-                _log.ErrorFormat("Exception message={0}." + ex.Message);
+                _log.ErrorFormat("Match id cannot be converted, id={0}.", id);
+                _log.ErrorFormat("Exception message={0}.", ex.Message);
 
                 return Json(new {
                     Success = false,
