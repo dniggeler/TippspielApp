@@ -4,6 +4,8 @@ using System.Web.Mvc;
 using FussballTippApp.Models;
 using System.Net.Mail;
 using System.Net;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 using Tippspiel.Contracts;
 using Tippspiel.Implementation;
 using Tippspiel.Contracts.Models;
@@ -87,13 +89,13 @@ namespace FussballTippApp.Controllers
         {
             using (var userContext = new UsersContext())
             {
-                var userObj = userContext.UserProfiles.Where(u => u.UserName == user).FirstOrDefault();
+                var userObj = userContext.UserProfiles.FirstOrDefault(u => u.UserName == user);
 
                 if (userObj != null && userObj.HasEmailReminder == true)
                 {
                     try
                     {
-                        SendEmail(userObj.UserName, userObj.Email);
+                        SendEmailBySendGrid( userObj.UserName, userObj.Email);
                     }
                     catch (Exception ex)
                     {
@@ -115,10 +117,10 @@ namespace FussballTippApp.Controllers
             {
                 foreach (var kp in model.EmailReminderDict.Where(p => (p.Value == true)))
                 {
-                    var userObj = ctxt.UserProfiles.Where(u => u.UserName == kp.Key).FirstOrDefault();
+                    var userObj = ctxt.UserProfiles.FirstOrDefault(u => u.UserName == kp.Key);
                     if (userObj != null)
                     {
-                        SendEmail(kp.Key, userObj.Email);
+                        SendEmailBySendGrid(kp.Key, userObj.Email);
                     }
                 }
 
@@ -153,30 +155,29 @@ namespace FussballTippApp.Controllers
             }
         }
 
-        private void SendEmail(string username, string email)
+        private void SendEmailBySendGrid(string username, string email)
         {
-            MailMessage msg = new MailMessage();
+            var client = new SendGridClient(TippspielConfigInfo.Current.EmailApiKey);
+            var from = new EmailAddress(TippspielConfigInfo.Current.EmailFrom, "Dieter Niggeler");
+            var subject = "Buli-Tippspiel: Reminder";
+            var to = new EmailAddress(email, email);
+            var plainTextContent = "Hallo " + username + "," + Environment.NewLine + Environment.NewLine +
+                                   @"Du hast für ein oder mehrere Spiele der aktuellen Buli-Runde, die in Kürze beginnen, noch Tipps offen." +
+                                   Environment.NewLine + Environment.NewLine + "Beste Grüsse, Dieter";
 
-            msg.From = new MailAddress(TippspielConfigInfo.Current.EmailFrom);
-            msg.To.Add(email);
-            msg.Subject = "Buli-Tippspiel: Reminder";
-            msg.Body = "Hallo " + username + "," + Environment.NewLine + Environment.NewLine +
-                        @"Du hast für ein oder mehrere Spiele der aktuellen Buli-Runde, die in Kürze beginnen, noch Tipps offen." +
-                        Environment.NewLine + Environment.NewLine +
-                        "Gruss, Dieter";
-            msg.Priority = MailPriority.Normal;
+            var htmlContent = "";
+            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
 
-            SmtpClient client = new SmtpClient();
+            Response response = client.SendEmailAsync(msg).Result;
 
-            client.Credentials = new NetworkCredential(TippspielConfigInfo.Current.EmailProviderUser, TippspielConfigInfo.Current.EmailProviderPwd);
-            client.Host = TippspielConfigInfo.Current.EmailHost;
-            client.Port = 587;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.EnableSsl = false;
-            client.Send(msg);
-
-            _log.DebugFormat("Reminder email sent to {0}", email);
-
+            if (response.IsSuccessStatusCode)
+            {
+                _log.DebugFormat($"Reminder email sent to {email}");
+            }
+            else
+            {
+                _log.WarnFormat($"Sending email to {email} failed: {response.StatusCode}");
+            }
         }
     }
 }
