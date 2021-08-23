@@ -3,8 +3,6 @@ using System.Configuration;
 using System.Linq;
 using System.Web.Mvc;
 using FussballTippApp.Models;
-using System.Net.Mail;
-using System.Net;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using Tippspiel.Contracts;
@@ -17,7 +15,7 @@ namespace FussballTippApp.Controllers
     {
         readonly log4net.ILog _log;
 
-        private IFussballDataRepository _matchDataRepository;
+        private readonly IFussballDataRepository _matchDataRepository;
 
         public EmailReminderController(IFussballDataRepository repository, log4net.ILog logger)
         {
@@ -63,7 +61,6 @@ namespace FussballTippApp.Controllers
                 }
 
                 return reminderModel;
-
             }
         }
 
@@ -116,7 +113,7 @@ namespace FussballTippApp.Controllers
 
             using (var ctxt = new UsersContext())
             {
-                foreach (var kp in model.EmailReminderDict.Where(p => (p.Value == true)))
+                foreach (var kp in model.EmailReminderDict.Where(p => p.Value == true && p.Key.Contains("dieter")))
                 {
                     var userObj = ctxt.UserProfiles.FirstOrDefault(u => u.UserName == kp.Key);
                     if (userObj != null)
