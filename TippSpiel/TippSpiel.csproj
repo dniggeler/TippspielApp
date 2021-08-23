@@ -1236,6 +1236,7 @@
     <Content Include="Content\ext\resources\images\yourtheme\window\right-corners.psd" />
     <Content Include="Content\ext\resources\images\yourtheme\window\top-bottom.psd" />
     <Content Include="Content\ext\resources\resources.jsb" />
+    <Content Include="appSettings.secrets" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
 using System.Web.Mvc;
 using FussballTippApp.Models;
@@ -157,7 +158,7 @@ namespace FussballTippApp.Controllers
 
         private void SendEmailBySendGrid(string username, string email)
         {
-            var client = new SendGridClient(TippspielConfigInfo.Current.EmailApiKey);
+            var client = new SendGridClient(ConfigurationManager.AppSettings["EmailApiKey"]);
             var from = new EmailAddress(TippspielConfigInfo.Current.EmailFrom, "Dieter Niggeler");
             var subject = "Buli-Tippspiel: Reminder";
             var to = new EmailAddress(email, email);
@@ -166,7 +167,7 @@ namespace FussballTippApp.Controllers
                                    Environment.NewLine + Environment.NewLine + "Beste Grüsse, Dieter";
 
             var htmlContent = "";
-            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+            SendGridMessage msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
 
             Response response = client.SendEmailAsync(msg).Result;
 
