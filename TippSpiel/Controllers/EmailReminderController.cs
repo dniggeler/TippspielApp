@@ -113,7 +113,7 @@ namespace FussballTippApp.Controllers
 
             using (var ctxt = new UsersContext())
             {
-                foreach (var kp in model.EmailReminderDict.Where(p => p.Value == true && p.Key.Contains("dieter")))
+                foreach (var kp in model.EmailReminderDict.Where(p => p.Value == true))
                 {
                     var userObj = ctxt.UserProfiles.FirstOrDefault(u => u.UserName == kp.Key);
                     if (userObj != null)
