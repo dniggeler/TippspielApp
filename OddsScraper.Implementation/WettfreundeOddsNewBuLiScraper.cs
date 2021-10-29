@@ -44,7 +44,6 @@ namespace OddsScraper
             var oddsList = new List<OddsInfoModel>();
             {
                 // remove all unnecessary html
-
                 ScrubHelper.ScrubHtml(doc);
 
                 var nodes = doc.DocumentNode.SelectNodes("//comment()");
@@ -69,8 +68,7 @@ namespace OddsScraper
                     var model = new OddsInfoModel();
 
                     var teams = GetTeams(sectionNode);
-
-
+                    
                     model.HomeTeam = teams.Item1;
                     model.HomeTeamSearch = model.HomeTeam.ToUpper();
 
@@ -148,12 +146,11 @@ namespace OddsScraper
 
         private Tuple<string, string> GetTeams(HtmlNode sectionNode)
         {
-            var split = sectionNode.InnerText.Trim(' ').Split(new []{"Wettquoten"},StringSplitOptions.RemoveEmptyEntries);
-            var split2 = split[0].Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
+            var split2 = sectionNode.InnerText.Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
 
             var splitTeams = split2[0].Split(new[] { "-","&#8211;"}, StringSplitOptions.RemoveEmptyEntries);
 
-            return new Tuple<string, string>(splitTeams[0].Trim(new []{' '}),splitTeams[1].Trim(new[] { ' ' }));
+            return new Tuple<string, string>(splitTeams[0].Trim(' '),splitTeams[1].Trim(' '));
         }
 
         private static HtmlNode GetSection(HtmlDocument doc, int sectionNumber)
@@ -167,12 +164,7 @@ namespace OddsScraper
 
             foreach (HtmlNode node in sectionNode.SelectNodes(".//h2"))
             {
-                string cleanStr = node.InnerText.Trim('\n', ' ');
-
-                if (cleanStr.Contains("Wettquoten"))
-                {
-                    return node;
-                }
+                return node;
             }
 
             return null;
