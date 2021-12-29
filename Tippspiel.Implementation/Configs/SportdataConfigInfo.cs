@@ -12,8 +12,8 @@
         {
             LeagueShortcut = "bl1";
             LeagueSaison = "2021";
-            StartSpieltag = 1;
-            EndSpieltag = 17;
+            StartSpieltag = 18;
+            EndSpieltag = 34;
         }
     }
 }
