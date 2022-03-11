@@ -68,6 +68,11 @@ namespace OddsScraper
                     var model = new OddsInfoModel();
 
                     var teams = GetTeams(sectionNode);
+
+                    if (teams == null)
+                    {
+                        continue;
+                    }
                     
                     model.HomeTeam = teams.Item1;
                     model.HomeTeamSearch = model.HomeTeam.ToUpper();
@@ -149,6 +154,11 @@ namespace OddsScraper
             var split2 = sectionNode.InnerText.Split(new []{":"},StringSplitOptions.RemoveEmptyEntries);
 
             var splitTeams = split2[0].Split(new[] { "-","&#8211;"}, StringSplitOptions.RemoveEmptyEntries);
+
+            if (splitTeams.Length != 2)
+            {
+                return null;
+            }
 
             return new Tuple<string, string>(splitTeams[0].Trim(' '),splitTeams[1].Trim(' '));
         }
