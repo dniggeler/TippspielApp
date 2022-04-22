@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text.RegularExpressions;
 using HtmlAgilityPack;
-using Microsoft.SqlServer.Server;
 using OddsScraper.Contract;
 using OddsScraper.Contract.Model;
 
@@ -73,7 +71,7 @@ namespace OddsScraper
                     {
                         continue;
                     }
-                    
+
                     model.HomeTeam = teams.Item1;
                     model.HomeTeamSearch = model.HomeTeam.ToUpper();
 
@@ -84,6 +82,12 @@ namespace OddsScraper
                     model.WinOdds = odds.Item1;
                     model.DrawOdds = odds.Item2;
                     model.LossOdds = odds.Item3;
+
+                    if (roundTag == "31" && teams.Item1.Contains("Hertha"))
+                    {
+                        model.AwayTeam = "Stuttgart";
+                        model.AwayTeamSearch = "Stuttgart".ToUpper();
+                    }
 
                     oddsList.Add(model);
                 }
