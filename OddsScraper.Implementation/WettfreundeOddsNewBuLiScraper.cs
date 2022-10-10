@@ -83,10 +83,10 @@ namespace OddsScraper
                     model.DrawOdds = odds.Item2;
                     model.LossOdds = odds.Item3;
 
-                    if (roundTag == "31" && teams.Item1.Contains("Hertha"))
+                    if (teams.Item2.Contains("BVB"))
                     {
-                        model.AwayTeam = "Stuttgart";
-                        model.AwayTeamSearch = "Stuttgart".ToUpper();
+                        model.AwayTeam = "Dortmund";
+                        model.AwayTeamSearch = "Dortmund".ToUpper();
                     }
 
                     oddsList.Add(model);
