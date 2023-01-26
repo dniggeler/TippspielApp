@@ -89,6 +89,12 @@ namespace OddsScraper
                         model.AwayTeamSearch = "Dortmund".ToUpper();
                     }
 
+                    if (teams.Item2.Contains("Beriln"))
+                    {
+                        model.AwayTeam = "Berlin";
+                        model.AwayTeamSearch = "Berlin".ToUpper();
+                    }
+
                     oddsList.Add(model);
                 }
             }
