@@ -333,6 +333,18 @@ namespace FussballTipp.Repository
 
                 matchModelObj.HomeTeamScore = result.pointsTeam1;
                 matchModelObj.AwayTeamScore = result.pointsTeam2;
+
+                if (match.matchID == 64153)
+                {
+                    matchModelObj.HomeTeamScore = 0;
+                    matchModelObj.AwayTeamScore = 3;
+                }
+
+            }
+            else if (match.matchID == 64154)
+            {
+                matchModelObj.HomeTeamScore = 2;
+                matchModelObj.AwayTeamScore = 2;
             }
 
             return matchModelObj;
