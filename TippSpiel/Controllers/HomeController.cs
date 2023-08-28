@@ -263,67 +263,64 @@ namespace FussballTippApp.Controllers
         {
             _log.Debug("Begin SendDailyWinnerEmail()");
 
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            // precondition to send daily winner email
             {
-                // precondition to send daily winner email
+                var completeInfo = await OpenDBHelper.IsSpieltagComplete(_matchDataRepository, true);
+
+                var jsonResponse = new
                 {
-                    var completeInfo = await OpenDBHelper.IsSpieltagComplete(_matchDataRepository, true);
+                    Success = true,
+                    Receivers = new List<string>()
+                };
 
-                    var jsonResponse = new
-                    {
-                        Success = true,
-                        Receivers = new List<string>()
-                    };
-
-                    if (completeInfo.IsCompleted == false)
-                    {
-                        _log.DebugFormat("Spieltag is not yet completed");
-
-                        return Json(jsonResponse, JsonRequestBehavior.AllowGet);
-                    }
-                    else if (completeInfo.IsCompletedRecently == false)
-                    {
-                        _log.DebugFormat("Spieltag is out-dated");
-
-                        return Json(jsonResponse, JsonRequestBehavior.AllowGet);
-                    }
-                }
-
-                var spieltag = (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).CurrentSpieltag;
-
-                var result = await DailyWinnersInternalAsync(spieltag);
-
-                using (var ctxt = new UsersContext())
+                if (completeInfo.IsCompleted == false)
                 {
-                    var userList = new List<string>();
-
-                    var profiles = ctxt.UserProfiles as IQueryable<UserProfile>;
-                    if (String.IsNullOrEmpty(username) == false)
-                    {
-                        profiles = profiles.Where(p => p.UserName == username);
-                    }
-
-                    foreach (var user in profiles)
-                    {
-                        if (user != null && !String.IsNullOrEmpty(user.Email))
-                        {
-                            TippMailer.EmailDailyWinner(user.Email, result, spieltag).Send();
-                            _log.Debug("Email sent to " + user.Email);
-
-                            userList.Add(user.UserName);
-                        }
-                    }
-
-                    var jsonResponse = new
-                    {
-                        Success = true,
-                        Receivers = userList
-                    };
-
-                    _log.Debug("End SendDailyWinnerEmail()");
+                    _log.DebugFormat("Spieltag is not yet completed");
 
                     return Json(jsonResponse, JsonRequestBehavior.AllowGet);
                 }
+                else if (completeInfo.IsCompletedRecently == false)
+                {
+                    _log.DebugFormat("Spieltag is out-dated");
+
+                    return Json(jsonResponse, JsonRequestBehavior.AllowGet);
+                }
+            }
+
+            var spieltag = (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).CurrentSpieltag;
+
+            var result = await DailyWinnersInternalAsync(spieltag);
+
+            using (var ctxt = new UsersContext())
+            {
+                var userList = new List<string>();
+
+                var profiles = ctxt.UserProfiles as IQueryable<UserProfile>;
+                if (String.IsNullOrEmpty(username) == false)
+                {
+                    profiles = profiles.Where(p => p.UserName == username);
+                }
+
+                foreach (var user in profiles)
+                {
+                    if (user != null && !String.IsNullOrEmpty(user.Email))
+                    {
+                        TippMailer.EmailDailyWinner(user.Email, result, spieltag).Send();
+                        _log.Debug("Email sent to " + user.Email);
+
+                        userList.Add(user.UserName);
+                    }
+                }
+
+                var jsonResponse = new
+                {
+                    Success = true,
+                    Receivers = userList
+                };
+
+                _log.Debug("End SendDailyWinnerEmail()");
+
+                return Json(jsonResponse, JsonRequestBehavior.AllowGet);
             }
         }
 
@@ -560,79 +557,77 @@ namespace FussballTippApp.Controllers
 
             var viewModel = new DailyWinnerInfoModel();
 
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            var matchesDb = await _matchDataRepository.GetMatchesByGroupAsync(currSpieltag);
+
+            foreach (var m in matchesDb)
             {
-                var matchesDB = await _matchDataRepository.GetMatchesByGroupAsync(currSpieltag);
+                viewModel.MatchInfo.Add(OpenDBHelper.Create(m));
+            }
 
-                foreach (var m in matchesDB)
+            using (var ctxt = new TippSpielContext())
+            {
+                var resultDict = new Dictionary<string, RankingInfoModel>();
+                using (var userCtxt = new UsersContext())
                 {
-                    viewModel.MatchInfo.Add(OpenDBHelper.Create(m));
-                }
-
-                using (var ctxt = new TippSpielContext())
-                {
-                    var resultDict = new Dictionary<string, RankingInfoModel>();
-                    using (var userCtxt = new UsersContext())
+                    // init result dict
                     {
-                        // init result dict
+                        foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
                         {
-                            foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
-                            {
-                                var m = new RankingInfoModel();
-                                m.User = username;
-                                m.DisplayName = (from u in userCtxt.UserProfiles
-                                                 where u.UserName == username
-                                                 select u.DisplayName)
-                                                 .FirstOrDefault();
+                            var m = new RankingInfoModel();
+                            m.User = username;
+                            m.DisplayName = (from u in userCtxt.UserProfiles
+                                    where u.UserName == username
+                                    select u.DisplayName)
+                                .FirstOrDefault();
 
-                                resultDict.Add(username, m);
-                                viewModel.AllTippInfoDict.Add(username, new List<MatchInfoModel>());
-                            }
+                            resultDict.Add(username, m);
+                            viewModel.AllTippInfoDict.Add(username, new List<MatchInfoModel>());
                         }
                     }
+                }
 
 
-                    // 1. get all tipps for match with id
-                    foreach (var match in matchesDB)
+                // 1. get all tipps for match with id
+                foreach (var match in matchesDb)
+                {
+                    var tippSet = (from t in ctxt.TippMatchList
+                        where t.MatchId == match.MatchId &&
+                              t.MyTip.HasValue &&
+                              t.MyAmount.HasValue &&
+                              t.MyOdds.HasValue
+                        select t);
+                    foreach (var tip in tippSet)
                     {
-                        var tippSet = (from t in ctxt.TippMatchList
-                                       where t.MatchId == match.MatchId &&
-                                             t.MyTip.HasValue &&
-                                             t.MyAmount.HasValue &&
-                                             t.MyOdds.HasValue
-                                       select t);
-                        foreach (var tip in tippSet)
+                        var matchModelObj = OpenDBHelper.Create(match);
+                        matchModelObj.MyOdds = tip.MyOdds;
+                        matchModelObj.MyAmount = tip.MyAmount;
+                        matchModelObj.MyTip = tip.MyTip;
+
+                        if (matchModelObj.HasStarted == true)
                         {
-                            var matchModelObj = OpenDBHelper.Create(match);
-                            matchModelObj.MyOdds = tip.MyOdds;
-                            matchModelObj.MyAmount = tip.MyAmount;
-                            matchModelObj.MyTip = tip.MyTip;
+                            resultDict[tip.User].TippCount++;
+                            resultDict[tip.User].TotalPoints +=
+                                (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
+                        }
 
-                            if (matchModelObj.HasStarted == true)
-                            {
-                                resultDict[tip.User].TippCount++;
-                                resultDict[tip.User].TotalPoints += (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
-                            }
-
-                            if (matchModelObj.HasStarted == true)
-                            {
-                                viewModel.AllTippInfoDict[tip.User].Add(matchModelObj);
-                            }
+                        if (matchModelObj.HasStarted == true)
+                        {
+                            viewModel.AllTippInfoDict[tip.User].Add(matchModelObj);
                         }
                     }
-
-                    var resultList = (from kp in resultDict select kp.Value).ToList();
-
-                    viewModel.Ranking = (from e in resultList
-                                         orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
-                                         select e)
-                                  .ToList();
-
-                    int counter = 1;
-                    viewModel.Ranking.ForEach(e => { e.Rang = counter++; });
-
-                    return viewModel;
                 }
+
+                var resultList = (from kp in resultDict select kp.Value).ToList();
+
+                viewModel.Ranking = (from e in resultList
+                        orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
+                        select e)
+                    .ToList();
+
+                int counter = 1;
+                viewModel.Ranking.ForEach(e => { e.Rang = counter++; });
+
+                return viewModel;
             }
         }
 

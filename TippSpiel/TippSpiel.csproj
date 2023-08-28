@@ -258,11 +258,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Service References\SvcOpenData\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="App_Code\Repository\BuliDataRepository.cs" />
     <Compile Include="App_Code\Utils\OpenDBHelper.cs" />
     <Compile Include="App_Code\Utils\WettfreundeScraper.cs" />
@@ -1243,7 +1238,10 @@
     <Content Include="Content\ext\resources\images\yourtheme\window\right-corners.psd" />
     <Content Include="Content\ext\resources\images\yourtheme\window\top-bottom.psd" />
     <Content Include="Content\ext\resources\resources.jsb" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - ReadOnly - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1258,13 +1256,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <None Include="Service References\SvcOpenData\Sportsdata.disco" />
-    <None Include="Service References\SvcOpenData\configuration91.svcinfo" />
-    <None Include="Service References\SvcOpenData\configuration.svcinfo" />
-    <None Include="Service References\SvcOpenData\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1281,100 +1272,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <None Include="Service References\SvcOpenData\Sportsdata.wsdl" />
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Fussballdaten.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetAvailGroupsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetAvailLeaguesBySportsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetAvailLeaguesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetAvailSportsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetCurrentGroupOrderIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetCurrentGroupResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetFusballdatenResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetGoalGettersByLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetGoalsByLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetGoalsByMatchResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetLastChangeDateByGroupLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetLastChangeDateByLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetLastMatchByLeagueTeamResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetLastMatchResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchByMatchIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchdataByGroupLeagueSaisonJSONResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchdataByGroupLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchdataByLeagueDateTimeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchdataByLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetMatchdataByTeamsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetNextMatchByLeagueTeamResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetNextMatchResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GetTeamsByLeagueSaisonResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Goal.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.GoalGetter.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Group.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.League.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Matchdata.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Sport.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\SvcOpenData\TippSpiel.SvcOpenData.Team.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
@@ -1426,12 +1323,6 @@
       <Project>{492db578-aafb-4ce4-bdc0-e6d965dfc097}</Project>
       <Name>Tippspiel.Implementation</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\SvcOpenData\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

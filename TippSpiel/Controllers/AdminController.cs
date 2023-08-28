@@ -139,58 +139,6 @@ namespace FussballTippApp.Controllers
             return RedirectToAction("Index");
         }
 
-        private List<MatchInfoModel> GetMatchModelListBySpieltag(int spieltag)
-        {
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
-            {
-                var matchList = new List<MatchInfoModel>();
-
-                var oddsList = _oddsScraper.Scrap(spieltag);
-
-                var matches = client.GetMatchdataByGroupLeagueSaison(spieltag, SportsdataConfigInfo.Current.LeagueShortcut, SportsdataConfigInfo.Current.LeagueSaison);
-
-
-                foreach (var m in matches)
-                {
-                    var matchInfoModel = new MatchInfoModel();
-                    matchInfoModel.MatchId = m.matchID;
-                    matchInfoModel.KickoffTime = m.matchDateTime;
-                    matchInfoModel.KickoffTimeUtc = m.matchDateTimeUTC;
-                    matchInfoModel.IsFinished = m.matchIsFinished;
-                    matchInfoModel.HomeTeam = m.nameTeam1;
-                    matchInfoModel.AwayTeam = m.nameTeam2;
-                    matchInfoModel.HomeTeamIcon = m.iconUrlTeam1;
-                    matchInfoModel.AwayTeamIcon = m.iconUrlTeam2;
-                    matchInfoModel.HomeTeamScore = m.pointsTeam1;
-                    matchInfoModel.AwayTeamScore = m.pointsTeam2;
-
-                    // mixin odds quotes into match data
-                    {
-                        MixinOddsQuotes(oddsList, matchInfoModel);
-                    }
-
-                    matchList.Add(matchInfoModel);
-                }
-
-                return matchList;
-            }
-        }
-
-        private static void MixinOddsQuotes(List<OddsInfoModel> oddsList, MatchInfoModel m)
-        {
-            var homeTeamUpper = m.HomeTeam.ToUpper();
-            var awayTeamUpper = m.AwayTeam.ToUpper();
-
-            var oddsMatch = (from o in oddsList
-                             where (homeTeamUpper.Contains(o.HomeTeamSearch) || awayTeamUpper.Contains(o.AwayTeamSearch))
-                             select o)
-                            .First();
-
-            m.HomeTeamOdds = oddsMatch.WinOdds;
-            m.AwayTeamOdds = oddsMatch.LossOdds;
-            m.DrawOdds = oddsMatch.DrawOdds;
-        }
-
         private List<dynamic> GetUserList()
         {
             var users = new[] {  
@@ -257,7 +205,7 @@ namespace FussballTippApp.Controllers
                         matchModelObj.MyAmount = tip.MyAmount;
                         matchModelObj.MyTip = tip.MyTip;
 
-                        if (matchModelObj.HasStarted == true || IsAdminView == true)
+                        if (matchModelObj.HasStarted || IsAdminView)
                         {
                             resultDict[tip.User].TippCount++;
                             resultDict[tip.User].TotalPoints +=
