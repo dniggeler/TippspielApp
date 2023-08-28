@@ -1,0 +1,30 @@
+﻿{
+  "matchID": 66648,
+  "group": {
+    "groupOrderID": 3,
+    "groupName": "3. Spieltag"
+  },
+  "MatchNr": 0,
+  "leagueShortcut": "bl1",
+  "matchDateTime": "2023-09-01T20:30:00",
+  "matchDateTimeUTC": "2023-09-01T18:30:00Z",
+  "matchIsFinished": false,
+  "team1": {
+    "teamId": 7,
+    "teamName": "Borussia Dortmund",
+    "shortName": "BVB",
+    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/560px-Borussia_Dortmund_logo.svg.png"
+  },
+  "team2": {
+    "teamId": 199,
+    "teamName": "1. FC Heidenheim 1846",
+    "shortName": "Heidenheim",
+    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/1._FC_Heidenheim_1846.svg/830px-1._FC_Heidenheim_1846.svg.png"
+  },
+  "matchResults": [],
+  "HomeTeamScore": 0,
+  "AwayTeamScore": 0,
+  "HasVerlaengerung": false,
+  "ResultType": null,
+  "HasStarted": false
+}

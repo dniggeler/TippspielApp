@@ -19,7 +19,7 @@ namespace OddsScraper.Tests.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -152,7 +152,17 @@ namespace OddsScraper.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to 
+        ///&lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;de-DE&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;!-- Google Tag Manager --&gt;
+        ///    &lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&apos;gtm.start&apos;:
+        ///          new Date().getTime(),event:&apos;gtm.js&apos;});var f=d.getElementsByTagName(s)[0],
+        ///        j=d.createElement(s),dl=l!=&apos;dataLayer&apos;?&apos;&amp;l=&apos;+l:&apos;&apos;;j.async=true;j.src=
+        ///        &apos;https://www.googletagmanager.com/gtm.js?id=&apos;+i+dl;f.parentNode.insertBefore(j,f);
+        ///      })(window,document,&apos;script&apos;,&apos;dataLayer&apos;,&apos;GTM-KCQTLCV&apos;);&lt;/script&gt;
+        ///    &lt;!-- End Google Tag Manager [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string spieltag2019_2 {
             get {

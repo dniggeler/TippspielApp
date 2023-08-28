@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Resources;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using BhFS.Tippspiel.Utils;
 using FussballTippApp.Models;
@@ -13,6 +14,7 @@ using TippSpiel.Properties;
 using Tippspiel.Contracts;
 using Tippspiel.Implementation;
 using log4net;
+using Tippspiel.Contracts.Models;
 
 namespace FussballTippApp.Controllers
 {
@@ -37,235 +39,227 @@ namespace FussballTippApp.Controllers
             set { _tippMailer = value; }
         }
 
-        public IAccessStats MatchDBStats
+        public IAccessStats MatchDBStats => _matchDataRepository as IAccessStats;
+
+        [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Post)]
+        public async Task<ActionResult> Index(int? Spieltag)
         {
-            get { return _matchDataRepository as IAccessStats; }
-        }
+            OpenDBHelper.SpieltagInfo spieltagInfo = await OpenDBHelper.GetSpieltagInfo(_matchDataRepository);
 
-        [AcceptVerbs(HttpVerbs.Get|HttpVerbs.Post)]
-        public ActionResult Index(int? Spieltag)
-        {
-            var spieltagInfo = OpenDBHelper.GetSpieltagInfo(_matchDataRepository);
+            int currentSpieltag = Spieltag ?? spieltagInfo.TippSpieltag;
 
-                int currentSpieltag = (Spieltag.HasValue == true) ? 
-                    Spieltag.Value :
-                    spieltagInfo.TippSpieltag;
-
-                // build dropdown list data
-                {
-                    var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag +1;
-                    var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
-                                             select new SelectListItem(){ Value = e.ToString(), Text = "Spieltag "+e.ToString(), Selected = (e==currentSpieltag)  });
-
-                    ViewBag.Spieltag = ddlSpieltageRange;
-                }
-
-                var model = new SpieltagModel();
-                model.Spieltag = currentSpieltag;
-
-                if ((currentSpieltag == 34 || currentSpieltag==0) && spieltagInfo.IsCompleted)
-                {
-                    model.IsTippSpielFinished = true;
-                    return View(model);
-                }
-
-                List<OddsInfoModel> oddsList = null;
-
-                try
-                {
-                    //throw new ApplicationException("skip");
-                    oddsList = _oddsScraper.Scrap(currentSpieltag);
-                }
-                catch (Exception ex)
-                {
-                    _log.Error("Error while scrab odds: "+ex.Message);
-                    string fixFilename = String.Format("Odds_{0}_{1}_{2}", SportsdataConfigInfo.Current.LeagueShortcut, SportsdataConfigInfo.Current.LeagueSaison, currentSpieltag);
-                    _log.Info("Try fix: "+fixFilename);
-
-                    ResourceManager rm = new ResourceManager(typeof(Resources));
-                    var fixContent = rm.GetObject(fixFilename) as string;
-
-                    var oddScraper = new WettfreundeOddsNewBuLiScraper();
-
-                    oddsList = oddScraper.GetOdds(fixContent, currentSpieltag.ToString());
-                }
-
-                var matches = _matchDataRepository.GetMatchesByGroup(currentSpieltag);
-
-                foreach (var m in matches)
-                {
-                    var modelAllInfo = new MatchInfoModel()
-                    {
-                        MatchId = m.MatchId,
-                        AwayTeam = m.AwayTeam,
-                        AwayTeamIcon = m.AwayTeamIcon,
-                        AwayTeamScore = m.AwayTeamScore,
-                        HomeTeam = m.HomeTeam,
-                        HomeTeamIcon = m.HomeTeamIcon,
-                        HomeTeamScore = m.HomeTeamScore,
-                        IsFinished = m.IsFinished,
-                        KickoffTime = m.KickoffTime,
-                        KickoffTimeUtc = m.KickoffTimeUTC
-                    };
-
-                    model.IsSpieltagFinished = (model.IsSpieltagFinished && modelAllInfo.IsFinished);
-
-                    // mixin odds quotes into match data
-                    {
-                        MixinOddsQuotes(oddsList, modelAllInfo);
-                    }
-
-                    using (var ctxt = new TippSpielContext())
-                    {
-                        var myTippObject = (from t in ctxt.TippMatchList
-                                            where t.MatchId == modelAllInfo.MatchId &&
-                                                  t.User == User.Identity.Name
-                                            select t)
-                                            .FirstOrDefault();
-
-                        if (myTippObject != null)
-                        {
-                            modelAllInfo.MyOdds = myTippObject.MyOdds;
-                            modelAllInfo.MyTip = myTippObject.MyTip;
-                            modelAllInfo.MyAmount = myTippObject.MyAmount;
-                        }
-                    }
-
-
-                    model.Matchdata.Add(modelAllInfo);
-                }
-
-                {
-                    _log.DebugFormat("Tipp data stats: remote hits={0}, cache hits={1}", MatchDBStats.GetRemoteHits(), MatchDBStats.GetCacheHits());
-                }
-
-                return View(model);
-
-        }
-
-        [AllowAnonymous]
-        public ActionResult OverallStanding()
-        {
-
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            // build dropdown list data
             {
-                int maxSpieltag = OpenDBHelper.GetSpieltagInfo(_matchDataRepository).CurrentSpieltag;
+                var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag + 1;
+                var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
+                    select new SelectListItem()
+                        { Value = e.ToString(), Text = "Spieltag " + e.ToString(), Selected = (e == currentSpieltag) });
+
+                ViewBag.Spieltag = ddlSpieltageRange;
+            }
+
+            var model = new SpieltagModel();
+            model.Spieltag = currentSpieltag;
+
+            if ((currentSpieltag == 34 || currentSpieltag == 0) && spieltagInfo.IsCompleted)
+            {
+                model.IsTippSpielFinished = true;
+                return View(model);
+            }
+
+            List<OddsInfoModel> oddsList = null;
+
+            try
+            {
+                //throw new ApplicationException("skip");
+                oddsList = _oddsScraper.Scrap(currentSpieltag);
+            }
+            catch (Exception ex)
+            {
+                _log.Error("Error while scrab odds: " + ex.Message);
+                string fixFilename = String.Format("Odds_{0}_{1}_{2}", SportsdataConfigInfo.Current.LeagueShortcut,
+                    SportsdataConfigInfo.Current.LeagueSaison, currentSpieltag);
+                _log.Info("Try fix: " + fixFilename);
+
+                ResourceManager rm = new ResourceManager(typeof(Resources));
+                var fixContent = rm.GetObject(fixFilename) as string;
+
+                var oddScraper = new WettfreundeOddsNewBuLiScraper();
+
+                oddsList = oddScraper.GetOdds(fixContent, currentSpieltag.ToString());
+            }
+
+            var matches = await _matchDataRepository.GetMatchesByGroupAsync(currentSpieltag);
+
+            foreach (var m in matches)
+            {
+                var modelAllInfo = new MatchInfoModel
+                {
+                    MatchId = m.MatchId,
+                    AwayTeam = m.AwayTeam.ShortName,
+                    AwayTeamIcon = m.AwayTeam.IconUrl,
+                    AwayTeamScore = m.AwayTeamScore,
+                    HomeTeam = m.HomeTeam.ShortName,
+                    HomeTeamIcon = m.HomeTeam.IconUrl,
+                    HomeTeamScore = m.HomeTeamScore,
+                    IsFinished = m.IsFinished,
+                    KickoffTime = m.KickoffTime,
+                    KickoffTimeUtc = m.KickoffTimeUTC
+                };
+
+                model.IsSpieltagFinished = (model.IsSpieltagFinished && modelAllInfo.IsFinished);
+
+                // mixin odds quotes into match data
+                {
+                    MixinOddsQuotes(oddsList, modelAllInfo);
+                }
 
                 using (var ctxt = new TippSpielContext())
                 {
-                    var resultDict = new Dictionary<string, RankingInfoModel>();
-                    using (var userCtxt = new UsersContext())
+                    var myTippObject = (from t in ctxt.TippMatchList
+                            where t.MatchId == modelAllInfo.MatchId &&
+                                  t.User == User.Identity.Name
+                            select t)
+                        .FirstOrDefault();
+
+                    if (myTippObject != null)
                     {
-                        // init dict
-                        {
-                            foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
-                            {
-                                var m = new RankingInfoModel();
-                                m.User = username;
-                                m.DisplayName = (from u in userCtxt.UserProfiles
-                                                 where u.UserName == username
-                                                 select u.DisplayName)
-                                                 .FirstOrDefault();
-                                resultDict.Add(username, m);
-                            }
-                        }
+                        modelAllInfo.MyOdds = myTippObject.MyOdds;
+                        modelAllInfo.MyTip = myTippObject.MyTip;
+                        modelAllInfo.MyAmount = myTippObject.MyAmount;
                     }
-
-                    foreach (var tip in ctxt.TippMatchList.Where(t=>t.MyTip.HasValue))
-                    {
-                        var rankingObj = resultDict[tip.User];
-
-                        var matchInfo = _matchDataRepository.GetMatchData(tip.MatchId);
-
-                        var matchModelObj = new MatchInfoModel()
-                        {
-                            MatchId = matchInfo.MatchId,
-                            AwayTeam = matchInfo.AwayTeam,
-                            AwayTeamIcon = matchInfo.AwayTeamIcon,
-                            AwayTeamScore = matchInfo.AwayTeamScore,
-                            HomeTeam = matchInfo.HomeTeam,
-                            HomeTeamIcon = matchInfo.HomeTeamIcon,
-                            HomeTeamScore = matchInfo.HomeTeamScore,
-                            IsFinished = matchInfo.IsFinished,
-                            KickoffTime = matchInfo.KickoffTime,
-                            KickoffTimeUtc = matchInfo.KickoffTimeUTC,
-                            MyOdds = tip.MyOdds,
-                            MyAmount = tip.MyAmount,
-                            MyTip = tip.MyTip
-                        };
-
-
-                        if (tip.MyOdds.HasValue && tip.MyAmount.HasValue)
-                        {
-                            matchModelObj.MyOdds = tip.MyOdds;
-                            matchModelObj.MyAmount = tip.MyAmount;
-                            matchModelObj.MyTip = tip.MyTip;
-
-                            if (matchModelObj.HasStarted == true)
-                            {
-                                rankingObj.TippCount++;
-                                rankingObj.TotalPoints += (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
-                            }
-
-                            // count longshot and favorite
-                            {
-                                rankingObj.TippCountFavorite += (matchModelObj.FavoriteTippIndex == tip.MyTip.Value) ? 1 : 0;
-                                rankingObj.TippCountLongshot += (matchModelObj.LongshotTippIndex == tip.MyTip.Value) ? 1 : 0;
-                            }
-                        }
-                    }
-
-                    var resultList = (from kp in resultDict select kp.Value).ToList();
-
-                    resultList = (from e in resultList
-                                  orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
-                                  select e)
-                                  .ToList();
-
-                    int counter = 1;
-                    resultList.ForEach(e => { e.Rang = counter++; });
-
-                    return View(resultList);
                 }
+
+
+                model.Matchdata.Add(modelAllInfo);
+            }
+
+            {
+                _log.DebugFormat("Tipp data stats: remote hits={0}, cache hits={1}", MatchDBStats.GetRemoteHits(),
+                    MatchDBStats.GetCacheHits());
+            }
+
+            return View(model);
+        }
+
+        [AllowAnonymous]
+        public async Task<ActionResult> OverallStanding()
+        {
+
+            using (var ctxt = new TippSpielContext())
+            {
+                var resultDict = new Dictionary<string, RankingInfoModel>();
+                using (var userCtxt = new UsersContext())
+                {
+                    // init dict
+                    {
+                        foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
+                        {
+                            var m = new RankingInfoModel();
+                            m.User = username;
+                            m.DisplayName = (from u in userCtxt.UserProfiles
+                                    where u.UserName == username
+                                    select u.DisplayName)
+                                .FirstOrDefault();
+                            resultDict.Add(username, m);
+                        }
+                    }
+                }
+
+                foreach (var tip in ctxt.TippMatchList.Where(t => t.MyTip.HasValue))
+                {
+                    var rankingObj = resultDict[tip.User];
+
+                    MatchDataModel matchInfo = await _matchDataRepository.GetMatchDataAsync(tip.MatchId);
+
+                    var matchModelObj = new MatchInfoModel()
+                    {
+                        MatchId = matchInfo.MatchId,
+                        AwayTeam = matchInfo.AwayTeam.ShortName,
+                        AwayTeamIcon = matchInfo.HomeTeam.IconUrl,
+                        AwayTeamScore = matchInfo.AwayTeamScore,
+                        HomeTeam = matchInfo.HomeTeam.ShortName,
+                        HomeTeamIcon = matchInfo.HomeTeam.IconUrl,
+                        HomeTeamScore = matchInfo.HomeTeamScore,
+                        IsFinished = matchInfo.IsFinished,
+                        KickoffTime = matchInfo.KickoffTime,
+                        KickoffTimeUtc = matchInfo.KickoffTimeUTC,
+                        MyOdds = tip.MyOdds,
+                        MyAmount = tip.MyAmount,
+                        MyTip = tip.MyTip
+                    };
+
+
+                    if (tip.MyOdds.HasValue && tip.MyAmount.HasValue)
+                    {
+                        matchModelObj.MyOdds = tip.MyOdds;
+                        matchModelObj.MyAmount = tip.MyAmount;
+                        matchModelObj.MyTip = tip.MyTip;
+
+                        if (matchModelObj.HasStarted == true)
+                        {
+                            rankingObj.TippCount++;
+                            rankingObj.TotalPoints +=
+                                (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
+                        }
+
+                        // count longshot and favorite
+                        {
+                            rankingObj.TippCountFavorite +=
+                                (matchModelObj.FavoriteTippIndex == tip.MyTip.Value) ? 1 : 0;
+                            rankingObj.TippCountLongshot +=
+                                (matchModelObj.LongshotTippIndex == tip.MyTip.Value) ? 1 : 0;
+                        }
+                    }
+                }
+
+                var resultList = (from kp in resultDict select kp.Value).ToList();
+
+                resultList = (from e in resultList
+                        orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
+                        select e)
+                    .ToList();
+
+                int counter = 1;
+                resultList.ForEach(e => { e.Rang = counter++; });
+
+                return View(resultList);
             }
         }
 
         [AllowAnonymous]
-        public ActionResult DailyWinners(int? Spieltag)
+        public async Task<ActionResult> DailyWinners(int? Spieltag)
         {
             _log.Debug("Begin DailyWinners");
 
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            int currSpieltag = Spieltag.HasValue
+                ? Spieltag.Value
+                : (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).CurrentSpieltag;
+
+
+            // build dropdown list data
             {
-                int currSpieltag = (Spieltag.HasValue == true) ? 
-                    Spieltag.Value : 
-                    OpenDBHelper.GetSpieltagInfo(_matchDataRepository).CurrentSpieltag;
+                var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag + 1;
+                var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
+                    select new SelectListItem()
+                    {
+                        Value = e.ToString(),
+                        Text = "Spieltag " + e.ToString(),
+                        Selected = (e == currSpieltag)
+                    });
 
-
-                // build dropdown list data
-                {
-                    var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag + 1;
-                    var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
-                                             select new SelectListItem()
-                                             {
-                                                 Value = e.ToString(),
-                                                 Text = "Spieltag " + e.ToString(),
-                                                 Selected = (e == currSpieltag)
-                                             });
-
-                    ViewBag.Spieltag = ddlSpieltageRange;
-                }
-
-                var viewModel = DailyWinnersInternal(currSpieltag);
-
-                _log.Debug("End DailyWinners");
-
-                return View(viewModel);
+                ViewBag.Spieltag = ddlSpieltageRange;
             }
+
+            var viewModel = await DailyWinnersInternalAsync(currSpieltag);
+
+            _log.Debug("End DailyWinners");
+
+            return View(viewModel);
         }
 
         [AllowAnonymous]
-        public JsonResult SendDailyWinnerEmail(string username)
+        public async Task<JsonResult> SendDailyWinnerEmail(string username)
         {
             _log.Debug("Begin SendDailyWinnerEmail()");
 
@@ -273,7 +267,7 @@ namespace FussballTippApp.Controllers
             {
                 // precondition to send daily winner email
                 {
-                    var completeInfo = OpenDBHelper.IsSpieltagComplete(client);
+                    var completeInfo = await OpenDBHelper.IsSpieltagComplete(_matchDataRepository, true);
 
                     var jsonResponse = new
                     {
@@ -295,9 +289,9 @@ namespace FussballTippApp.Controllers
                     }
                 }
 
-                var spieltag = OpenDBHelper.GetSpieltagInfo(_matchDataRepository).CurrentSpieltag;
+                var spieltag = (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).CurrentSpieltag;
 
-                var result = this.DailyWinnersInternal(spieltag);
+                var result = await DailyWinnersInternalAsync(spieltag);
 
                 using (var ctxt = new UsersContext())
                 {
@@ -334,60 +328,59 @@ namespace FussballTippApp.Controllers
         }
 
         [AllowAnonymous]
-        public ActionResult ReportDailyWinners()
+        public async Task<ActionResult> ReportDailyWinners()
         {
             _log.Debug("Begin All DailyWinners");
 
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            int endSpieltag = (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).CurrentSpieltag;
+            int beginSpieltag = SportsdataConfigInfo.Current.StartSpieltag;
+
+            var allWinnersModel = new OverallDailyWinnerInfoModel();
+
+            using (var ctxt = new TippSpielContext())
             {
-                int endSpieltag = OpenDBHelper.GetSpieltagInfo(_matchDataRepository).CurrentSpieltag;
-                int beginSpieltag = SportsdataConfigInfo.Current.StartSpieltag;
-
-                var allWinnersModel = new OverallDailyWinnerInfoModel();
-
-                using (var ctxt = new TippSpielContext())
+                using (var userCtxt = new UsersContext())
                 {
-                    using (var userCtxt = new UsersContext())
+                    var allUsers = (from t in ctxt.TippMatchList select t.User).Distinct().ToArray();
+                    foreach (var user in allUsers)
                     {
-                        var allUsers = (from t in ctxt.TippMatchList select t.User).Distinct().ToArray();
-                        foreach (var user in allUsers)
+                        var displayName =
+                            (from u in userCtxt.UserProfiles where u.UserName == user select u.DisplayName)
+                            .FirstOrDefault();
+
+                        allWinnersModel.AllDailyWinnerMap.Add(user, new OverallDailyWinnerRankingItemModel()
                         {
-                            var displayName =
-                                (from u in userCtxt.UserProfiles where u.UserName == user select u.DisplayName)
-                                    .FirstOrDefault();
-
-                            allWinnersModel.AllDailyWinnerMap.Add(user,new OverallDailyWinnerRankingItemModel()
-                            {
-                                User = user,
-                                DisplayName = displayName,
-                                Rang = -1,
-                                Wins = 0
-                            });
-                        }                        
+                            User = user,
+                            DisplayName = displayName,
+                            Rang = -1,
+                            Wins = 0
+                        });
                     }
                 }
-
-             
-                for (int day = beginSpieltag; day <= endSpieltag; day++)
-                {
-                    var result = DailyWinnersInternal(day);
-                    foreach(var item in result.Ranking.Where(r=>r.Rang==1))
-                    {
-                        allWinnersModel.AllDailyWinnerMap[item.User].Wins += 1;
-                    }
-                }
-
-                var orderResult = (from kp in allWinnersModel.AllDailyWinnerMap orderby kp.Value.Wins descending select kp).ToDictionary(p=>p.Key,p=>p.Value);
-                int counter = 1;
-                orderResult.ForEach(e => { e.Value.Rang = counter++; });
-
-
-                allWinnersModel.AllDailyWinnerMap = orderResult;
-
-                _log.Debug("End All DailyWinners");
-
-                return View(allWinnersModel);
             }
+
+
+            for (int day = beginSpieltag; day <= endSpieltag; day++)
+            {
+                var result = await DailyWinnersInternalAsync(day);
+                foreach (var item in result.Ranking.Where(r => r.Rang == 1))
+                {
+                    allWinnersModel.AllDailyWinnerMap[item.User].Wins += 1;
+                }
+            }
+
+            var orderResult =
+                (from kp in allWinnersModel.AllDailyWinnerMap orderby kp.Value.Wins descending select kp).ToDictionary(
+                    p => p.Key, p => p.Value);
+            int counter = 1;
+            orderResult.ForEach(e => { e.Value.Rang = counter++; });
+
+
+            allWinnersModel.AllDailyWinnerMap = orderResult;
+
+            _log.Debug("End All DailyWinners");
+
+            return View(allWinnersModel);
         }
 
         [HttpPost]
@@ -561,7 +554,7 @@ namespace FussballTippApp.Controllers
             }
         }
 
-        private DailyWinnerInfoModel DailyWinnersInternal(int currSpieltag)
+        private async Task<DailyWinnerInfoModel> DailyWinnersInternalAsync(int currSpieltag)
         {
             _log.Debug("Current spieltag="+currSpieltag.ToString());
 
@@ -569,9 +562,7 @@ namespace FussballTippApp.Controllers
 
             using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
             {
-                var matchesDB = client.GetMatchdataByGroupLeagueSaison(currSpieltag,
-                                                                     SportsdataConfigInfo.Current.LeagueShortcut,
-                                                                     SportsdataConfigInfo.Current.LeagueSaison);
+                var matchesDB = await _matchDataRepository.GetMatchesByGroupAsync(currSpieltag);
 
                 foreach (var m in matchesDB)
                 {
@@ -605,7 +596,7 @@ namespace FussballTippApp.Controllers
                     foreach (var match in matchesDB)
                     {
                         var tippSet = (from t in ctxt.TippMatchList
-                                       where t.MatchId == match.matchID &&
+                                       where t.MatchId == match.MatchId &&
                                              t.MyTip.HasValue &&
                                              t.MyAmount.HasValue &&
                                              t.MyOdds.HasValue

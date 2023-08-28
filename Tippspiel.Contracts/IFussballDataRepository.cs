@@ -1,24 +1,29 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Tippspiel.Contracts.Models;
 
 namespace Tippspiel.Contracts
 {
     public interface IFussballDataRepository
     {
-        bool IsSpieltagComplete { get; }
+        Task<bool> IsSpieltagCompleteAsync(bool disableCache = false);
 
-        bool Exist(string leagueShortcut, string leagueSeason);
+        Task<List<TeamModel>> GetTeamsAsync(bool disableCache = false);
 
-        GroupInfoModel GetCurrentGroup();
-        List<GroupInfoModel> GetAllGroups();
+        Task<GroupInfoModel> GetCurrentGroupAsync(bool disableCache = false);
 
-        MatchDataModel GetNextMatch();
-        MatchDataModel GetLastMatch();
+        Task<List<GroupInfoModel>> GetAllGroupsAsync(bool disableCache = false);
 
-        MatchDataModel GetMatchData(int matchId);
+        Task<MatchDataModel> GetNextMatchAsync(bool disableCache = false);
 
-        List<MatchDataModel> GetMatchesByCurrentGroup();
-        List<MatchDataModel> GetMatchesByGroup(int groupId);
-        List<MatchDataModel> GetAllMatches();
+        Task<MatchDataModel> GetLastMatchAsync(bool disableCache = false);
+
+        Task<MatchDataModel> GetMatchDataAsync(int matchId, bool disableCache = false);
+
+        Task<List<MatchDataModel>> GetMatchesByCurrentGroupAsync(bool disableCache = false);
+
+        Task<List<MatchDataModel>> GetMatchesByGroupAsync(int groupId, bool disableCache = false);
+
+        Task<List<MatchDataModel>> GetAllMatchesAsync(bool disableCache = false);
     }
 }

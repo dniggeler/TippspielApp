@@ -5,6 +5,7 @@ using OddsScraper;
 using OddsScraper.Contract;
 using Tippspiel.Contracts;
 using Tippspiel.Implementation;
+using TippSpiel.Repository;
 
 namespace BhFS.Tippspiel.Utils
 {
@@ -20,7 +21,7 @@ namespace BhFS.Tippspiel.Utils
             Kernel.Load(modules);
 
             Kernel.Bind<IFussballDataRepository>()
-                .ToConstructor(c => new FussballTipp.Repository.BuLiDataRepository(SportsdataConfigInfo.Current,c.Inject<ICacheProvider>(),c.Inject<ILog>()))
+                .ToConstructor(c => new BuLiDataRepository(SportsdataConfigInfo.Current, c.Inject<ICacheProvider>(), c.Inject<ILog>()))
                 .InRequestScope();
 
             Kernel.Bind<ILog>()

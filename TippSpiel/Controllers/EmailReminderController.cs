@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using FussballTippApp.Models;
 using SendGrid;
@@ -23,25 +24,25 @@ namespace FussballTippApp.Controllers
             _log = logger;
         }
 
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            var model = GetEmailReminders();
+            var model = await GetEmailRemindersAsync();
 
             return View(model);
 
         }
 
-        private EmailReminderInfoModel GetEmailReminders()
+        private async Task<EmailReminderInfoModel> GetEmailRemindersAsync()
         {
             using (var ctxt = new UsersContext())
             {
                 var reminderModel = new EmailReminderInfoModel();
 
-                var nextMatch = _matchDataRepository.GetNextMatch();
+                var nextMatch = await _matchDataRepository.GetNextMatchAsync(true);
 
                 reminderModel.KickoffTime = nextMatch.KickoffTime;
-                reminderModel.HomeTeam = nextMatch.HomeTeam;
-                reminderModel.AwayTeam = nextMatch.AwayTeam;
+                reminderModel.HomeTeam = nextMatch.HomeTeam.ShortName;
+                reminderModel.AwayTeam = nextMatch.AwayTeam.ShortName;
 
                 using (var tippContext = new TippSpielContext())
                 {
@@ -105,11 +106,11 @@ namespace FussballTippApp.Controllers
             return RedirectToAction("Index");
         }
 
-        public JsonResult CheckAndSend()
+        public async Task<JsonResult> CheckAndSend()
         {
             _log.Debug("Begin CheckAndSend()");
 
-            var model = GetEmailReminders();
+            var model = await GetEmailRemindersAsync();
 
             using (var ctxt = new UsersContext())
             {

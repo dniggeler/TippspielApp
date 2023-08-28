@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 using log4net;
 using FussballTippApp.Models;
 using Tippspiel.Contracts;
+using Tippspiel.Contracts.Models;
 using Tippspiel.Implementation;
 
 namespace BhFS.Tippspiel.Utils
 {
     public class OpenDBHelper
     {
-        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod()?.DeclaringType);
 
         public struct SpieltagInfo
         {
@@ -26,25 +28,26 @@ namespace BhFS.Tippspiel.Utils
             public DateTime? CompletedSince { get; set; }
         }
 
-        public static CompleteInfo IsSpieltagComplete(TippSpiel.SvcOpenData.SportsdataSoapClient client)
+        public static async Task<CompleteInfo> IsSpieltagComplete(
+            IFussballDataRepository repository, bool disableCache = false)
         {
-            var dataNext = client.GetNextMatch(SportsdataConfigInfo.Current.LeagueShortcut);
-            var dataLast = client.GetLastMatch(SportsdataConfigInfo.Current.LeagueShortcut);
+            var dataNext = await repository.GetNextMatchAsync();
+            var dataLast = await repository.GetLastMatchAsync();
 
-            Log.Debug($"Last:{dataLast?.groupOrderID}, Next: {dataNext?.groupOrderID}");
+            Log.Debug($"Last:{dataLast?.Group.Id}, Next: {dataNext?.Group.Id}");
 
             if (dataNext == null)
             {
 
-                return new CompleteInfo()
+                return new CompleteInfo
                 {
                     IsCompleted = true,
-                    CompletedSince = dataLast.matchDateTime.AddHours(3)
+                    CompletedSince = dataLast.KickoffTime.AddHours(3)
                 };
             }
             if (dataLast == null)
             {
-                return new CompleteInfo()
+                return new CompleteInfo
                 {
                     IsCompleted = false,
                     CompletedSince = null,
@@ -52,33 +55,34 @@ namespace BhFS.Tippspiel.Utils
             }
             var result = new CompleteInfo();
 
-            if (dataLast.groupOrderID < dataNext.groupOrderID)
+            if (dataLast.Group.Id < dataNext.Group.Id)
             {
                 result.IsCompleted = true;
                 // check if emails already sent the day before
                 {
-                    var lastMatchDate = dataLast.matchDateTime;
+                    var lastMatchDate = dataLast.KickoffTime;
                     var yesterday = DateTime.Now.AddDays(-1);
                     if (lastMatchDate > yesterday)
                     {
                         result.IsCompletedRecently = true;
                     }
                 }
-                result.CompletedSince = dataLast.matchDateTime.AddHours(3);
+                result.CompletedSince = dataLast.KickoffTime.AddHours(3);
             }
 
             return result;
         }
 
-        public static SpieltagInfo GetSpieltagInfo(IFussballDataRepository repository)
+        public static async Task<SpieltagInfo> GetSpieltagInfo(
+            IFussballDataRepository repository, bool disableCache = false)
         {
             var spieltagInfo = new SpieltagInfo();
             spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = 1;
 
-            var dataNext = repository.GetNextMatch();
-            var dataLast = repository.GetLastMatch();
+            var dataNext = await repository.GetNextMatchAsync();
+            var dataLast = await repository.GetLastMatchAsync();
 
-            Log.Debug($"Last is null: {dataLast==null}, Next is null: {dataNext==null}, Last:{dataLast?.GroupOrderId}, Next: {dataNext?.GroupOrderId}");
+            Log.Debug($"Last is null: {dataLast==null}, Next is null: {dataNext==null}, Last:{dataLast?.Group.Id}, Next: {dataNext?.Group.Id}");
 
             if (dataNext == null && dataLast == null)
             {
@@ -86,17 +90,17 @@ namespace BhFS.Tippspiel.Utils
             }
             if (dataNext == null || (dataNext.MatchId==-1)) //e.g. last season
             {
-                spieltagInfo.CurrentSpieltag = dataLast.GroupId;
+                spieltagInfo.CurrentSpieltag = dataLast.Group.Id;
 
                 return spieltagInfo;
             }
-            if (dataLast == null || (dataLast.GroupId > dataNext.GroupId)) //e.g. last season
+            if (dataLast == null || (dataLast.Group.Id > dataNext.Group.Id)) //e.g. last season
             {
-                spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = dataNext.GroupId;
+                spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = dataNext.Group.Id;
 
                 return spieltagInfo;
             }
-            if ((dataNext.GroupId > dataLast.GroupId) && (dataNext.GroupId > SportsdataConfigInfo.Current.EndSpieltag))
+            if ((dataNext.Group.Id > dataLast.Group.Id) && (dataNext.Group.Id > SportsdataConfigInfo.Current.EndSpieltag))
             {
                 spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = SportsdataConfigInfo.Current.EndSpieltag;
                 spieltagInfo.IsCompleted = true;
@@ -104,56 +108,55 @@ namespace BhFS.Tippspiel.Utils
                 return spieltagInfo;
             }
 
-            if (dataNext.GroupId > dataLast.GroupId)
+            if (dataNext.Group.Id > dataLast.Group.Id)
             {
-                spieltagInfo.CurrentSpieltag = dataLast.GroupId;
-                spieltagInfo.TippSpieltag = dataNext.GroupId;
+                spieltagInfo.CurrentSpieltag = dataLast.Group.Id;
+                spieltagInfo.TippSpieltag = dataNext.Group.Id;
             }
             else {
-                spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = dataLast.GroupId;
+                spieltagInfo.CurrentSpieltag = spieltagInfo.TippSpieltag = dataLast.Group.Id;
                 spieltagInfo.IsCompleted = true;
             }
 
             return  spieltagInfo;
         }
 
-        public static MatchInfoModel Create(TippSpiel.SvcOpenData.Matchdata match)
+        public static MatchInfoModel Create(MatchDataModel match)
         {
             var matchModelObj = new MatchInfoModel
             {
-                MatchId = match.matchID,
-                KickoffTime = match.matchDateTime,
-                KickoffTimeUtc = match.matchDateTimeUTC,
-                HomeTeamScore = match.pointsTeam1,
-                AwayTeamScore = match.pointsTeam2,
-                HomeTeamIcon = match.iconUrlTeam1,
-                AwayTeamIcon = match.iconUrlTeam2,
-                HomeTeam = match.nameTeam1,
-                AwayTeam = match.nameTeam2,
-                IsFinished = match.matchIsFinished
+                MatchId = match.MatchId,
+                KickoffTime = match.KickoffTime,
+                KickoffTimeUtc = match.KickoffTimeUTC,
+                HomeTeamScore = match.HomeTeamScore,
+                AwayTeamScore = match.AwayTeamScore,
+                HomeTeamIcon = match.HomeTeam.IconUrl,
+                AwayTeamIcon = match.AwayTeam.IconUrl,
+                HomeTeam = match.HomeTeam.ShortName,
+                AwayTeam = match.AwayTeam.ShortName,
+                IsFinished = match.IsFinished
             };
 
-            if (match.matchResults != null && match.matchResults.Any())
+            if (match.MatchResults != null && match.MatchResults.Any())
             {
-                var result = (from r in match.matchResults orderby r.resultTypeId descending select r).FirstOrDefault();
+                var result = (from r in match.MatchResults orderby r.ResultOrderId descending select r).FirstOrDefault();
 
                 if (result == null) return matchModelObj;
 
-                matchModelObj.HomeTeamScore = result.pointsTeam1;
-                matchModelObj.AwayTeamScore = result.pointsTeam2;
+                matchModelObj.HomeTeamScore = result.HomeTeamScore;
+                matchModelObj.AwayTeamScore = result.AwayTeamScore;
 
-                if (match.matchID == 64153)
+                if (match.MatchId == 64153)
                 {
                     matchModelObj.HomeTeamScore = 0;
                     matchModelObj.AwayTeamScore = 3;
                 }
             }
-            else if (match.matchID == 64154)
+            else if (match.MatchId == 64154)
             {
                 matchModelObj.HomeTeamScore = 2;
                 matchModelObj.AwayTeamScore = 2;
             }
-
 
             return matchModelObj;
         }

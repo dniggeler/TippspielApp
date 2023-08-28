@@ -1,0 +1,49 @@
+﻿{
+  "matchID": 66639,
+  "group": {
+    "groupOrderID": 2,
+    "groupName": "2. Spieltag"
+  },
+  "MatchNr": 0,
+  "leagueShortcut": "bl1",
+  "matchDateTime": "2023-08-27T17:30:00",
+  "matchDateTimeUTC": "2023-08-27T15:30:00Z",
+  "matchIsFinished": true,
+  "team1": {
+    "teamId": 40,
+    "teamName": "FC Bayern München",
+    "shortName": "Bayern",
+    "teamIconUrl": "https://i.imgur.com/jJEsJrj.png"
+  },
+  "team2": {
+    "teamId": 95,
+    "teamName": "FC Augsburg",
+    "shortName": "Augsburg",
+    "teamIconUrl": "https://i.imgur.com/sdE62e2.png"
+  },
+  "matchResults": [
+    {
+      "resultID": 103640,
+      "resultName": "Halbzeitergebnis",
+      "pointsTeam1": 2,
+      "pointsTeam2": 0,
+      "resultOrderID": 1,
+      "resultTypeID": 1,
+      "ResultType": 1
+    },
+    {
+      "resultID": 103639,
+      "resultName": "Endergebnis",
+      "pointsTeam1": 3,
+      "pointsTeam2": 1,
+      "resultOrderID": 2,
+      "resultTypeID": 2,
+      "ResultType": 1
+    }
+  ],
+  "HomeTeamScore": 3,
+  "AwayTeamScore": 1,
+  "HasVerlaengerung": false,
+  "ResultType": 1,
+  "HasStarted": true
+}

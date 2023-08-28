@@ -3,17 +3,10 @@
     public class SportsdataConfigInfo : AppInfo<SportsdataConfigInfo>
     {
         // Addition shared info
-        public string LeagueShortcut { get; set; }
-        public string LeagueSaison { get; set; }
-        public int StartSpieltag { get; set; }
-        public int EndSpieltag { get; set; }
-
-        public SportsdataConfigInfo()
-        {
-            LeagueShortcut = "bl1";
-            LeagueSaison = "2023";
-            StartSpieltag = 1;
-            EndSpieltag = 17;
-        }
+        public int LeagueId { get; set; } = 4608;
+        public string LeagueShortcut { get; set; } = "bl1";
+        public string LeagueSaison { get; set; } = "2023";
+        public int StartSpieltag { get; set; } = 1;
+        public int EndSpieltag { get; set; } = 17;
     }
 }

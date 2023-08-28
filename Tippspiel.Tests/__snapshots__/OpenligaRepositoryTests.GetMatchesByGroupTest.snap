@@ -1,0 +1,272 @@
+﻿[
+  {
+    "matchID": 66648,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-01T20:30:00",
+    "matchDateTimeUTC": "2023-09-01T18:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 7,
+      "teamName": "Borussia Dortmund",
+      "shortName": "BVB",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/560px-Borussia_Dortmund_logo.svg.png"
+    },
+    "team2": {
+      "teamId": 199,
+      "teamName": "1. FC Heidenheim 1846",
+      "shortName": "Heidenheim",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/1._FC_Heidenheim_1846.svg/830px-1._FC_Heidenheim_1846.svg.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66650,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T15:30:00",
+    "matchDateTimeUTC": "2023-09-02T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 6,
+      "teamName": "Bayer Leverkusen",
+      "shortName": "Leverkusen",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/f/f7/Bayer_Leverkusen_Logo.svg/1200px-Bayer_Leverkusen_Logo.svg.png"
+    },
+    "team2": {
+      "teamId": 118,
+      "teamName": "SV Darmstadt 98",
+      "shortName": "Darmstadt",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/SV_Darmstadt_98_Logo.svg"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66653,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T15:30:00",
+    "matchDateTimeUTC": "2023-09-02T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 175,
+      "teamName": "TSG 1899 Hoffenheim",
+      "shortName": "Hoffenheim",
+      "teamIconUrl": "https://i.imgur.com/gF0PfEl.png"
+    },
+    "team2": {
+      "teamId": 131,
+      "teamName": "VfL Wolfsburg",
+      "shortName": "Wolfsburg",
+      "teamIconUrl": "https://i.imgur.com/ucqKV4B.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66654,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T15:30:00",
+    "matchDateTimeUTC": "2023-09-02T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 134,
+      "teamName": "Werder Bremen",
+      "shortName": "Bremen",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/681px-SV-Werder-Bremen-Logo.svg.png"
+    },
+    "team2": {
+      "teamId": 81,
+      "teamName": "1. FSV Mainz 05",
+      "shortName": "Mainz",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_Mainz_05.svg/1200px-Logo_Mainz_05.svg.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66655,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T15:30:00",
+    "matchDateTimeUTC": "2023-09-02T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 95,
+      "teamName": "FC Augsburg",
+      "shortName": "Augsburg",
+      "teamIconUrl": "https://i.imgur.com/sdE62e2.png"
+    },
+    "team2": {
+      "teamId": 129,
+      "teamName": "VfL Bochum",
+      "shortName": "Bochum",
+      "teamIconUrl": "https://i.imgur.com/5jy3Gfr.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66656,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T15:30:00",
+    "matchDateTimeUTC": "2023-09-02T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 16,
+      "teamName": "VfB Stuttgart",
+      "shortName": "Stuttgart",
+      "teamIconUrl": "https://i.imgur.com/v0tkpNx.png"
+    },
+    "team2": {
+      "teamId": 112,
+      "teamName": "SC Freiburg",
+      "shortName": "Freiburg",
+      "teamIconUrl": "https://i.imgur.com/r3mvi0h.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66652,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-02T18:30:00",
+    "matchDateTimeUTC": "2023-09-02T16:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 87,
+      "teamName": "Borussia Mönchengladbach",
+      "shortName": "Gladbach",
+      "teamIconUrl": "https://i.imgur.com/KSIk0Eu.png"
+    },
+    "team2": {
+      "teamId": 40,
+      "teamName": "FC Bayern München",
+      "shortName": "Bayern",
+      "teamIconUrl": "https://i.imgur.com/jJEsJrj.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66651,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-03T15:30:00",
+    "matchDateTimeUTC": "2023-09-03T13:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 91,
+      "teamName": "Eintracht Frankfurt",
+      "shortName": "Frankfurt",
+      "teamIconUrl": "https://i.imgur.com/X8NFkOb.png"
+    },
+    "team2": {
+      "teamId": 65,
+      "teamName": "1. FC Köln",
+      "shortName": "Köln",
+      "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014–.svg/296px-1._FC_Koeln_Logo_2014–.svg.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  },
+  {
+    "matchID": 66649,
+    "group": {
+      "groupOrderID": 3,
+      "groupName": "3. Spieltag"
+    },
+    "MatchNr": 0,
+    "leagueShortcut": "bl1",
+    "matchDateTime": "2023-09-03T17:30:00",
+    "matchDateTimeUTC": "2023-09-03T15:30:00Z",
+    "matchIsFinished": false,
+    "team1": {
+      "teamId": 80,
+      "teamName": "1. FC Union Berlin",
+      "shortName": "Union Berlin",
+      "teamIconUrl": "https://assets.dfb.de/uploads/000/018/232/small_union-Berlin.jpg"
+    },
+    "team2": {
+      "teamId": 1635,
+      "teamName": "RB Leipzig",
+      "shortName": "Leipzig",
+      "teamIconUrl": "https://i.imgur.com/Rpwsjz1.png"
+    },
+    "matchResults": [],
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HasVerlaengerung": false,
+    "ResultType": null,
+    "HasStarted": false
+  }
+]

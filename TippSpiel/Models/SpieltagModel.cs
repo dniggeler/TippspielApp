@@ -123,11 +123,6 @@ namespace FussballTippApp.Models
         }
 
         public bool HasStarted => !(KickoffTimeUtc > DateTime.UtcNow);
-
-        public MatchInfoModel()
-        {
-        }
-
     }
 
     public class SpieltagModel

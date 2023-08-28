@@ -1,30 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using log4net;
 using Tippspiel.Contracts;
 using Tippspiel.Contracts.Models;
 using Tippspiel.Implementation;
 
-namespace FussballTipp.Repository
+namespace TippSpiel.Repository
 {
-    public class BuLiDataRepository : IFussballDataRepository, IAccessStats, IDisposable
+    public class BuLiDataRepository : IFussballDataRepository, IAccessStats
     {
-        public int StartGroup { get; set; }
-        public int EndGroup { get; set; }
+        private readonly HttpClient httpClient;
+        private readonly string CACHE_MATCH_PREFIX = "cacheGame";
+
+        private static int _remoteHits;
+        private static int _cacheHits;
+        private const int CacheDuration = 60;
+        private readonly ICacheProvider _cache;
+        private readonly ILog _log;
+
+        private readonly int _leagueId;
+        private readonly string _leagueTag;
+        private readonly string _saisonTag;
 
         public BuLiDataRepository(SportsdataConfigInfo info, ICacheProvider cacheProvider, ILog log)
-            :  this(info.LeagueShortcut, info.LeagueSaison)
+            :  this(info.LeagueId, info.LeagueShortcut, info.LeagueSaison)
         {
             _cache = cacheProvider;
             _log = log;
         }
 
-        public BuLiDataRepository(string leagueShortcut, string leagueSeason)
+        public BuLiDataRepository(int leagueId, string leagueShortcut, string leagueSeason)
         {
+            _leagueId = leagueId;
             _leagueTag = leagueShortcut;
             _saisonTag = leagueSeason;
-            _client = new TippSpiel.SvcOpenData.SportsdataSoapClient();
+
+            httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://www.openligadb.de/api/");
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public int GetRemoteHits()
@@ -37,331 +55,264 @@ namespace FussballTipp.Repository
             return _cacheHits;
         }
 
-        public GroupInfoModel GetCurrentGroup()
+        public async Task<List<TeamModel>> GetTeamsAsync(bool disableCache)
         {
-            const string CACHE_TAG = "cacheCurrGrp";
+            const string cacheTag = "cacheTeams";
 
-            TippSpiel.SvcOpenData.Group g = null;
-            if (_cache.IsSet(CACHE_TAG))
+            List<TeamModel> g;
+            if (_cache.IsSet(cacheTag))
             {
-                g = (TippSpiel.SvcOpenData.Group)_cache.Get(CACHE_TAG);
+                g = (List<TeamModel>)_cache.Get(cacheTag);
                 _cacheHits++;
             }
             else
             {
-                g = _client.GetCurrentGroup(_leagueTag);
-                _cache.Set(CACHE_TAG, g, CACHE_DURATION);
+                g = await GetFromApiAsync<List<TeamModel>>($"getavailableteams/{_leagueTag}/{_saisonTag}");
+                _cache.Set(cacheTag, g, CacheDuration);
 
                 _remoteHits++;
             }
 
-            return new GroupInfoModel
-            {
-                Id = g.groupOrderID,
-                Text = g.groupName
-            };
+            return g;
         }
 
-        List<GroupInfoModel> IFussballDataRepository.GetAllGroups()
+        public async Task<GroupInfoModel> GetCurrentGroupAsync(bool disableCache)
         {
-            const string CACHE_TAG = "cacheAllGrps";
+            const string cacheTag = "cacheCurrGrp";
 
-            TippSpiel.SvcOpenData.Group[] groups = null;
-            if (_cache.IsSet(CACHE_TAG))
+            GroupInfoModel g;
+            if (_cache.IsSet(cacheTag))
             {
-                groups = (TippSpiel.SvcOpenData.Group[])_cache.Get(CACHE_TAG);
+                g = (GroupInfoModel)_cache.Get(cacheTag);
                 _cacheHits++;
             }
             else
             {
-                groups = _client.GetAvailGroups(_leagueTag, _saisonTag);
-                _cache.Set(CACHE_TAG, groups, CACHE_DURATION);
+                g = await GetFromApiAsync<GroupInfoModel>($"getcurrentgroup/{_leagueTag}");
+                _cache.Set(cacheTag, g, CacheDuration);
+
                 _remoteHits++;
             }
 
-            var groupList = new List<GroupInfoModel>();
-            foreach (var g in groups)
-            {
-                groupList.Add(new GroupInfoModel {
-                    Id = g.groupOrderID,
-                    Text = g.groupName
-                });
-            }
-
-            return groupList;
+            return g;
         }
 
-        public List<MatchDataModel> GetAllMatches()
+        public async Task<List<GroupInfoModel>> GetAllGroupsAsync(bool disableCache)
         {
-            string CACHE_ALL_MATCH_TAG = "cacheAllMatches" + _leagueTag + _saisonTag;
-            string CACHE_MATCH_TAG = CACHE_MATCH_PREFIX + _leagueTag;
+            const string cacheTag = "cacheAllGrps";
 
-            TippSpiel.SvcOpenData.Matchdata[] matches = null;
-            if (_cache.IsSet(CACHE_ALL_MATCH_TAG))
+            List<GroupInfoModel> groups;
+            if (_cache.IsSet(cacheTag))
             {
-                matches = (TippSpiel.SvcOpenData.Matchdata[])_cache.Get(CACHE_ALL_MATCH_TAG);
+                groups = (List<GroupInfoModel>)_cache.Get(cacheTag);
+                _cacheHits++;
+            }
+            else
+            {
+                groups = await GetFromApiAsync<List<GroupInfoModel>>($"getavailablegroups/{_leagueTag}/{_saisonTag}");
+                _cache.Set(cacheTag, groups, CacheDuration);
+                _remoteHits++;
+            }
+
+            return groups;
+        }
+
+        public async Task<List<MatchDataModel>> GetAllMatchesAsync(bool disableCache)
+        {
+            string cacheAllMatchTag = "cacheAllMatches" + _leagueTag + _saisonTag;
+            string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag;
+
+            List<MatchDataModel> matches;
+            if (_cache.IsSet(cacheAllMatchTag))
+            {
+                matches = (List<MatchDataModel>)_cache.Get(cacheAllMatchTag);
 
                 _cacheHits++;
             }
             else
             {
-                matches = _client.GetMatchdataByLeagueSaison(_leagueTag, _saisonTag);
-                _log.Debug($"Remote hit GetAllMatches(), Count={matches?.Length}");
+                matches = await GetFromApiAsync<List<MatchDataModel>>($"getmatchdata/{_leagueTag}/{_saisonTag}");
+                _log.Debug($"Remote hit GetAllMatches(), Count={matches?.Count}");
 
-                _cache.Set(CACHE_ALL_MATCH_TAG, matches, CACHE_DURATION);
+                _cache.Set(cacheAllMatchTag, matches, CacheDuration);
 
                 // cache single matches
-                foreach (var m in matches)
+                foreach (var m in matches ?? new List<MatchDataModel>())
                 {
-                    _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, CACHE_DURATION);
+                    _cache.Set(cacheMatchTag + m.MatchId, m, CacheDuration);
                 }
 
                 _remoteHits++;
             }
 
-            var mList = new List<MatchDataModel>();
-
-            foreach (var m in matches)
-            {
-                mList.Add(Create(m));
-            }
-
-            return mList;            
+            return matches;            
         }
 
-        public MatchDataModel GetNextMatch()
+        public async Task<MatchDataModel> GetNextMatchAsync(bool disableCache)
         {
-            string CACHE_NXT_MATCH_TAG = "cacheNxtGame"+_leagueTag;
-            string CACHE_MATCH_TAG = CACHE_MATCH_PREFIX + _leagueTag;
+            string cacheNxtMatchTag = "cacheNxtGame"+_leagueTag;
+            string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag;
 
-            TippSpiel.SvcOpenData.Matchdata m = null;
-            if (_cache.IsSet(CACHE_NXT_MATCH_TAG))
+            if (_cache.IsSet(cacheNxtMatchTag))
             {
-                m = (TippSpiel.SvcOpenData.Matchdata)_cache.Get(CACHE_NXT_MATCH_TAG);
+                var m = (MatchDataModel)_cache.Get(cacheNxtMatchTag);
                 _cacheHits++;
+
+                return m;
             }
-            else
+            var teams = await GetTeamsAsync(disableCache);
+            MatchDataModel nextMatch = null;
+            foreach (TeamModel team in teams)
             {
-                m = _client.GetNextMatch(_leagueTag);
-                _log.Debug($"Remote hit GetNextMatch(), {m?.groupOrderID}");
-                _cache.Set(CACHE_NXT_MATCH_TAG, m, CACHE_DURATION);
-                _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, 10);
+                var m = await GetFromApiAsync<MatchDataModel>($"getnextmatchbyleagueteam/{_leagueId}/{team.Id}");
+
+                if (nextMatch == null || m.KickoffTimeUTC < nextMatch.KickoffTimeUTC)
+                {
+                    nextMatch = m;
+                }
+
+                _log.Debug($"Remote hit GetNextMatch(), {m?.Group.Id}");
+
+                _cache.Set(cacheNxtMatchTag, m, CacheDuration);
+                _cache.Set(cacheMatchTag + m?.MatchId, m, CacheDuration);
                 _remoteHits++;
             }
 
-            return Create(m);
+            return nextMatch;
         }
 
-        public MatchDataModel GetLastMatch()
+        public async Task<MatchDataModel> GetLastMatchAsync(bool disableCache)
         {
-            string CACHE_LAST_MATCH_TAG = "cacheLastGame" + _leagueTag;
-            string CACHE_MATCH_TAG = CACHE_MATCH_PREFIX + _leagueTag;
+            string cacheLastMatchTag = "cacheLastGame" + _leagueTag;
+            string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag;
 
-            TippSpiel.SvcOpenData.Matchdata m = null;
-            if (_cache.IsSet(CACHE_LAST_MATCH_TAG))
+            if (_cache.IsSet(cacheLastMatchTag))
             {
-                m = (TippSpiel.SvcOpenData.Matchdata)_cache.Get(CACHE_LAST_MATCH_TAG);
+                MatchDataModel m = (MatchDataModel)_cache.Get(cacheLastMatchTag);
                 _cacheHits++;
-            }
-            else
-            {
-                m = _client.GetLastMatch(_leagueTag);
-                _log.Debug($"Remote hit GetLastMatch(), {m?.groupOrderID}");
 
-                _cache.Set(CACHE_LAST_MATCH_TAG, m, CACHE_DURATION);
-                _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, CACHE_DURATION);
+                return m;
+            }
+
+            var teams = await GetTeamsAsync(disableCache);
+            MatchDataModel mostRecentLastMatch = null;
+            foreach (TeamModel team in teams)
+            {
+                var m = await GetFromApiAsync<MatchDataModel>($"getlastmatchbyleagueteam/{_leagueId}/{team.Id}");
+
+                if (mostRecentLastMatch == null || m.KickoffTimeUTC > mostRecentLastMatch.KickoffTimeUTC)
+                {
+                    mostRecentLastMatch = m;
+                }
+
+                _log.Debug($"Remote hit GetLastMatch(), {m?.Group.Id}");
+
+                _cache.Set(cacheLastMatchTag, m, CacheDuration);
+                _cache.Set(cacheMatchTag + m?.MatchId, m, CacheDuration);
                 _remoteHits++;
             }
 
-            return Create(m);
+            return mostRecentLastMatch;
         }
 
-        public MatchDataModel GetMatchData(int matchId)
+        public async Task<MatchDataModel> GetMatchDataAsync(int matchId, bool disableCache)
         {
-            string CACHE_MATCH_TAG = CACHE_MATCH_PREFIX + _leagueTag+matchId.ToString();
+            string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag+matchId;
 
-            TippSpiel.SvcOpenData.Matchdata m = null;
-            if (_cache.IsSet(CACHE_MATCH_TAG))
+            MatchDataModel m;
+            if (_cache.IsSet(cacheMatchTag))
             {
-                m = (TippSpiel.SvcOpenData.Matchdata)_cache.Get(CACHE_MATCH_TAG);
+                m = (MatchDataModel)_cache.Get(cacheMatchTag);
                 _cacheHits++;
             }
             else
             {
-                m = _client.GetMatchByMatchID(matchId);
-                _cache.Set(CACHE_MATCH_TAG, m, CACHE_DURATION);
+                m = await GetFromApiAsync<MatchDataModel>($"getmatchdata/{matchId}");
+                _cache.Set(cacheMatchTag, m, CacheDuration);
                 _remoteHits++;
             }
 
-            return Create(m);
+            return m;
         }
 
-        public List<MatchDataModel> GetMatchesByGroup(int groupId)
+        public async Task<List<MatchDataModel>> GetMatchesByGroupAsync(int groupId, bool disableCache)
         {
-            string CACHE_MATCH_GROUP_TAG = "cacheGameByGrp" + groupId.ToString() + _leagueTag + _saisonTag;
-            string CACHE_MATCH_TAG = CACHE_MATCH_PREFIX + _leagueTag;
+            string cacheMatchGroupTag = "cacheGameByGrp" + groupId + _leagueTag + _saisonTag;
+            string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag;
 
-            TippSpiel.SvcOpenData.Matchdata[] matches = null;
-            if (_cache.IsSet(CACHE_MATCH_GROUP_TAG))
+            List<MatchDataModel> matches;
+            if (_cache.IsSet(cacheMatchGroupTag))
             {
-                matches = (TippSpiel.SvcOpenData.Matchdata[])_cache.Get(CACHE_MATCH_GROUP_TAG);
+                matches = (List<MatchDataModel>)_cache.Get(cacheMatchGroupTag);
 
                 _cacheHits++;
             }
             else
             {
-                matches = _client.GetMatchdataByGroupLeagueSaison(groupId, _leagueTag, _saisonTag);
+                matches = await GetFromApiAsync<List<MatchDataModel>>($"getmatchdata/{_leagueTag}/{_saisonTag}/{groupId}");
 
                 // check if data has been found at all
-                if(matches.Count()==1)
+                if(matches.Count == 1)
                 {
-                    if (matches.First().matchID == -1)
+                    if (matches.First().MatchId == -1)
                     {
                         return new List<MatchDataModel>();
                     }
                 }
 
-                _cache.Set(CACHE_MATCH_GROUP_TAG, matches, CACHE_DURATION);
+                _cache.Set(cacheMatchGroupTag, matches, CacheDuration);
 
                 // cache single matches
                 foreach(var m in matches)
                 {
-                    _cache.Set(CACHE_MATCH_TAG + m.matchID.ToString(), m, CACHE_DURATION);
+                    _cache.Set(cacheMatchTag + m.MatchId, m, CacheDuration);
                 }
 
                 _remoteHits++;
             }
 
-            var mList = new List<MatchDataModel>();
+            return matches;
+        }
 
-            foreach (var m in matches)
+        public async Task<List<MatchDataModel>> GetMatchesByCurrentGroupAsync(bool disableCache)
+        {
+            GroupInfoModel group = await GetCurrentGroupAsync(disableCache);
+
+            return await GetMatchesByGroupAsync(group.Id, disableCache);
+        }
+
+        public async Task<bool> IsSpieltagCompleteAsync(bool disableCache)
+        {
+            var mNext = await GetNextMatchAsync(disableCache);
+            var dataLast = await GetLastMatchAsync(disableCache);
+
+            if (mNext == null)
             {
-                mList.Add(Create(m));
+                return true;
             }
 
-            return mList;
-        }
-
-        public List<MatchDataModel> GetMatchesByCurrentGroup()
-        {
-            return GetMatchesByGroup(this.GetCurrentGroup().Id);
-        }
-
-        bool IFussballDataRepository.IsSpieltagComplete
-        {
-            get {
-                var mNext = this.GetNextMatch();
-                var dataLast = this.GetLastMatch();
-
-                if (mNext == null)
-                {
-                    return true;
-                }
-                else if (dataLast == null)
-                {
-                    return false;
-                }
-                else
-                {
-                    if (dataLast.GroupId < mNext.GroupId)
-                    {
-                        return true;
-                    }
-
-                    return false;
-                }
-            }
-        }
-
-        public bool Exist(string leagueShortcut, string leagueSeason)
-        {
-            var leagues = _client.GetAvailLeagues();
-
-            var count = (from e in leagues
-                             where e.leagueShortcut == leagueShortcut &&
-                                   e.leagueSaison == leagueSeason
-                             select e)
-                             .Count();
-
-            return count==1?true:false;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (_disposed)
-                return;
-
-            if (disposing)
+            if (dataLast == null)
             {
-                _client.Close();
+                return false;
             }
 
-            // Free any unmanaged objects here. 
-            //
-            _disposed = true;
+            if (dataLast.Group.Id < mNext.Group.Id)
+            {
+                return true;
+            }
+
+            return false;
         }
 
-        public static MatchDataModel Create(TippSpiel.SvcOpenData.Matchdata match)
+        private async Task<T> GetFromApiAsync<T>(string path) where T : class
         {
-            var matchModelObj = new MatchDataModel();
-            matchModelObj.MatchId = match.matchID;
-            matchModelObj.GroupId = match.groupOrderID;
-            matchModelObj.KickoffTime = match.matchDateTime;
-            matchModelObj.KickoffTimeUTC = match.matchDateTimeUTC;
-            matchModelObj.HomeTeamId = match.idTeam1;
-            matchModelObj.AwayTeamId = match.idTeam2;
-            matchModelObj.HomeTeamScore = match.pointsTeam1;
-            matchModelObj.AwayTeamScore = match.pointsTeam2;
-            matchModelObj.HomeTeamIcon = match.iconUrlTeam1;
-            matchModelObj.AwayTeamIcon = match.iconUrlTeam2;
-            matchModelObj.HomeTeam = match.nameTeam1;
-            matchModelObj.AwayTeam = match.nameTeam2;
-            matchModelObj.IsFinished = match.matchIsFinished;
-            matchModelObj.LeagueShortcut = match.leagueShortcut;
-
-            if(match.matchResults != null && match.matchResults.Count > 0)
+            T item = null;
+            HttpResponseMessage response = await httpClient.GetAsync(path);
+            if (response.IsSuccessStatusCode)
             {
-                var result = (from r in match.matchResults orderby r.resultTypeId descending select r).FirstOrDefault();
-
-                if (result == null) return matchModelObj;
-
-                matchModelObj.HomeTeamScore = result.pointsTeam1;
-                matchModelObj.AwayTeamScore = result.pointsTeam2;
-
-                if (match.matchID == 64153)
-                {
-                    matchModelObj.HomeTeamScore = 0;
-                    matchModelObj.AwayTeamScore = 3;
-                }
-
+                item = await response.Content.ReadAsAsync<T>();
             }
-            else if (match.matchID == 64154)
-            {
-                matchModelObj.HomeTeamScore = 2;
-                matchModelObj.AwayTeamScore = 2;
-            }
-
-            return matchModelObj;
+            return item;
         }
-
-        private string CACHE_MATCH_PREFIX = "cacheGame";
-
-        private static int _remoteHits = 0;
-        private static int _cacheHits = 0;
-        private const int CACHE_DURATION = 60;
-        private ICacheProvider _cache = null;
-        private readonly ILog _log;
-
-        private string _leagueTag;
-        private string _saisonTag;
-        private TippSpiel.SvcOpenData.SportsdataSoapClient _client = null;
-
-        bool _disposed = false;
     }
 }

@@ -84,17 +84,27 @@ namespace Tippspiel.Implementation
         {
             var matchModelObj = new MatchDataModel();
             matchModelObj.MatchId = match.MatchId;
-            matchModelObj.GroupId = match.GroupOrderId;
+            matchModelObj.Group = new GroupInfoModel
+            {
+                Id = match.GroupOrderId,
+            };
             matchModelObj.KickoffTime = match.KickoffTime;
             matchModelObj.KickoffTimeUTC = match.KickoffTimeUtc;
-            matchModelObj.HomeTeamId = match.HomeTeamId;
-            matchModelObj.AwayTeamId = match.AwayTeamId;
-            matchModelObj.HomeTeamScore = match.HomeTeamScore;
-            matchModelObj.AwayTeamScore = match.AwayTeamScore;
-            matchModelObj.HomeTeamIcon = match.HomeTeamIcon;
-            matchModelObj.AwayTeamIcon = match.AwayTeamIcon;
-            matchModelObj.HomeTeam = match.HomeTeam;
-            matchModelObj.AwayTeam = match.AwayTeam;
+            matchModelObj.MatchResults = new[]
+            {
+                new MatchResultModel
+                {
+                    ResultOrderId = 1,
+                    ResultTypeId = 2,
+                    HomeTeamScore = match.HomeTeamScore,
+                    AwayTeamScore = match.AwayTeamScore,
+                    ResultName = "Endergebnis"
+                }
+            };
+            matchModelObj.HomeTeam = new TeamModel
+                { ShortName = match.HomeTeam, IconUrl = match.HomeTeamIcon, Id = match.HomeTeamId };
+            matchModelObj.AwayTeam = new TeamModel
+                { ShortName = match.AwayTeam, IconUrl = match.AwayTeamIcon, Id = match.AwayTeamId };
             matchModelObj.IsFinished = match.IsFinished;
             matchModelObj.LeagueShortcut = match.LeagueIdentifier;
 

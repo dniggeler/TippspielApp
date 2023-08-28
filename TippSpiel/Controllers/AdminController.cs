@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using WebMatrix.WebData;
 using FussballTippApp.Models;
@@ -31,32 +32,29 @@ namespace FussballTippApp.Controllers
             _oddsScraper = oddsScraper;
         }
 
-        public ActionResult Index(int? Spieltag)
+        public async Task<ActionResult> Index(int? Spieltag)
         {
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            int currSpieltag = Spieltag.HasValue
+                ? Spieltag.Value
+                : (await OpenDBHelper.GetSpieltagInfo(_matchDataRepository)).TippSpieltag;
+
+            // build dropdown list data
             {
-                int currSpieltag = (Spieltag.HasValue == true) ? 
-                    Spieltag.Value :
-                    OpenDBHelper.GetSpieltagInfo(_matchDataRepository).TippSpieltag;
+                var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag + 1;
+                var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
+                    select new SelectListItem()
+                    {
+                        Value = e.ToString(),
+                        Text = "Spieltag " + e,
+                        Selected = (e == currSpieltag)
+                    });
 
-                // build dropdown list data
-                {
-                    var count = SportsdataConfigInfo.Current.EndSpieltag - SportsdataConfigInfo.Current.StartSpieltag + 1;
-                    var ddlSpieltageRange = (from e in Enumerable.Range(SportsdataConfigInfo.Current.StartSpieltag, count)
-                                             select new SelectListItem()
-                                             {
-                                                 Value = e.ToString(),
-                                                 Text = "Spieltag " + e.ToString(),
-                                                 Selected = (e == currSpieltag)
-                                             });
-
-                    ViewBag.Spieltag = ddlSpieltageRange;
-                }
-
-                var viewModel = DailyWinnersInternal(currSpieltag,true);
-
-                return View(viewModel);
+                ViewBag.Spieltag = ddlSpieltageRange;
             }
+
+            var viewModel = await DailyWinnersInternalAsync(currSpieltag, true);
+
+            return View(viewModel);
         }
 
         public ActionResult Clear()
@@ -102,9 +100,9 @@ namespace FussballTippApp.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult GetAllMatches(int spieltag)
+        public async Task<ActionResult> GetAllMatchesAsync(int spieltag)
         {
-            var matches = _matchDataRepository.GetMatchesByGroup(spieltag);
+            var matches = await _matchDataRepository.GetMatchesByGroupAsync(spieltag);
 
             var leagueIdentifier = SportsdataConfigInfo.Current.LeagueShortcut;
             var seasonIdentifier = SportsdataConfigInfo.Current.LeagueSaison;
@@ -115,17 +113,17 @@ namespace FussballTippApp.Controllers
                 {
                     ctxt.Items.Add(new MatchInfoItem()
                     {
-                        GroupOrderId = m.GroupId,
+                        GroupOrderId = m.Group.Id,
                         MatchId = m.MatchId,
                         MatchNr = m.MatchNr,
-                        HomeTeamId = m.HomeTeamId,
-                        AwayTeamId = m.AwayTeamId,
-                        HomeTeam = m.HomeTeam,
-                        AwayTeam = m.AwayTeam,
+                        HomeTeamId = m.HomeTeam.Id,
+                        AwayTeamId = m.AwayTeam.Id,
+                        HomeTeam = m.HomeTeam.ShortName,
+                        AwayTeam = m.AwayTeam.ShortName,
                         HomeTeamScore = m.HomeTeamScore,
                         AwayTeamScore = m.AwayTeamScore,
-                        HomeTeamIcon = m.HomeTeamIcon,
-                        AwayTeamIcon = m.AwayTeamIcon,
+                        HomeTeamIcon = m.HomeTeam.IconUrl,
+                        AwayTeamIcon = m.AwayTeam.IconUrl,
                         KickoffTime = m.KickoffTime,
                         KickoffTimeUtc = m.KickoffTimeUTC,
                         IsFinished = m.IsFinished,
@@ -210,80 +208,76 @@ namespace FussballTippApp.Controllers
             return users.ToList<dynamic>();
         }
 
-        private DailyWinnerInfoModel DailyWinnersInternal(int currSpieltag, bool IsAdminView)
+        private async Task<DailyWinnerInfoModel> DailyWinnersInternalAsync(int currSpieltag, bool IsAdminView)
         {
             var viewModel = new DailyWinnerInfoModel();
 
-            using (var client = new TippSpiel.SvcOpenData.SportsdataSoapClient())
+            var matchesDB = await _matchDataRepository.GetMatchesByGroupAsync(currSpieltag);
+
+            foreach (var m in matchesDB)
             {
-                var matchesDB = client.GetMatchdataByGroupLeagueSaison(currSpieltag,
-                                                                     SportsdataConfigInfo.Current.LeagueShortcut,
-                                                                     SportsdataConfigInfo.Current.LeagueSaison);
+                viewModel.MatchInfo.Add(OpenDBHelper.Create(m));
+            }
 
-                foreach (var m in matchesDB)
+            using (var ctxt = new TippSpielContext())
+            {
+                var resultDict = new Dictionary<string, RankingInfoModel>();
+                using (var userCtxt = new UsersContext())
                 {
-                    viewModel.MatchInfo.Add(OpenDBHelper.Create(m));
-                }
-
-                using (var ctxt = new TippSpielContext())
-                {
-                    var resultDict = new Dictionary<string, RankingInfoModel>();
-                    using (var userCtxt = new UsersContext())
+                    // init result dict
                     {
-                        // init result dict
+                        foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
                         {
-                            foreach (var username in (from t in ctxt.TippMatchList select t.User).Distinct())
-                            {
-                                var m = new RankingInfoModel();
-                                m.User = username;
-                                m.DisplayName = (from u in userCtxt.UserProfiles
-                                                 where u.UserName == username
-                                                 select u.DisplayName)
-                                                 .FirstOrDefault();
+                            var m = new RankingInfoModel();
+                            m.User = username;
+                            m.DisplayName = (from u in userCtxt.UserProfiles
+                                    where u.UserName == username
+                                    select u.DisplayName)
+                                .FirstOrDefault();
 
-                                resultDict.Add(username, m);
-                                viewModel.AllTippInfoDict.Add(username, new List<MatchInfoModel>());
-                            }
+                            resultDict.Add(username, m);
+                            viewModel.AllTippInfoDict.Add(username, new List<MatchInfoModel>());
                         }
                     }
+                }
 
-                    // 1. get all tipps for match with id
-                    foreach (var match in matchesDB)
+                // 1. get all tipps for match with id
+                foreach (var match in matchesDB)
+                {
+                    var tippSet = (from t in ctxt.TippMatchList
+                        where t.MatchId == match.MatchId &&
+                              t.MyTip.HasValue &&
+                              t.MyAmount.HasValue &&
+                              t.MyOdds.HasValue
+                        select t);
+                    foreach (var tip in tippSet)
                     {
-                        var tippSet = (from t in ctxt.TippMatchList
-                                       where t.MatchId == match.matchID &&
-                                             t.MyTip.HasValue &&
-                                             t.MyAmount.HasValue &&
-                                             t.MyOdds.HasValue
-                                       select t);
-                        foreach (var tip in tippSet)
-                        {
-                            var matchModelObj = OpenDBHelper.Create(match);
-                            matchModelObj.MyOdds = tip.MyOdds;
-                            matchModelObj.MyAmount = tip.MyAmount;
-                            matchModelObj.MyTip = tip.MyTip;
+                        var matchModelObj = OpenDBHelper.Create(match);
+                        matchModelObj.MyOdds = tip.MyOdds;
+                        matchModelObj.MyAmount = tip.MyAmount;
+                        matchModelObj.MyTip = tip.MyTip;
 
-                            if (matchModelObj.HasStarted == true || IsAdminView == true)
-                            {
-                                resultDict[tip.User].TippCount++;
-                                resultDict[tip.User].TotalPoints += (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
-                                viewModel.AllTippInfoDict[tip.User].Add(matchModelObj);
-                            }
+                        if (matchModelObj.HasStarted == true || IsAdminView == true)
+                        {
+                            resultDict[tip.User].TippCount++;
+                            resultDict[tip.User].TotalPoints +=
+                                (matchModelObj.MyPoints.HasValue) ? matchModelObj.MyPoints.Value : 0.0;
+                            viewModel.AllTippInfoDict[tip.User].Add(matchModelObj);
                         }
                     }
-
-                    var resultList = (from kp in resultDict select kp.Value).ToList();
-
-                    viewModel.Ranking = (from e in resultList
-                                         orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
-                                         select e)
-                                  .ToList();
-
-                    int counter = 1;
-                    viewModel.Ranking.ForEach(e => { e.Rang = counter++; });
-
-                    return viewModel;
                 }
+
+                var resultList = (from kp in resultDict select kp.Value).ToList();
+
+                viewModel.Ranking = (from e in resultList
+                        orderby e.TotalPoints descending, e.PointAvg, e.TippCount descending
+                        select e)
+                    .ToList();
+
+                int counter = 1;
+                viewModel.Ranking.ForEach(e => { e.Rang = counter++; });
+
+                return viewModel;
             }
         }
 

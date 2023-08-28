@@ -1,0 +1,49 @@
+﻿{
+  "matchID": 66641,
+  "group": {
+    "groupOrderID": 2,
+    "groupName": "2. Spieltag"
+  },
+  "MatchNr": 0,
+  "leagueShortcut": "bl1",
+  "matchDateTime": "2023-08-26T15:30:00",
+  "matchDateTimeUTC": "2023-08-26T13:30:00Z",
+  "matchIsFinished": true,
+  "team1": {
+    "teamId": 112,
+    "teamName": "SC Freiburg",
+    "shortName": "Freiburg",
+    "teamIconUrl": "https://i.imgur.com/r3mvi0h.png"
+  },
+  "team2": {
+    "teamId": 134,
+    "teamName": "Werder Bremen",
+    "shortName": "Bremen",
+    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/681px-SV-Werder-Bremen-Logo.svg.png"
+  },
+  "matchResults": [
+    {
+      "resultID": 103602,
+      "resultName": "Halbzeitergebnis",
+      "pointsTeam1": 0,
+      "pointsTeam2": 0,
+      "resultOrderID": 1,
+      "resultTypeID": 1,
+      "ResultType": 0
+    },
+    {
+      "resultID": 103601,
+      "resultName": "Endergebnis",
+      "pointsTeam1": 1,
+      "pointsTeam2": 0,
+      "resultOrderID": 2,
+      "resultTypeID": 2,
+      "ResultType": 1
+    }
+  ],
+  "HomeTeamScore": 1,
+  "AwayTeamScore": 0,
+  "HasVerlaengerung": false,
+  "ResultType": 1,
+  "HasStarted": true
+}
