@@ -460,7 +460,8 @@ namespace FussballTippApp.Controllers
             var awayTeamUpper = m.AwayTeam.ToUpper();
 
             var oddsMatchObj = (from o in oddsList
-                             where (homeTeamUpper.Contains(o.HomeTeamSearch) || awayTeamUpper.Contains(o.AwayTeamSearch))
+                             where (m.HomeTeam.IndexOf(o.HomeTeamSearch, StringComparison.OrdinalIgnoreCase) >=0 ||
+                                    m.AwayTeam.IndexOf(o.AwayTeamSearch, StringComparison.OrdinalIgnoreCase) >= 0)
                              select o)
                             .FirstOrDefault();
 

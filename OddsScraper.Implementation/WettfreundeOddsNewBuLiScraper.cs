@@ -83,16 +83,24 @@ namespace OddsScraper
                     model.DrawOdds = odds.Item2;
                     model.LossOdds = odds.Item3;
 
+                    // remove "Wettquote" from team name
+                    string spamString = "Wettquoten";
+                    if (teams.Item1.Contains(spamString))
+                    {
+                        model.HomeTeam = model.HomeTeam.Replace(spamString, "").Trim(' ');
+                        model.HomeTeamSearch = model.HomeTeam.ToUpper();
+                    }
+
+                    if (teams.Item2.Contains(spamString))
+                    {
+                        model.AwayTeam = model.AwayTeam.Replace(spamString, "").Trim(' ');
+                        model.AwayTeamSearch = model.AwayTeam.ToUpper();
+                    }
+
                     if (teams.Item2.Contains("BVB"))
                     {
                         model.AwayTeam = "Dortmund";
                         model.AwayTeamSearch = "Dortmund".ToUpper();
-                    }
-
-                    if (teams.Item2.Contains("Beriln"))
-                    {
-                        model.AwayTeam = "Berlin";
-                        model.AwayTeamSearch = "Berlin".ToUpper();
                     }
 
                     oddsList.Add(model);
