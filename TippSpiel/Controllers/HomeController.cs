@@ -506,9 +506,18 @@ namespace FussballTippApp.Controllers
 
             var oddsMatch = oddsMatchObj;
 
-            m.HomeTeamOdds = oddsMatch.WinOdds;
-            m.AwayTeamOdds = oddsMatch.LossOdds;
-            m.DrawOdds = oddsMatch.DrawOdds;
+            if (m.MatchId == 66738)
+            {
+                m.HomeTeamOdds = 1.15;
+                m.AwayTeamOdds = 17.0;
+                m.DrawOdds = 7.0;
+            }
+            else
+            {
+                m.HomeTeamOdds = oddsMatch.WinOdds;
+                m.AwayTeamOdds = oddsMatch.LossOdds;
+                m.DrawOdds = oddsMatch.DrawOdds;
+            }
 
             // find favorite and longshot tipp
             if (m.DrawOdds.HasValue &&

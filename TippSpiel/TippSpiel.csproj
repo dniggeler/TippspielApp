@@ -1239,9 +1239,12 @@
     <Content Include="Content\ext\resources\images\yourtheme\window\top-bottom.psd" />
     <Content Include="Content\ext\resources\resources.jsb" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - ReadOnly - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\BuliTippspiel - Web Deploy2.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
