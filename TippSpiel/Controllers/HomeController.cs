@@ -512,6 +512,12 @@ namespace FussballTippApp.Controllers
                 m.AwayTeamOdds = 17.0;
                 m.DrawOdds = 7.0;
             }
+            else if (m.MatchId == 66787)
+            {
+                m.HomeTeamOdds = null;
+                m.AwayTeamOdds = null;
+                m.DrawOdds = null;
+            }
             else
             {
                 m.HomeTeamOdds = oddsMatch.WinOdds;
