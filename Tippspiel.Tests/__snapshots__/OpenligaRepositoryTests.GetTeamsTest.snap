@@ -6,12 +6,6 @@
     "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/1._FC_Heidenheim_1846.svg/830px-1._FC_Heidenheim_1846.svg.png"
   },
   {
-    "teamId": 65,
-    "teamName": "1. FC Köln",
-    "shortName": "Köln",
-    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014–.svg/296px-1._FC_Koeln_Logo_2014–.svg.png"
-  },
-  {
     "teamId": 80,
     "teamName": "1. FC Union Berlin",
     "shortName": "Union Berlin",
@@ -60,6 +54,18 @@
     "teamIconUrl": "https://i.imgur.com/jJEsJrj.png"
   },
   {
+    "teamId": 98,
+    "teamName": "FC St. Pauli",
+    "shortName": "St. Pauli",
+    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/de/b/b3/Fc_st_pauli_logo.svg"
+  },
+  {
+    "teamId": 104,
+    "teamName": "Holstein Kiel",
+    "shortName": "Kiel",
+    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Holstein_Kiel_Logo.svg/300px-Holstein_Kiel_Logo.svg.png"
+  },
+  {
     "teamId": 1635,
     "teamName": "RB Leipzig",
     "shortName": "Leipzig",
@@ -70,12 +76,6 @@
     "teamName": "SC Freiburg",
     "shortName": "Freiburg",
     "teamIconUrl": "https://i.imgur.com/r3mvi0h.png"
-  },
-  {
-    "teamId": 118,
-    "teamName": "SV Darmstadt 98",
-    "shortName": "Darmstadt",
-    "teamIconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/SV_Darmstadt_98_Logo.svg"
   },
   {
     "teamId": 175,

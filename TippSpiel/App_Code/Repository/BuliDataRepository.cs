@@ -198,7 +198,12 @@ namespace TippSpiel.Repository
             MatchDataModel mostRecentLastMatch = null;
             foreach (TeamModel team in teams)
             {
-                var m = await GetFromApiAsync<MatchDataModel>($"getlastmatchbyleagueteam/{_leagueId}/{team.Id}");
+                MatchDataModel m = await GetFromApiAsync<MatchDataModel>($"getlastmatchbyleagueteam/{_leagueId}/{team.Id}");
+
+                if(m == null)
+                {
+                    continue;
+                }
 
                 if (mostRecentLastMatch == null || m.KickoffTimeUTC > mostRecentLastMatch.KickoffTimeUTC)
                 {
