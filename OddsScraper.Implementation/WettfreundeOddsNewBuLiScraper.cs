@@ -140,21 +140,21 @@ namespace OddsScraper
 
         private Tuple<double?, double?, double?> GetGameOdds(HtmlNode sectionNode, string team1, string roundTag)
         {
-            if (roundTag == "12")
+            if (roundTag == "13")
             {
                 string teamClean = team1.Replace("Wettquoten","").Trim(' ');
                 Dictionary<string, Tuple<double, double, double>> quotes =
                     new Dictionary<string, Tuple<double, double, double>>
                     {
-                        { "BVB", new Tuple<double, double, double>(4.4, 4.4, 1.66) },
-                        //{ "Hertha BSC", new Tuple<double, double, double>(1.72, 4, 4.5) },
-                        //{ "Bremen", new Tuple<double, double, double>(5.5, 4.5, 1.55) },
-                        //{ "Stuttgart", new Tuple<double, double, double>(2.05, 3.75, 3.4) },
-                        //{ "Schalke 04", new Tuple<double, double, double>(2.87, 3.5, 2.37) },
-                        //{ "Bayern", new Tuple<double, double, double>(1.33, 5.5, 8.5) },
-                        //{ "Hoffenheim", new Tuple<double, double, double>(5, 4.5, 1.6) },
-                        //{ "Köln", new Tuple<double, double, double>(5.25, 4.2, 1.6) },
-                        //{ "Bielefeld", new Tuple<double, double, double>(2.8, 3.3, 2.55) },
+                        { "Stuttgart", new Tuple<double, double, double>(1.69, 3.60, 5.00) },
+                        { "Leverkusen", new Tuple<double, double, double>(1.19, 7, 11) },
+                        { "Bayern", new Tuple<double, double, double>(1.07, 9, 26) },
+                        { "Frankfurt", new Tuple<double, double, double>(1.54, 4, 6) },
+                        { "Kiel", new Tuple<double, double, double>(5.5, 4, 1.58) },
+                        { "Bochum", new Tuple<double, double, double>(3.1, 3.5, 2.25) },
+                        { "Gladbach", new Tuple<double, double, double>(3.4, 3.6, 2.05) },
+                        { "Wolfsburg", new Tuple<double, double, double>(2.1, 3.3, 3.6) },
+                        { "Hoffenheim", new Tuple<double, double, double>(2.7, 3.25, 2.62) },
                     };
 
                 double winOddValue = 0;
