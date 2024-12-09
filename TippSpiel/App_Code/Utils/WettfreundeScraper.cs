@@ -28,7 +28,7 @@ namespace BhFS.Tippspiel.Utils
 
             var oddResponseStr = PostRequest("", betOddsUrl, "", cookies);
 
-            var oddScraper = new WettfreundeOddsBuLiManual();
+            var oddScraper = new WettfreundeOddsNewBuLiScraper();
 
             return oddScraper.GetOdds(oddResponseStr, spieltag.ToString());
         }

@@ -140,7 +140,7 @@ namespace OddsScraper
 
         private Tuple<double?, double?, double?> GetGameOdds(HtmlNode sectionNode, string team1, string roundTag)
         {
-            if (roundTag == "13")
+            if (roundTag == "12")
             {
                 string teamClean = team1.Replace("Wettquoten","").Trim(' ');
                 Dictionary<string, Tuple<double, double, double>> quotes =
