@@ -145,7 +145,6 @@ namespace FussballTippApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> OverallStanding()
         {
-
             using (var ctxt = new TippSpielContext())
             {
                 var resultDict = new Dictionary<string, RankingInfoModel>();
@@ -166,11 +165,17 @@ namespace FussballTippApp.Controllers
                     }
                 }
 
+                DateTime maxLastUpdate = DateTime.MinValue;
                 foreach (var tip in ctxt.TippMatchList.Where(t => t.MyTip.HasValue))
                 {
                     var rankingObj = resultDict[tip.User];
 
                     MatchDataModel matchInfo = await _matchDataRepository.GetMatchDataAsync(tip.MatchId);
+
+                    if (matchInfo.LastUpdate.HasValue && matchInfo.LastUpdate > maxLastUpdate)
+                    {
+                        maxLastUpdate = matchInfo.LastUpdate.Value;
+                    }
 
                     var matchModelObj = new MatchInfoModel()
                     {
@@ -222,6 +227,8 @@ namespace FussballTippApp.Controllers
 
                 int counter = 1;
                 resultList.ForEach(e => { e.Rang = counter++; });
+
+                ViewData["LastUpdate"] = $"{maxLastUpdate.ToShortDateString()}, {maxLastUpdate.ToShortTimeString()}";
 
                 return View(resultList);
             }

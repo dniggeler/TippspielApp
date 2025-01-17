@@ -23,6 +23,9 @@ namespace Tippspiel.Contracts.Models
         [JsonProperty("matchDateTimeUTC")]
         public DateTime KickoffTimeUTC { get; set; }
 
+        [JsonProperty("lastUpdateDateTime")]
+        public DateTime? LastUpdate { get; set; }
+
         [JsonProperty("matchIsFinished")]
         public bool IsFinished { get; set; }
 
