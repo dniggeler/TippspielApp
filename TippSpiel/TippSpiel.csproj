@@ -1206,8 +1206,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Quotes\Odds_bl1_2020_2.txt" />
-    <Content Include="Quotes\Odds_bl1_2019_24.txt" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -1299,6 +1297,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\ext\resources\images\vista\dd\" />
     <Folder Include="Content\ext\resources\images\vista\tree\" />
+    <Folder Include="Quotes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1331,6 +1330,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

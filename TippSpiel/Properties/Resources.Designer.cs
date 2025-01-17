@@ -59,32 +59,5 @@ namespace TippSpiel.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;html lang=&quot;de-DE&quot; class=&quot;js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths iconsmxfail wf-opensans-n3-active [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Odds_bl1_2019_24 {
-            get {
-                return ResourceManager.GetString("Odds_bl1_2019_24", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
-        ///&lt;html lang=&quot;de-DE&quot;&gt;
-        ///&lt;head&gt;
-        ///    &lt;!-- Google Tag Manager --&gt;
-        ///    &lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&apos;gtm.start&apos;:
-        ///          new Date().getTime(),event:&apos;gtm.js&apos;});var f=d.getElementsByTagName(s)[0],
-        ///        j=d.createElement(s),dl=l!=&apos;dataLayer&apos;?&apos;&amp;l=&apos;+l:&apos;&apos;;j.async=true;j.src=
-        ///        &apos;https://www.googletagmanager.com/gtm.js?id=&apos;+i+dl;f.parentNode.insertBefore(j,f);
-        ///      })(window,document,&apos;script&apos;,&apos;dataLayer&apos;,&apos;GTM-KCQTLCV&apos;);&lt;/script&gt;
-        ///    &lt;!-- End Google Tag Manager - [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Odds_bl1_2020_2 {
-            get {
-                return ResourceManager.GetString("Odds_bl1_2020_2", resourceCulture);
-            }
-        }
     }
 }
