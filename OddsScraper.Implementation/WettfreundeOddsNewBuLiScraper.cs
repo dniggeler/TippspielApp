@@ -109,6 +109,18 @@ namespace OddsScraper
                         model.AwayTeamSearch = "Dortmund".ToUpper();
                     }
 
+                    if (teams.Item1.ToUpper().Contains("HOLSTEIN"))
+                    {
+                        model.HomeTeam = "Kiel";
+                        model.HomeTeamSearch = "Kiel".ToUpper();
+                    }
+
+                    if (teams.Item2.ToUpper().Contains("HOLSTEIN"))
+                    {
+                        model.AwayTeam = "Kiel";
+                        model.AwayTeamSearch = "Kiel".ToUpper();
+                    }
+
                     oddsList.Add(model);
                 }
             }
@@ -140,7 +152,7 @@ namespace OddsScraper
 
         private Tuple<double?, double?, double?> GetGameOdds(HtmlNode sectionNode, string team1, string roundTag)
         {
-            if (roundTag == "35")
+            if (roundTag == "-1")
             {
                 string teamClean = team1.Replace("Wettquoten","").Trim(' ');
                 Dictionary<string, Tuple<double, double, double>> quotes =
