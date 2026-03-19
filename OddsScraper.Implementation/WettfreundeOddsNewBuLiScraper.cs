@@ -196,6 +196,14 @@ namespace OddsScraper
 
             var splitTeams = split2[0].Split(new[] { "-","&#8211;"}, StringSplitOptions.RemoveEmptyEntries);
 
+            // fallback if standard delimiters does not work, take space as delimiter 
+            if (splitTeams.Length == 1)
+            {
+                var splitTeamsBySpace = splitTeams[0].Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+
+                return new Tuple<string, string>(splitTeamsBySpace[1].Trim(' '), splitTeamsBySpace[2].Trim(' '));
+            }
+
             if (splitTeams.Length != 2)
             {
                 return null;
