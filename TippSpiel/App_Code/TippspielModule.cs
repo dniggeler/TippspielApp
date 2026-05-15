@@ -20,8 +20,12 @@ namespace BhFS.Tippspiel.Utils
 
             Kernel.Load(modules);
 
+            Kernel.Rebind<IMatchHistory>()
+                .To<JsonMatchHistoryStorage>()
+                .InRequestScope();
+
             Kernel.Bind<IFussballDataRepository>()
-                .ToConstructor(c => new BuLiDataRepository(SportsdataConfigInfo.Current, c.Inject<ICacheProvider>(), c.Inject<ILog>()))
+                .ToConstructor(c => new BuLiDataRepository(SportsdataConfigInfo.Current, c.Inject<IMatchHistory>(), c.Inject<ICacheProvider>(), c.Inject<ILog>()))
                 .InRequestScope();
 
             Kernel.Bind<ILog>()

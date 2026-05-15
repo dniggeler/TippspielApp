@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -98,6 +99,18 @@ namespace FussballTippApp.Controllers
             _cache.Clear();
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult MatchHistory()
+        {
+            var filePath = Server.MapPath("~/Content/MatchData/MatchHistory.json");
+
+            if (string.IsNullOrEmpty(filePath) || !System.IO.File.Exists(filePath))
+            {
+                return HttpNotFound();
+            }
+
+            return File(filePath, "application/json");
         }
 
         public async Task<ActionResult> GetAllMatchesAsync(int spieltag)

@@ -19,6 +19,7 @@ namespace TippSpiel.Repository
         private static int _remoteHits;
         private static int _cacheHits;
         private const int CacheDuration = 60;
+        private readonly IMatchHistory _matchHistory;
         private readonly ICacheProvider _cache;
         private readonly ILog _log;
 
@@ -26,9 +27,10 @@ namespace TippSpiel.Repository
         private readonly string _leagueTag;
         private readonly string _saisonTag;
 
-        public BuLiDataRepository(SportsdataConfigInfo info, ICacheProvider cacheProvider, ILog log)
+        public BuLiDataRepository(SportsdataConfigInfo info, IMatchHistory matchHistory, ICacheProvider cacheProvider, ILog log)
             :  this(info.LeagueId, info.LeagueShortcut, info.LeagueSaison)
         {
+            _matchHistory = matchHistory;
             _cache = cacheProvider;
             _log = log;
         }
@@ -222,6 +224,12 @@ namespace TippSpiel.Repository
 
         public async Task<MatchDataModel> GetMatchDataAsync(int matchId, bool disableCache)
         {
+            MatchDataModel matchDataFromHistory = _matchHistory.GetMatchData(matchId);
+            if (matchDataFromHistory != null && matchDataFromHistory.Group.Id < 34)
+            {
+                return matchDataFromHistory;
+            }
+
             string cacheMatchTag = CACHE_MATCH_PREFIX + _leagueTag+matchId;
 
             MatchDataModel m;

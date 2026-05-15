@@ -243,6 +243,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\JsonMatchHistoryStorage.cs" />
     <Compile Include="App_Code\TippspielModule.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -1236,6 +1237,9 @@
     <Content Include="Content\ext\resources\images\yourtheme\window\right-corners.psd" />
     <Content Include="Content\ext\resources\images\yourtheme\window\top-bottom.psd" />
     <Content Include="Content\ext\resources\resources.jsb" />
+    <Content Include="Content\MatchData\MatchHistory.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\BuliTippspiel - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\BuliTippspiel - ReadOnly - FTP.pubxml" />

@@ -11,10 +11,6 @@ namespace Tippspiel.Implementation
             Kernel.Bind<ICacheProvider>()
                 .To<DefaultCacheProvider>()
                 .InSingletonScope();
-
-            Kernel.Bind<IMatchHistory>()
-                .ToConstructor(c=>new OpenligaHistoryStorage(SportsdataConfigInfo.Current))
-                .InRequestScope();
         }
     }
 }
