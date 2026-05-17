@@ -168,15 +168,20 @@ namespace TippSpiel.Repository
             {
                 var m = await GetFromApiAsync<MatchDataModel>($"getnextmatchbyleagueteam/{_leagueId}/{team.Id}");
 
+                if (m == null)
+                {
+                    continue;
+                }
+
                 if (nextMatch == null || m.KickoffTimeUTC < nextMatch.KickoffTimeUTC)
                 {
                     nextMatch = m;
                 }
 
-                _log.Debug($"Remote hit GetNextMatch(), {m?.Group.Id}");
+                _log.Debug($"Remote hit GetNextMatch(), {m.Group.Id}");
 
                 _cache.Set(cacheNxtMatchTag, m, CacheDuration);
-                _cache.Set(cacheMatchTag + m?.MatchId, m, CacheDuration);
+                _cache.Set(cacheMatchTag + m.MatchId, m, CacheDuration);
                 _remoteHits++;
             }
 
